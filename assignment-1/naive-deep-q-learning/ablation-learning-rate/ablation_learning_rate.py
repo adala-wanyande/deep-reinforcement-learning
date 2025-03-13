@@ -10,7 +10,7 @@ import random
 
 # Experiment parameters
 NUM_RUNS = 5  # Number of independent runs per learning rate
-MAX_ENV_STEPS = 10e6  # Total environment steps per run
+MAX_ENV_STEPS = int(10e6)  # Total environment steps per run
 GAMMA = 0.99
 EPSILON = 1.0
 EPSILON_DECAY = 0.999
@@ -25,9 +25,7 @@ class QNetwork(nn.Module):
     def __init__(self, input_dim, output_dim):
         super(QNetwork, self).__init__()
         self.fc = nn.Sequential(
-            nn.Linear(input_dim, 64),  # Increased network size for stability
-            nn.ReLU(),
-            nn.Linear(64, 64),
+            nn.Linear(input_dim, 64),
             nn.ReLU(),
             nn.Linear(64, output_dim)
         )
