@@ -19,8 +19,8 @@ sns.set_style("whitegrid")
 os.makedirs("../visuals", exist_ok=True)
 
 # Downsampling factor (set to None for full resolution)
-DOWNSAMPLE_FACTOR = 50  # Adjusted to prevent excessive skipping
-SMOOTHING_WINDOW = 500  # Adjusted to provide a balanced smoothness
+DOWNSAMPLE_FACTOR = 20  # Adjusted to prevent excessive skipping
+SMOOTHING_WINDOW = 10000  # Adjusted to provide a balanced smoothness
 
 # Prepare the figure
 plt.figure(figsize=(10, 5))
