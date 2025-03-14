@@ -1,0 +1,3076 @@
+Configuration,Episode,Mean Total Reward,Std Dev
+Naive DQN (No Experience Replay),1,15.5,0.5
+Naive DQN (No Experience Replay),2,43.0,26.0
+Naive DQN (No Experience Replay),3,14.5,1.5
+Naive DQN (No Experience Replay),4,28.5,2.5
+Naive DQN (No Experience Replay),5,21.5,10.5
+Naive DQN (No Experience Replay),6,25.5,12.5
+Naive DQN (No Experience Replay),7,28.0,8.0
+Naive DQN (No Experience Replay),8,38.5,24.5
+Naive DQN (No Experience Replay),9,28.0,14.0
+Naive DQN (No Experience Replay),10,14.5,2.5
+Naive DQN (No Experience Replay),11,16.5,4.5
+Naive DQN (No Experience Replay),12,22.5,9.5
+Naive DQN (No Experience Replay),13,17.5,0.5
+Naive DQN (No Experience Replay),14,12.5,3.5
+Naive DQN (No Experience Replay),15,18.0,8.0
+Naive DQN (No Experience Replay),16,17.5,2.5
+Naive DQN (No Experience Replay),17,18.0,1.0
+Naive DQN (No Experience Replay),18,25.5,9.5
+Naive DQN (No Experience Replay),19,18.5,3.5
+Naive DQN (No Experience Replay),20,28.5,8.5
+Naive DQN (No Experience Replay),21,15.0,4.0
+Naive DQN (No Experience Replay),22,17.5,2.5
+Naive DQN (No Experience Replay),23,39.5,9.5
+Naive DQN (No Experience Replay),24,14.0,2.0
+Naive DQN (No Experience Replay),25,22.5,1.5
+Naive DQN (No Experience Replay),26,19.5,2.5
+Naive DQN (No Experience Replay),27,23.0,0.0
+Naive DQN (No Experience Replay),28,25.0,6.0
+Naive DQN (No Experience Replay),29,24.0,11.0
+Naive DQN (No Experience Replay),30,16.0,3.0
+Naive DQN (No Experience Replay),31,32.5,1.5
+Naive DQN (No Experience Replay),32,26.0,12.0
+Naive DQN (No Experience Replay),33,18.0,5.0
+Naive DQN (No Experience Replay),34,16.0,3.0
+Naive DQN (No Experience Replay),35,18.5,6.5
+Naive DQN (No Experience Replay),36,30.0,3.0
+Naive DQN (No Experience Replay),37,13.5,1.5
+Naive DQN (No Experience Replay),38,16.0,2.0
+Naive DQN (No Experience Replay),39,19.5,4.5
+Naive DQN (No Experience Replay),40,20.0,3.0
+Naive DQN (No Experience Replay),41,14.5,0.5
+Naive DQN (No Experience Replay),42,18.5,4.5
+Naive DQN (No Experience Replay),43,15.5,3.5
+Naive DQN (No Experience Replay),44,14.5,3.5
+Naive DQN (No Experience Replay),45,32.5,10.5
+Naive DQN (No Experience Replay),46,24.5,9.5
+Naive DQN (No Experience Replay),47,22.0,6.0
+Naive DQN (No Experience Replay),48,20.0,3.0
+Naive DQN (No Experience Replay),49,14.0,3.0
+Naive DQN (No Experience Replay),50,20.5,4.5
+Naive DQN (No Experience Replay),51,22.0,8.0
+Naive DQN (No Experience Replay),52,15.0,2.0
+Naive DQN (No Experience Replay),53,25.5,13.5
+Naive DQN (No Experience Replay),54,37.5,13.5
+Naive DQN (No Experience Replay),55,16.0,3.0
+Naive DQN (No Experience Replay),56,18.5,6.5
+Naive DQN (No Experience Replay),57,41.5,26.5
+Naive DQN (No Experience Replay),58,19.0,3.0
+Naive DQN (No Experience Replay),59,12.0,1.0
+Naive DQN (No Experience Replay),60,14.5,0.5
+Naive DQN (No Experience Replay),61,31.5,8.5
+Naive DQN (No Experience Replay),62,16.5,0.5
+Naive DQN (No Experience Replay),63,50.0,2.0
+Naive DQN (No Experience Replay),64,17.5,8.5
+Naive DQN (No Experience Replay),65,22.5,0.5
+Naive DQN (No Experience Replay),66,13.0,1.0
+Naive DQN (No Experience Replay),67,15.0,2.0
+Naive DQN (No Experience Replay),68,12.5,1.5
+Naive DQN (No Experience Replay),69,16.5,4.5
+Naive DQN (No Experience Replay),70,13.0,2.0
+Naive DQN (No Experience Replay),71,17.0,3.0
+Naive DQN (No Experience Replay),72,13.0,3.0
+Naive DQN (No Experience Replay),73,18.0,1.0
+Naive DQN (No Experience Replay),74,16.0,2.0
+Naive DQN (No Experience Replay),75,23.5,3.5
+Naive DQN (No Experience Replay),76,59.0,20.0
+Naive DQN (No Experience Replay),77,13.5,0.5
+Naive DQN (No Experience Replay),78,35.5,14.5
+Naive DQN (No Experience Replay),79,16.0,4.0
+Naive DQN (No Experience Replay),80,11.5,0.5
+Naive DQN (No Experience Replay),81,24.5,12.5
+Naive DQN (No Experience Replay),82,20.0,11.0
+Naive DQN (No Experience Replay),83,16.0,0.0
+Naive DQN (No Experience Replay),84,36.0,7.0
+Naive DQN (No Experience Replay),85,17.5,2.5
+Naive DQN (No Experience Replay),86,14.5,2.5
+Naive DQN (No Experience Replay),87,28.0,4.0
+Naive DQN (No Experience Replay),88,23.0,11.0
+Naive DQN (No Experience Replay),89,25.5,11.5
+Naive DQN (No Experience Replay),90,31.5,11.5
+Naive DQN (No Experience Replay),91,27.5,7.5
+Naive DQN (No Experience Replay),92,32.0,4.0
+Naive DQN (No Experience Replay),93,16.5,1.5
+Naive DQN (No Experience Replay),94,12.0,3.0
+Naive DQN (No Experience Replay),95,57.5,9.5
+Naive DQN (No Experience Replay),96,30.0,3.0
+Naive DQN (No Experience Replay),97,21.0,5.0
+Naive DQN (No Experience Replay),98,19.0,0.0
+Naive DQN (No Experience Replay),99,20.5,8.5
+Naive DQN (No Experience Replay),100,14.0,3.0
+Naive DQN (No Experience Replay),101,29.5,6.5
+Naive DQN (No Experience Replay),102,16.0,0.0
+Naive DQN (No Experience Replay),103,26.0,14.0
+Naive DQN (No Experience Replay),104,13.0,1.0
+Naive DQN (No Experience Replay),105,20.5,9.5
+Naive DQN (No Experience Replay),106,24.5,5.5
+Naive DQN (No Experience Replay),107,37.0,9.0
+Naive DQN (No Experience Replay),108,18.5,1.5
+Naive DQN (No Experience Replay),109,26.0,8.0
+Naive DQN (No Experience Replay),110,19.5,0.5
+Naive DQN (No Experience Replay),111,12.5,1.5
+Naive DQN (No Experience Replay),112,36.5,14.5
+Naive DQN (No Experience Replay),113,13.5,2.5
+Naive DQN (No Experience Replay),114,19.5,5.5
+Naive DQN (No Experience Replay),115,12.5,1.5
+Naive DQN (No Experience Replay),116,15.5,3.5
+Naive DQN (No Experience Replay),117,13.5,3.5
+Naive DQN (No Experience Replay),118,21.0,9.0
+Naive DQN (No Experience Replay),119,17.0,1.0
+Naive DQN (No Experience Replay),120,16.0,3.0
+Naive DQN (No Experience Replay),121,24.0,8.0
+Naive DQN (No Experience Replay),122,17.0,1.0
+Naive DQN (No Experience Replay),123,36.5,4.5
+Naive DQN (No Experience Replay),124,13.0,3.0
+Naive DQN (No Experience Replay),125,14.5,1.5
+Naive DQN (No Experience Replay),126,15.0,1.0
+Naive DQN (No Experience Replay),127,16.0,4.0
+Naive DQN (No Experience Replay),128,13.0,1.0
+Naive DQN (No Experience Replay),129,20.0,9.0
+Naive DQN (No Experience Replay),130,14.5,4.5
+Naive DQN (No Experience Replay),131,23.5,12.5
+Naive DQN (No Experience Replay),132,18.0,0.0
+Naive DQN (No Experience Replay),133,16.0,1.0
+Naive DQN (No Experience Replay),134,26.0,13.0
+Naive DQN (No Experience Replay),135,19.5,5.5
+Naive DQN (No Experience Replay),136,18.0,4.0
+Naive DQN (No Experience Replay),137,21.5,7.5
+Naive DQN (No Experience Replay),138,19.5,3.5
+Naive DQN (No Experience Replay),139,26.5,13.5
+Naive DQN (No Experience Replay),140,30.0,11.0
+Naive DQN (No Experience Replay),141,15.0,4.0
+Naive DQN (No Experience Replay),142,26.0,0.0
+Naive DQN (No Experience Replay),143,31.5,5.5
+Naive DQN (No Experience Replay),144,13.0,1.0
+Naive DQN (No Experience Replay),145,22.0,9.0
+Naive DQN (No Experience Replay),146,31.5,13.5
+Naive DQN (No Experience Replay),147,35.0,4.0
+Naive DQN (No Experience Replay),148,20.0,1.0
+Naive DQN (No Experience Replay),149,18.0,4.0
+Naive DQN (No Experience Replay),150,37.0,17.0
+Naive DQN (No Experience Replay),151,21.5,7.5
+Naive DQN (No Experience Replay),152,14.5,2.5
+Naive DQN (No Experience Replay),153,15.0,2.0
+Naive DQN (No Experience Replay),154,15.5,1.5
+Naive DQN (No Experience Replay),155,24.5,6.5
+Naive DQN (No Experience Replay),156,20.0,9.0
+Naive DQN (No Experience Replay),157,28.0,16.0
+Naive DQN (No Experience Replay),158,22.0,0.0
+Naive DQN (No Experience Replay),159,25.5,4.5
+Naive DQN (No Experience Replay),160,21.0,5.0
+Naive DQN (No Experience Replay),161,10.0,1.0
+Naive DQN (No Experience Replay),162,16.0,1.0
+Naive DQN (No Experience Replay),163,15.5,2.5
+Naive DQN (No Experience Replay),164,26.5,9.5
+Naive DQN (No Experience Replay),165,11.5,0.5
+Naive DQN (No Experience Replay),166,21.5,2.5
+Naive DQN (No Experience Replay),167,23.0,11.0
+Naive DQN (No Experience Replay),168,18.0,2.0
+Naive DQN (No Experience Replay),169,18.5,5.5
+Naive DQN (No Experience Replay),170,32.0,14.0
+Naive DQN (No Experience Replay),171,15.5,2.5
+Naive DQN (No Experience Replay),172,12.0,0.0
+Naive DQN (No Experience Replay),173,11.0,0.0
+Naive DQN (No Experience Replay),174,11.0,0.0
+Naive DQN (No Experience Replay),175,16.0,3.0
+Naive DQN (No Experience Replay),176,15.0,3.0
+Naive DQN (No Experience Replay),177,16.0,3.0
+Naive DQN (No Experience Replay),178,28.5,12.5
+Naive DQN (No Experience Replay),179,15.5,4.5
+Naive DQN (No Experience Replay),180,11.5,0.5
+Naive DQN (No Experience Replay),181,17.0,3.0
+Naive DQN (No Experience Replay),182,10.5,2.5
+Naive DQN (No Experience Replay),183,24.5,2.5
+Naive DQN (No Experience Replay),184,11.0,1.0
+Naive DQN (No Experience Replay),185,22.5,5.5
+Naive DQN (No Experience Replay),186,27.5,0.5
+Naive DQN (No Experience Replay),187,23.5,1.5
+Naive DQN (No Experience Replay),188,20.0,5.0
+Naive DQN (No Experience Replay),189,16.5,3.5
+Naive DQN (No Experience Replay),190,17.0,4.0
+Naive DQN (No Experience Replay),191,15.5,3.5
+Naive DQN (No Experience Replay),192,17.0,0.0
+Naive DQN (No Experience Replay),193,23.0,2.0
+Naive DQN (No Experience Replay),194,14.5,1.5
+Naive DQN (No Experience Replay),195,24.5,8.5
+Naive DQN (No Experience Replay),196,16.0,3.0
+Naive DQN (No Experience Replay),197,9.5,0.5
+Naive DQN (No Experience Replay),198,25.0,2.0
+Naive DQN (No Experience Replay),199,24.5,4.5
+Naive DQN (No Experience Replay),200,16.5,4.5
+Naive DQN (No Experience Replay),201,25.5,12.5
+Naive DQN (No Experience Replay),202,53.5,7.5
+Naive DQN (No Experience Replay),203,17.0,1.0
+Naive DQN (No Experience Replay),204,31.5,18.5
+Naive DQN (No Experience Replay),205,19.0,7.0
+Naive DQN (No Experience Replay),206,26.5,4.5
+Naive DQN (No Experience Replay),207,17.5,5.5
+Naive DQN (No Experience Replay),208,19.5,9.5
+Naive DQN (No Experience Replay),209,28.0,5.0
+Naive DQN (No Experience Replay),210,22.0,7.0
+Naive DQN (No Experience Replay),211,16.0,5.0
+Naive DQN (No Experience Replay),212,25.5,8.5
+Naive DQN (No Experience Replay),213,24.5,7.5
+Naive DQN (No Experience Replay),214,12.5,3.5
+Naive DQN (No Experience Replay),215,22.0,1.0
+Naive DQN (No Experience Replay),216,17.0,4.0
+Naive DQN (No Experience Replay),217,20.0,10.0
+Naive DQN (No Experience Replay),218,27.0,15.0
+Naive DQN (No Experience Replay),219,23.5,0.5
+Naive DQN (No Experience Replay),220,13.0,1.0
+Naive DQN (No Experience Replay),221,17.5,6.5
+Naive DQN (No Experience Replay),222,25.0,4.0
+Naive DQN (No Experience Replay),223,29.0,6.0
+Naive DQN (No Experience Replay),224,27.5,12.5
+Naive DQN (No Experience Replay),225,34.5,11.5
+Naive DQN (No Experience Replay),226,18.0,0.0
+Naive DQN (No Experience Replay),227,33.5,21.5
+Naive DQN (No Experience Replay),228,19.0,2.0
+Naive DQN (No Experience Replay),229,13.5,2.5
+Naive DQN (No Experience Replay),230,22.5,5.5
+Naive DQN (No Experience Replay),231,15.5,0.5
+Naive DQN (No Experience Replay),232,18.0,3.0
+Naive DQN (No Experience Replay),233,15.0,4.0
+Naive DQN (No Experience Replay),234,13.5,3.5
+Naive DQN (No Experience Replay),235,27.5,14.5
+Naive DQN (No Experience Replay),236,18.5,4.5
+Naive DQN (No Experience Replay),237,45.0,29.0
+Naive DQN (No Experience Replay),238,22.5,13.5
+Naive DQN (No Experience Replay),239,29.0,6.0
+Naive DQN (No Experience Replay),240,15.5,3.5
+Naive DQN (No Experience Replay),241,14.5,1.5
+Naive DQN (No Experience Replay),242,25.0,10.0
+Naive DQN (No Experience Replay),243,15.5,2.5
+Naive DQN (No Experience Replay),244,13.5,1.5
+Naive DQN (No Experience Replay),245,16.5,1.5
+Naive DQN (No Experience Replay),246,19.0,8.0
+Naive DQN (No Experience Replay),247,23.0,4.0
+Naive DQN (No Experience Replay),248,14.0,3.0
+Naive DQN (No Experience Replay),249,25.0,10.0
+Naive DQN (No Experience Replay),250,18.0,8.0
+Naive DQN (No Experience Replay),251,21.5,9.5
+Naive DQN (No Experience Replay),252,30.5,0.5
+Naive DQN (No Experience Replay),253,16.0,6.0
+Naive DQN (No Experience Replay),254,13.5,3.5
+Naive DQN (No Experience Replay),255,21.0,0.0
+Naive DQN (No Experience Replay),256,33.5,0.5
+Naive DQN (No Experience Replay),257,39.0,8.0
+Naive DQN (No Experience Replay),258,21.5,8.5
+Naive DQN (No Experience Replay),259,23.5,8.5
+Naive DQN (No Experience Replay),260,20.5,6.5
+Naive DQN (No Experience Replay),261,13.5,3.5
+Naive DQN (No Experience Replay),262,18.0,1.0
+Naive DQN (No Experience Replay),263,15.5,5.5
+Naive DQN (No Experience Replay),264,17.5,0.5
+Naive DQN (No Experience Replay),265,22.0,1.0
+Naive DQN (No Experience Replay),266,28.0,10.0
+Naive DQN (No Experience Replay),267,17.0,7.0
+Naive DQN (No Experience Replay),268,19.0,2.0
+Naive DQN (No Experience Replay),269,20.0,2.0
+Naive DQN (No Experience Replay),270,11.5,1.5
+Naive DQN (No Experience Replay),271,19.5,1.5
+Naive DQN (No Experience Replay),272,20.0,5.0
+Naive DQN (No Experience Replay),273,26.5,14.5
+Naive DQN (No Experience Replay),274,18.5,7.5
+Naive DQN (No Experience Replay),275,44.0,24.0
+Naive DQN (No Experience Replay),276,18.0,5.0
+Naive DQN (No Experience Replay),277,15.0,3.0
+Naive DQN (No Experience Replay),278,13.5,3.5
+Naive DQN (No Experience Replay),279,24.5,4.5
+Naive DQN (No Experience Replay),280,14.5,2.5
+Naive DQN (No Experience Replay),281,21.0,5.0
+Naive DQN (No Experience Replay),282,17.5,4.5
+Naive DQN (No Experience Replay),283,14.0,4.0
+Naive DQN (No Experience Replay),284,23.0,3.0
+Naive DQN (No Experience Replay),285,19.0,3.0
+Naive DQN (No Experience Replay),286,40.5,16.5
+Naive DQN (No Experience Replay),287,10.5,1.5
+Naive DQN (No Experience Replay),288,14.5,3.5
+Naive DQN (No Experience Replay),289,14.5,3.5
+Naive DQN (No Experience Replay),290,16.5,2.5
+Naive DQN (No Experience Replay),291,18.5,2.5
+Naive DQN (No Experience Replay),292,18.0,1.0
+Naive DQN (No Experience Replay),293,10.0,1.0
+Naive DQN (No Experience Replay),294,19.5,5.5
+Naive DQN (No Experience Replay),295,44.5,10.5
+Naive DQN (No Experience Replay),296,27.0,0.0
+Naive DQN (No Experience Replay),297,26.5,4.5
+Naive DQN (No Experience Replay),298,19.5,1.5
+Naive DQN (No Experience Replay),299,35.5,10.5
+Naive DQN (No Experience Replay),300,16.5,3.5
+Naive DQN (No Experience Replay),301,15.0,1.0
+Naive DQN (No Experience Replay),302,23.5,15.5
+Naive DQN (No Experience Replay),303,20.5,8.5
+Naive DQN (No Experience Replay),304,26.5,11.5
+Naive DQN (No Experience Replay),305,20.0,2.0
+Naive DQN (No Experience Replay),306,26.0,9.0
+Naive DQN (No Experience Replay),307,22.5,10.5
+Naive DQN (No Experience Replay),308,28.0,8.0
+Naive DQN (No Experience Replay),309,30.0,13.0
+Naive DQN (No Experience Replay),310,14.5,1.5
+Naive DQN (No Experience Replay),311,62.5,36.5
+Naive DQN (No Experience Replay),312,24.5,11.5
+Naive DQN (No Experience Replay),313,15.5,1.5
+Naive DQN (No Experience Replay),314,14.5,1.5
+Naive DQN (No Experience Replay),315,12.5,1.5
+Naive DQN (No Experience Replay),316,15.5,4.5
+Naive DQN (No Experience Replay),317,11.0,2.0
+Naive DQN (No Experience Replay),318,13.5,2.5
+Naive DQN (No Experience Replay),319,15.0,0.0
+Naive DQN (No Experience Replay),320,26.5,10.5
+Naive DQN (No Experience Replay),321,22.5,9.5
+Naive DQN (No Experience Replay),322,16.5,1.5
+Naive DQN (No Experience Replay),323,23.5,7.5
+Naive DQN (No Experience Replay),324,16.0,7.0
+Naive DQN (No Experience Replay),325,10.5,0.5
+Naive DQN (No Experience Replay),326,18.0,3.0
+Naive DQN (No Experience Replay),327,11.5,2.5
+Naive DQN (No Experience Replay),328,15.5,2.5
+Naive DQN (No Experience Replay),329,14.5,5.5
+Naive DQN (No Experience Replay),330,14.5,3.5
+Naive DQN (No Experience Replay),331,15.0,0.0
+Naive DQN (No Experience Replay),332,12.5,2.5
+Naive DQN (No Experience Replay),333,21.0,0.0
+Naive DQN (No Experience Replay),334,13.5,3.5
+Naive DQN (No Experience Replay),335,18.5,4.5
+Naive DQN (No Experience Replay),336,29.5,7.5
+Naive DQN (No Experience Replay),337,31.0,6.0
+Naive DQN (No Experience Replay),338,44.0,29.0
+Naive DQN (No Experience Replay),339,23.5,4.5
+Naive DQN (No Experience Replay),340,20.0,4.0
+Naive DQN (No Experience Replay),341,25.0,2.0
+Naive DQN (No Experience Replay),342,29.5,13.5
+Naive DQN (No Experience Replay),343,25.0,9.0
+Naive DQN (No Experience Replay),344,23.0,5.0
+Naive DQN (No Experience Replay),345,29.5,15.5
+Naive DQN (No Experience Replay),346,16.0,2.0
+Naive DQN (No Experience Replay),347,27.0,10.0
+Naive DQN (No Experience Replay),348,18.0,2.0
+Naive DQN (No Experience Replay),349,18.5,4.5
+Naive DQN (No Experience Replay),350,17.0,3.0
+Naive DQN (No Experience Replay),351,38.0,13.0
+Naive DQN (No Experience Replay),352,11.5,2.5
+Naive DQN (No Experience Replay),353,10.5,0.5
+Naive DQN (No Experience Replay),354,12.0,0.0
+Naive DQN (No Experience Replay),355,16.0,4.0
+Naive DQN (No Experience Replay),356,20.0,2.0
+Naive DQN (No Experience Replay),357,36.5,12.5
+Naive DQN (No Experience Replay),358,15.0,3.0
+Naive DQN (No Experience Replay),359,19.0,6.0
+Naive DQN (No Experience Replay),360,17.0,4.0
+Naive DQN (No Experience Replay),361,27.0,10.0
+Naive DQN (No Experience Replay),362,19.5,8.5
+Naive DQN (No Experience Replay),363,17.0,5.0
+Naive DQN (No Experience Replay),364,40.0,19.0
+Naive DQN (No Experience Replay),365,17.0,1.0
+Naive DQN (No Experience Replay),366,19.5,5.5
+Naive DQN (No Experience Replay),367,10.5,0.5
+Naive DQN (No Experience Replay),368,15.0,1.0
+Naive DQN (No Experience Replay),369,14.5,0.5
+Naive DQN (No Experience Replay),370,27.0,15.0
+Naive DQN (No Experience Replay),371,37.5,10.5
+Naive DQN (No Experience Replay),372,32.0,12.0
+Naive DQN (No Experience Replay),373,19.0,3.0
+Naive DQN (No Experience Replay),374,23.0,10.0
+Naive DQN (No Experience Replay),375,15.0,3.0
+Naive DQN (No Experience Replay),376,28.0,6.0
+Naive DQN (No Experience Replay),377,24.0,15.0
+Naive DQN (No Experience Replay),378,22.0,11.0
+Naive DQN (No Experience Replay),379,35.5,2.5
+Naive DQN (No Experience Replay),380,18.0,2.0
+Naive DQN (No Experience Replay),381,39.5,15.5
+Naive DQN (No Experience Replay),382,18.0,2.0
+Naive DQN (No Experience Replay),383,19.5,8.5
+Naive DQN (No Experience Replay),384,45.5,7.5
+Naive DQN (No Experience Replay),385,17.5,5.5
+Naive DQN (No Experience Replay),386,15.0,1.0
+Naive DQN (No Experience Replay),387,25.0,1.0
+Naive DQN (No Experience Replay),388,40.0,25.0
+Naive DQN (No Experience Replay),389,26.0,7.0
+Naive DQN (No Experience Replay),390,20.0,3.0
+Naive DQN (No Experience Replay),391,34.5,22.5
+Naive DQN (No Experience Replay),392,52.5,38.5
+Naive DQN (No Experience Replay),393,21.5,5.5
+Naive DQN (No Experience Replay),394,15.0,0.0
+Naive DQN (No Experience Replay),395,33.5,1.5
+Naive DQN (No Experience Replay),396,33.0,11.0
+Naive DQN (No Experience Replay),397,54.5,8.5
+Naive DQN (No Experience Replay),398,24.0,5.0
+Naive DQN (No Experience Replay),399,15.5,6.5
+Naive DQN (No Experience Replay),400,16.5,2.5
+Naive DQN (No Experience Replay),401,12.0,2.0
+Naive DQN (No Experience Replay),402,18.0,6.0
+Naive DQN (No Experience Replay),403,11.5,0.5
+Naive DQN (No Experience Replay),404,10.0,2.0
+Naive DQN (No Experience Replay),405,12.0,1.0
+Naive DQN (No Experience Replay),406,19.5,9.5
+Naive DQN (No Experience Replay),407,23.0,8.0
+Naive DQN (No Experience Replay),408,20.5,2.5
+Naive DQN (No Experience Replay),409,32.5,15.5
+Naive DQN (No Experience Replay),410,15.0,3.0
+Naive DQN (No Experience Replay),411,15.0,3.0
+Naive DQN (No Experience Replay),412,76.0,57.0
+Naive DQN (No Experience Replay),413,16.5,0.5
+Naive DQN (No Experience Replay),414,29.0,16.0
+Naive DQN (No Experience Replay),415,15.5,0.5
+Naive DQN (No Experience Replay),416,18.5,5.5
+Naive DQN (No Experience Replay),417,19.0,6.0
+Naive DQN (No Experience Replay),418,31.0,17.0
+Naive DQN (No Experience Replay),419,19.0,6.0
+Naive DQN (No Experience Replay),420,16.0,1.0
+Naive DQN (No Experience Replay),421,33.5,0.5
+Naive DQN (No Experience Replay),422,17.0,6.0
+Naive DQN (No Experience Replay),423,16.5,5.5
+Naive DQN (No Experience Replay),424,19.0,5.0
+Naive DQN (No Experience Replay),425,19.0,8.0
+Naive DQN (No Experience Replay),426,20.0,0.0
+Naive DQN (No Experience Replay),427,37.0,14.0
+Naive DQN (No Experience Replay),428,16.5,0.5
+Naive DQN (No Experience Replay),429,48.5,29.5
+Naive DQN (No Experience Replay),430,60.5,45.5
+Naive DQN (No Experience Replay),431,32.5,13.5
+Naive DQN (No Experience Replay),432,36.0,22.0
+Naive DQN (No Experience Replay),433,28.5,19.5
+Naive DQN (No Experience Replay),434,18.0,2.0
+Naive DQN (No Experience Replay),435,20.5,6.5
+Naive DQN (No Experience Replay),436,17.5,7.5
+Naive DQN (No Experience Replay),437,14.5,1.5
+Naive DQN (No Experience Replay),438,19.0,0.0
+Naive DQN (No Experience Replay),439,17.0,0.0
+Naive DQN (No Experience Replay),440,14.0,4.0
+Naive DQN (No Experience Replay),441,13.5,3.5
+Naive DQN (No Experience Replay),442,14.0,4.0
+Naive DQN (No Experience Replay),443,10.0,1.0
+Naive DQN (No Experience Replay),444,14.5,4.5
+Naive DQN (No Experience Replay),445,16.0,3.0
+Naive DQN (No Experience Replay),446,18.5,0.5
+Naive DQN (No Experience Replay),447,15.0,1.0
+Naive DQN (No Experience Replay),448,12.5,1.5
+Naive DQN (No Experience Replay),449,11.0,0.0
+Naive DQN (No Experience Replay),450,17.0,2.0
+Naive DQN (No Experience Replay),451,16.5,3.5
+Naive DQN (No Experience Replay),452,12.0,1.0
+Naive DQN (No Experience Replay),453,13.5,0.5
+Naive DQN (No Experience Replay),454,40.5,4.5
+Naive DQN (No Experience Replay),455,14.5,1.5
+Naive DQN (No Experience Replay),456,16.5,6.5
+Naive DQN (No Experience Replay),457,26.5,5.5
+Naive DQN (No Experience Replay),458,31.5,2.5
+Naive DQN (No Experience Replay),459,32.0,0.0
+Naive DQN (No Experience Replay),460,15.0,2.0
+Naive DQN (No Experience Replay),461,36.5,24.5
+Naive DQN (No Experience Replay),462,60.0,16.0
+Naive DQN (No Experience Replay),463,28.0,5.0
+Naive DQN (No Experience Replay),464,48.0,27.0
+Naive DQN (No Experience Replay),465,26.0,2.0
+Naive DQN (No Experience Replay),466,15.5,0.5
+Naive DQN (No Experience Replay),467,25.0,6.0
+Naive DQN (No Experience Replay),468,17.5,5.5
+Naive DQN (No Experience Replay),469,14.5,2.5
+Naive DQN (No Experience Replay),470,26.0,15.0
+Naive DQN (No Experience Replay),471,25.5,8.5
+Naive DQN (No Experience Replay),472,13.5,3.5
+Naive DQN (No Experience Replay),473,20.5,0.5
+Naive DQN (No Experience Replay),474,12.0,1.0
+Naive DQN (No Experience Replay),475,17.5,5.5
+Naive DQN (No Experience Replay),476,10.0,0.0
+Naive DQN (No Experience Replay),477,24.5,7.5
+Naive DQN (No Experience Replay),478,11.5,2.5
+Naive DQN (No Experience Replay),479,24.0,13.0
+Naive DQN (No Experience Replay),480,19.0,4.0
+Naive DQN (No Experience Replay),481,11.5,1.5
+Naive DQN (No Experience Replay),482,23.5,11.5
+Naive DQN (No Experience Replay),483,14.0,3.0
+Naive DQN (No Experience Replay),484,15.0,0.0
+Naive DQN (No Experience Replay),485,14.0,3.0
+Naive DQN (No Experience Replay),486,24.5,9.5
+Naive DQN (No Experience Replay),487,18.5,3.5
+Naive DQN (No Experience Replay),488,21.0,10.0
+Naive DQN (No Experience Replay),489,21.5,5.5
+Naive DQN (No Experience Replay),490,18.5,0.5
+Naive DQN (No Experience Replay),491,23.0,8.0
+Naive DQN (No Experience Replay),492,19.5,9.5
+Naive DQN (No Experience Replay),493,24.0,2.0
+Naive DQN (No Experience Replay),494,27.0,16.0
+Naive DQN (No Experience Replay),495,39.5,27.5
+Naive DQN (No Experience Replay),496,72.0,50.0
+Naive DQN (No Experience Replay),497,70.0,14.0
+Naive DQN (No Experience Replay),498,30.0,5.0
+Naive DQN (No Experience Replay),499,13.0,1.0
+Naive DQN (No Experience Replay),500,11.0,0.0
+Naive DQN (No Experience Replay),501,20.0,1.0
+Naive DQN (No Experience Replay),502,11.0,0.0
+Naive DQN (No Experience Replay),503,20.0,8.0
+Naive DQN (No Experience Replay),504,15.0,1.0
+Naive DQN (No Experience Replay),505,13.5,2.5
+Naive DQN (No Experience Replay),506,20.5,1.5
+Naive DQN (No Experience Replay),507,13.5,1.5
+Naive DQN (No Experience Replay),508,10.5,0.5
+Naive DQN (No Experience Replay),509,14.5,0.5
+Naive DQN (No Experience Replay),510,23.0,8.0
+Naive DQN (No Experience Replay),511,31.5,15.5
+Naive DQN (No Experience Replay),512,32.0,12.0
+Naive DQN (No Experience Replay),513,17.5,0.5
+Naive DQN (No Experience Replay),514,54.0,36.0
+Naive DQN (No Experience Replay),515,18.0,2.0
+Naive DQN (No Experience Replay),516,15.5,3.5
+Naive DQN (No Experience Replay),517,17.5,1.5
+Naive DQN (No Experience Replay),518,21.0,5.0
+Naive DQN (No Experience Replay),519,22.0,10.0
+Naive DQN (No Experience Replay),520,18.0,4.0
+Naive DQN (No Experience Replay),521,26.0,9.0
+Naive DQN (No Experience Replay),522,16.0,0.0
+Naive DQN (No Experience Replay),523,17.5,3.5
+Naive DQN (No Experience Replay),524,31.0,22.0
+Naive DQN (No Experience Replay),525,16.0,7.0
+Naive DQN (No Experience Replay),526,15.5,3.5
+Naive DQN (No Experience Replay),527,15.0,6.0
+Naive DQN (No Experience Replay),528,36.0,9.0
+Naive DQN (No Experience Replay),529,44.0,32.0
+Naive DQN (No Experience Replay),530,22.5,13.5
+Naive DQN (No Experience Replay),531,19.0,4.0
+Naive DQN (No Experience Replay),532,17.0,6.0
+Naive DQN (No Experience Replay),533,17.5,0.5
+Naive DQN (No Experience Replay),534,10.0,1.0
+Naive DQN (No Experience Replay),535,10.5,0.5
+Naive DQN (No Experience Replay),536,13.0,1.0
+Naive DQN (No Experience Replay),537,9.0,0.0
+Naive DQN (No Experience Replay),538,20.0,1.0
+Naive DQN (No Experience Replay),539,15.5,4.5
+Naive DQN (No Experience Replay),540,18.5,1.5
+Naive DQN (No Experience Replay),541,17.5,4.5
+Naive DQN (No Experience Replay),542,20.0,1.0
+Naive DQN (No Experience Replay),543,33.0,18.0
+Naive DQN (No Experience Replay),544,26.0,11.0
+Naive DQN (No Experience Replay),545,14.0,4.0
+Naive DQN (No Experience Replay),546,35.0,17.0
+Naive DQN (No Experience Replay),547,27.0,6.0
+Naive DQN (No Experience Replay),548,14.0,2.0
+Naive DQN (No Experience Replay),549,15.0,3.0
+Naive DQN (No Experience Replay),550,20.5,7.5
+Naive DQN (No Experience Replay),551,10.5,0.5
+Naive DQN (No Experience Replay),552,20.5,8.5
+Naive DQN (No Experience Replay),553,11.0,1.0
+Naive DQN (No Experience Replay),554,34.5,19.5
+Naive DQN (No Experience Replay),555,21.5,5.5
+Naive DQN (No Experience Replay),556,28.0,1.0
+Naive DQN (No Experience Replay),557,33.0,20.0
+Naive DQN (No Experience Replay),558,16.5,2.5
+Naive DQN (No Experience Replay),559,19.0,4.0
+Naive DQN (No Experience Replay),560,20.0,5.0
+Naive DQN (No Experience Replay),561,22.5,8.5
+Naive DQN (No Experience Replay),562,15.5,7.5
+Naive DQN (No Experience Replay),563,17.0,2.0
+Naive DQN (No Experience Replay),564,15.0,5.0
+Naive DQN (No Experience Replay),565,17.0,2.0
+Naive DQN (No Experience Replay),566,44.0,14.0
+Naive DQN (No Experience Replay),567,34.0,16.0
+Naive DQN (No Experience Replay),568,46.0,4.0
+Naive DQN (No Experience Replay),569,56.5,34.5
+Naive DQN (No Experience Replay),570,32.0,11.0
+Naive DQN (No Experience Replay),571,41.5,5.5
+Naive DQN (No Experience Replay),572,38.5,11.5
+Naive DQN (No Experience Replay),573,36.0,8.0
+Naive DQN (No Experience Replay),574,41.0,16.0
+Naive DQN (No Experience Replay),575,20.0,4.0
+Naive DQN (No Experience Replay),576,17.0,5.0
+Naive DQN (No Experience Replay),577,40.0,12.0
+Naive DQN (No Experience Replay),578,20.0,3.0
+Naive DQN (No Experience Replay),579,30.5,10.5
+Naive DQN (No Experience Replay),580,133.0,64.0
+Naive DQN (No Experience Replay),581,41.0,4.0
+Naive DQN (No Experience Replay),582,81.5,48.5
+Naive DQN (No Experience Replay),583,23.5,0.5
+Naive DQN (No Experience Replay),584,39.5,26.5
+Naive DQN (No Experience Replay),585,55.0,1.0
+Naive DQN (No Experience Replay),586,27.5,2.5
+Naive DQN (No Experience Replay),587,54.0,7.0
+Naive DQN (No Experience Replay),588,22.0,4.0
+Naive DQN (No Experience Replay),589,50.5,13.5
+Naive DQN (No Experience Replay),590,24.5,10.5
+Naive DQN (No Experience Replay),591,20.0,2.0
+Naive DQN (No Experience Replay),592,26.0,4.0
+Naive DQN (No Experience Replay),593,29.0,13.0
+Naive DQN (No Experience Replay),594,26.5,14.5
+Naive DQN (No Experience Replay),595,17.5,0.5
+Naive DQN (No Experience Replay),596,12.5,0.5
+Naive DQN (No Experience Replay),597,17.0,3.0
+Naive DQN (No Experience Replay),598,16.5,2.5
+Naive DQN (No Experience Replay),599,32.0,18.0
+Naive DQN (No Experience Replay),600,54.0,44.0
+Naive DQN (No Experience Replay),601,34.0,3.0
+Naive DQN (No Experience Replay),602,39.5,4.5
+Naive DQN (No Experience Replay),603,35.5,24.5
+Naive DQN (No Experience Replay),604,31.5,10.5
+Naive DQN (No Experience Replay),605,20.0,11.0
+Naive DQN (No Experience Replay),606,41.0,10.0
+Naive DQN (No Experience Replay),607,80.5,66.5
+Naive DQN (No Experience Replay),608,16.0,1.0
+Naive DQN (No Experience Replay),609,22.0,5.0
+Naive DQN (No Experience Replay),610,14.5,2.5
+Naive DQN (No Experience Replay),611,21.0,9.0
+Naive DQN (No Experience Replay),612,48.5,22.5
+Naive DQN (No Experience Replay),613,30.0,3.0
+Naive DQN (No Experience Replay),614,45.5,27.5
+Naive DQN (No Experience Replay),615,65.5,41.5
+Naive DQN (No Experience Replay),616,37.0,12.0
+Naive DQN (No Experience Replay),617,21.0,8.0
+Naive DQN (No Experience Replay),618,15.0,4.0
+Naive DQN (No Experience Replay),619,45.0,1.0
+Naive DQN (No Experience Replay),620,36.5,14.5
+Naive DQN (No Experience Replay),621,14.5,0.5
+Naive DQN (No Experience Replay),622,11.0,1.0
+Naive DQN (No Experience Replay),623,15.0,1.0
+Naive DQN (No Experience Replay),624,15.5,0.5
+Naive DQN (No Experience Replay),625,16.5,0.5
+Naive DQN (No Experience Replay),626,18.0,6.0
+Naive DQN (No Experience Replay),627,28.0,10.0
+Naive DQN (No Experience Replay),628,22.0,9.0
+Naive DQN (No Experience Replay),629,31.5,15.5
+Naive DQN (No Experience Replay),630,20.0,2.0
+Naive DQN (No Experience Replay),631,40.5,15.5
+Naive DQN (No Experience Replay),632,28.5,1.5
+Naive DQN (No Experience Replay),633,47.0,5.0
+Naive DQN (No Experience Replay),634,43.0,2.0
+Naive DQN (No Experience Replay),635,36.5,4.5
+Naive DQN (No Experience Replay),636,30.5,10.5
+Naive DQN (No Experience Replay),637,24.0,9.0
+Naive DQN (No Experience Replay),638,31.5,0.5
+Naive DQN (No Experience Replay),639,31.0,12.0
+Naive DQN (No Experience Replay),640,30.5,9.5
+Naive DQN (No Experience Replay),641,24.5,5.5
+Naive DQN (No Experience Replay),642,14.0,0.0
+Naive DQN (No Experience Replay),643,14.0,1.0
+Naive DQN (No Experience Replay),644,20.5,0.5
+Naive DQN (No Experience Replay),645,35.5,8.5
+Naive DQN (No Experience Replay),646,31.5,2.5
+Naive DQN (No Experience Replay),647,36.0,22.0
+Naive DQN (No Experience Replay),648,35.5,21.5
+Naive DQN (No Experience Replay),649,38.5,24.5
+Naive DQN (No Experience Replay),650,20.0,9.0
+Naive DQN (No Experience Replay),651,20.0,5.0
+Naive DQN (No Experience Replay),652,17.0,3.0
+Naive DQN (No Experience Replay),653,22.5,3.5
+Naive DQN (No Experience Replay),654,17.5,2.5
+Naive DQN (No Experience Replay),655,33.0,21.0
+Naive DQN (No Experience Replay),656,29.0,17.0
+Naive DQN (No Experience Replay),657,28.0,6.0
+Naive DQN (No Experience Replay),658,21.0,8.0
+Naive DQN (No Experience Replay),659,59.5,36.5
+Naive DQN (No Experience Replay),660,40.5,0.5
+Naive DQN (No Experience Replay),661,19.5,1.5
+Naive DQN (No Experience Replay),662,26.5,6.5
+Naive DQN (No Experience Replay),663,30.5,10.5
+Naive DQN (No Experience Replay),664,38.5,23.5
+Naive DQN (No Experience Replay),665,24.5,2.5
+Naive DQN (No Experience Replay),666,18.0,0.0
+Naive DQN (No Experience Replay),667,19.5,1.5
+Naive DQN (No Experience Replay),668,39.0,10.0
+Naive DQN (No Experience Replay),669,24.0,3.0
+Naive DQN (No Experience Replay),670,27.5,4.5
+Naive DQN (No Experience Replay),671,46.5,17.5
+Naive DQN (No Experience Replay),672,34.0,1.0
+Naive DQN (No Experience Replay),673,58.0,1.0
+Naive DQN (No Experience Replay),674,26.5,0.5
+Naive DQN (No Experience Replay),675,24.5,7.5
+Naive DQN (No Experience Replay),676,25.5,9.5
+Naive DQN (No Experience Replay),677,24.0,6.0
+Naive DQN (No Experience Replay),678,30.0,2.0
+Naive DQN (No Experience Replay),679,32.0,11.0
+Naive DQN (No Experience Replay),680,15.5,1.5
+Naive DQN (No Experience Replay),681,45.0,10.0
+Naive DQN (No Experience Replay),682,48.0,3.0
+Naive DQN (No Experience Replay),683,40.5,12.5
+Naive DQN (No Experience Replay),684,50.5,19.5
+Naive DQN (No Experience Replay),685,38.0,5.0
+Naive DQN (No Experience Replay),686,26.0,3.0
+Naive DQN (No Experience Replay),687,24.5,0.5
+Naive DQN (No Experience Replay),688,22.0,5.0
+Naive DQN (No Experience Replay),689,25.5,3.5
+Naive DQN (No Experience Replay),690,20.5,0.5
+Naive DQN (No Experience Replay),691,56.0,37.0
+Naive DQN (No Experience Replay),692,54.5,39.5
+Naive DQN (No Experience Replay),693,35.0,7.0
+Naive DQN (No Experience Replay),694,42.5,3.5
+Naive DQN (No Experience Replay),695,32.0,12.0
+Naive DQN (No Experience Replay),696,32.5,15.5
+Naive DQN (No Experience Replay),697,21.5,2.5
+Naive DQN (No Experience Replay),698,32.5,20.5
+Naive DQN (No Experience Replay),699,18.0,8.0
+Naive DQN (No Experience Replay),700,57.5,45.5
+Naive DQN (No Experience Replay),701,31.5,19.5
+Naive DQN (No Experience Replay),702,22.0,4.0
+Naive DQN (No Experience Replay),703,32.5,15.5
+Naive DQN (No Experience Replay),704,34.5,1.5
+Naive DQN (No Experience Replay),705,46.5,6.5
+Naive DQN (No Experience Replay),706,26.5,6.5
+Naive DQN (No Experience Replay),707,22.0,2.0
+Naive DQN (No Experience Replay),708,20.0,1.0
+Naive DQN (No Experience Replay),709,18.0,3.0
+Naive DQN (No Experience Replay),710,32.0,12.0
+Naive DQN (No Experience Replay),711,13.0,1.0
+Naive DQN (No Experience Replay),712,13.5,1.5
+Naive DQN (No Experience Replay),713,13.0,1.0
+Naive DQN (No Experience Replay),714,13.0,1.0
+Naive DQN (No Experience Replay),715,12.0,1.0
+Naive DQN (No Experience Replay),716,12.5,2.5
+Naive DQN (No Experience Replay),717,10.5,1.5
+Naive DQN (No Experience Replay),718,17.5,0.5
+Naive DQN (No Experience Replay),719,24.5,8.5
+Naive DQN (No Experience Replay),720,15.5,0.5
+Naive DQN (No Experience Replay),721,15.5,5.5
+Naive DQN (No Experience Replay),722,23.0,0.0
+Naive DQN (No Experience Replay),723,47.5,27.5
+Naive DQN (No Experience Replay),724,46.0,12.0
+Naive DQN (No Experience Replay),725,70.5,9.5
+Naive DQN (No Experience Replay),726,48.0,23.0
+Naive DQN (No Experience Replay),727,27.5,2.5
+Naive DQN (No Experience Replay),728,25.0,3.0
+Naive DQN (No Experience Replay),729,26.5,9.5
+Naive DQN (No Experience Replay),730,32.5,15.5
+Naive DQN (No Experience Replay),731,34.5,17.5
+Naive DQN (No Experience Replay),732,34.0,15.0
+Naive DQN (No Experience Replay),733,36.0,6.0
+Naive DQN (No Experience Replay),734,32.5,1.5
+Naive DQN (No Experience Replay),735,41.0,18.0
+Naive DQN (No Experience Replay),736,21.5,0.5
+Naive DQN (No Experience Replay),737,39.5,22.5
+Naive DQN (No Experience Replay),738,37.0,24.0
+Naive DQN (No Experience Replay),739,27.5,18.5
+Naive DQN (No Experience Replay),740,22.5,11.5
+Naive DQN (No Experience Replay),741,22.5,2.5
+Naive DQN (No Experience Replay),742,29.0,7.0
+Naive DQN (No Experience Replay),743,32.0,7.0
+Naive DQN (No Experience Replay),744,96.5,52.5
+Naive DQN (No Experience Replay),745,57.5,24.5
+Naive DQN (No Experience Replay),746,69.0,0.0
+Naive DQN (No Experience Replay),747,53.5,6.5
+Naive DQN (No Experience Replay),748,39.0,15.0
+Naive DQN (No Experience Replay),749,39.0,3.0
+Naive DQN (No Experience Replay),750,41.5,20.5
+Naive DQN (No Experience Replay),751,35.0,16.0
+Naive DQN (No Experience Replay),752,46.5,17.5
+Naive DQN (No Experience Replay),753,30.5,2.5
+Naive DQN (No Experience Replay),754,20.5,4.5
+Naive DQN (No Experience Replay),755,22.5,2.5
+Naive DQN (No Experience Replay),756,26.5,6.5
+Naive DQN (No Experience Replay),757,22.5,3.5
+Naive DQN (No Experience Replay),758,26.0,4.0
+Naive DQN (No Experience Replay),759,24.0,1.0
+Naive DQN (No Experience Replay),760,30.0,0.0
+Naive DQN (No Experience Replay),761,15.5,1.5
+Naive DQN (No Experience Replay),762,26.5,5.5
+Naive DQN (No Experience Replay),763,30.0,14.0
+Naive DQN (No Experience Replay),764,40.0,19.0
+Naive DQN (No Experience Replay),765,14.5,2.5
+Naive DQN (No Experience Replay),766,28.5,1.5
+Naive DQN (No Experience Replay),767,35.5,5.5
+Naive DQN (No Experience Replay),768,46.5,22.5
+Naive DQN (No Experience Replay),769,28.5,4.5
+Naive DQN (No Experience Replay),770,50.5,26.5
+Naive DQN (No Experience Replay),771,34.0,0.0
+Naive DQN (No Experience Replay),772,40.5,6.5
+Naive DQN (No Experience Replay),773,30.0,9.0
+Naive DQN (No Experience Replay),774,27.5,14.5
+Naive DQN (No Experience Replay),775,27.0,4.0
+Naive DQN (No Experience Replay),776,29.5,7.5
+Naive DQN (No Experience Replay),777,47.5,24.5
+Naive DQN (No Experience Replay),778,38.0,7.0
+Naive DQN (No Experience Replay),779,42.5,1.5
+Naive DQN (No Experience Replay),780,56.5,23.5
+Naive DQN (No Experience Replay),781,33.0,11.0
+Naive DQN (No Experience Replay),782,71.0,39.0
+Naive DQN (No Experience Replay),783,35.5,10.5
+Naive DQN (No Experience Replay),784,47.0,7.0
+Naive DQN (No Experience Replay),785,56.0,6.0
+Naive DQN (No Experience Replay),786,36.0,3.0
+Naive DQN (No Experience Replay),787,54.0,8.0
+Naive DQN (No Experience Replay),788,63.0,6.0
+Naive DQN (No Experience Replay),789,34.5,5.5
+Naive DQN (No Experience Replay),790,62.5,22.5
+Naive DQN (No Experience Replay),791,18.0,5.0
+Naive DQN (No Experience Replay),792,57.0,9.0
+Naive DQN (No Experience Replay),793,64.5,16.5
+Naive DQN (No Experience Replay),794,74.5,19.5
+Naive DQN (No Experience Replay),795,84.5,27.5
+Naive DQN (No Experience Replay),796,47.5,15.5
+Naive DQN (No Experience Replay),797,41.0,4.0
+Naive DQN (No Experience Replay),798,21.5,9.5
+Naive DQN (No Experience Replay),799,43.0,15.0
+Naive DQN (No Experience Replay),800,57.5,30.5
+Naive DQN (No Experience Replay),801,27.5,14.5
+Naive DQN (No Experience Replay),802,38.0,11.0
+Naive DQN (No Experience Replay),803,53.0,28.0
+Naive DQN (No Experience Replay),804,30.5,5.5
+Naive DQN (No Experience Replay),805,42.0,22.0
+Naive DQN (No Experience Replay),806,31.5,11.5
+Naive DQN (No Experience Replay),807,34.0,7.0
+Naive DQN (No Experience Replay),808,17.0,5.0
+Naive DQN (No Experience Replay),809,44.5,18.5
+Naive DQN (No Experience Replay),810,29.5,0.5
+Naive DQN (No Experience Replay),811,31.0,3.0
+Naive DQN (No Experience Replay),812,41.0,4.0
+Naive DQN (No Experience Replay),813,64.5,18.5
+Naive DQN (No Experience Replay),814,39.0,4.0
+Naive DQN (No Experience Replay),815,38.0,1.0
+Naive DQN (No Experience Replay),816,36.0,13.0
+Naive DQN (No Experience Replay),817,36.0,3.0
+Naive DQN (No Experience Replay),818,37.0,15.0
+Naive DQN (No Experience Replay),819,13.5,1.5
+Naive DQN (No Experience Replay),820,36.5,22.5
+Naive DQN (No Experience Replay),821,50.5,24.5
+Naive DQN (No Experience Replay),822,44.5,27.5
+Naive DQN (No Experience Replay),823,28.0,0.0
+Naive DQN (No Experience Replay),824,25.0,3.0
+Naive DQN (No Experience Replay),825,19.5,1.5
+Naive DQN (No Experience Replay),826,53.0,33.0
+Naive DQN (No Experience Replay),827,26.5,3.5
+Naive DQN (No Experience Replay),828,50.0,18.0
+Naive DQN (No Experience Replay),829,33.5,8.5
+Naive DQN (No Experience Replay),830,41.5,27.5
+Naive DQN (No Experience Replay),831,34.5,10.5
+Naive DQN (No Experience Replay),832,43.5,19.5
+Naive DQN (No Experience Replay),833,40.5,18.5
+Naive DQN (No Experience Replay),834,74.0,39.0
+Naive DQN (No Experience Replay),835,39.0,10.0
+Naive DQN (No Experience Replay),836,22.0,4.0
+Naive DQN (No Experience Replay),837,26.5,13.5
+Naive DQN (No Experience Replay),838,25.5,5.5
+Naive DQN (No Experience Replay),839,36.5,10.5
+Naive DQN (No Experience Replay),840,58.5,16.5
+Naive DQN (No Experience Replay),841,57.5,29.5
+Naive DQN (No Experience Replay),842,60.5,20.5
+Naive DQN (No Experience Replay),843,72.0,47.0
+Naive DQN (No Experience Replay),844,44.0,14.0
+Naive DQN (No Experience Replay),845,55.0,14.0
+Naive DQN (No Experience Replay),846,45.5,8.5
+Naive DQN (No Experience Replay),847,68.5,30.5
+Naive DQN (No Experience Replay),848,28.5,0.5
+Naive DQN (No Experience Replay),849,25.0,4.0
+Naive DQN (No Experience Replay),850,25.5,9.5
+Naive DQN (No Experience Replay),851,34.0,17.0
+Naive DQN (No Experience Replay),852,55.0,32.0
+Naive DQN (No Experience Replay),853,46.0,15.0
+Naive DQN (No Experience Replay),854,46.0,19.0
+Naive DQN (No Experience Replay),855,32.0,2.0
+Naive DQN (No Experience Replay),856,30.5,10.5
+Naive DQN (No Experience Replay),857,34.5,11.5
+Naive DQN (No Experience Replay),858,35.5,20.5
+Naive DQN (No Experience Replay),859,35.0,3.0
+Naive DQN (No Experience Replay),860,41.5,9.5
+Naive DQN (No Experience Replay),861,28.5,5.5
+Naive DQN (No Experience Replay),862,68.5,33.5
+Naive DQN (No Experience Replay),863,35.5,4.5
+Naive DQN (No Experience Replay),864,49.0,5.0
+Naive DQN (No Experience Replay),865,71.0,17.0
+Naive DQN (No Experience Replay),866,39.0,16.0
+Naive DQN (No Experience Replay),867,32.0,7.0
+Naive DQN (No Experience Replay),868,54.5,5.5
+Naive DQN (No Experience Replay),869,62.5,8.5
+Naive DQN (No Experience Replay),870,58.5,0.5
+Naive DQN (No Experience Replay),871,38.0,11.0
+Naive DQN (No Experience Replay),872,24.0,4.0
+Naive DQN (No Experience Replay),873,40.0,23.0
+Naive DQN (No Experience Replay),874,89.5,63.5
+Naive DQN (No Experience Replay),875,31.5,6.5
+Naive DQN (No Experience Replay),876,36.0,14.0
+Naive DQN (No Experience Replay),877,34.0,4.0
+Naive DQN (No Experience Replay),878,44.5,19.5
+Naive DQN (No Experience Replay),879,37.5,4.5
+Naive DQN (No Experience Replay),880,38.0,3.0
+Naive DQN (No Experience Replay),881,42.0,8.0
+Naive DQN (No Experience Replay),882,43.0,16.0
+Naive DQN (No Experience Replay),883,39.0,6.0
+Naive DQN (No Experience Replay),884,42.5,3.5
+Naive DQN (No Experience Replay),885,48.5,1.5
+Naive DQN (No Experience Replay),886,77.5,9.5
+Naive DQN (No Experience Replay),887,43.0,9.0
+Naive DQN (No Experience Replay),888,40.5,10.5
+Naive DQN (No Experience Replay),889,29.5,6.5
+Naive DQN (No Experience Replay),890,25.0,3.0
+Naive DQN (No Experience Replay),891,33.0,4.0
+Naive DQN (No Experience Replay),892,35.5,2.5
+Naive DQN (No Experience Replay),893,28.5,6.5
+Naive DQN (No Experience Replay),894,34.5,16.5
+Naive DQN (No Experience Replay),895,29.0,9.0
+Naive DQN (No Experience Replay),896,33.5,9.5
+Naive DQN (No Experience Replay),897,35.5,18.5
+Naive DQN (No Experience Replay),898,42.5,4.5
+Naive DQN (No Experience Replay),899,65.5,1.5
+Naive DQN (No Experience Replay),900,55.5,12.5
+Naive DQN (No Experience Replay),901,35.5,6.5
+Naive DQN (No Experience Replay),902,36.5,7.5
+Naive DQN (No Experience Replay),903,46.5,6.5
+Naive DQN (No Experience Replay),904,30.5,11.5
+Naive DQN (No Experience Replay),905,50.0,28.0
+Naive DQN (No Experience Replay),906,31.5,14.5
+Naive DQN (No Experience Replay),907,31.0,12.0
+Naive DQN (No Experience Replay),908,44.5,11.5
+Naive DQN (No Experience Replay),909,45.0,18.0
+Naive DQN (No Experience Replay),910,27.5,7.5
+Naive DQN (No Experience Replay),911,29.0,14.0
+Naive DQN (No Experience Replay),912,34.5,15.5
+Naive DQN (No Experience Replay),913,25.5,7.5
+Naive DQN (No Experience Replay),914,29.0,14.0
+Naive DQN (No Experience Replay),915,26.0,6.0
+Naive DQN (No Experience Replay),916,17.5,0.5
+Naive DQN (No Experience Replay),917,27.0,15.0
+Naive DQN (No Experience Replay),918,32.5,14.5
+Naive DQN (No Experience Replay),919,44.0,27.0
+Naive DQN (No Experience Replay),920,85.5,60.5
+Naive DQN (No Experience Replay),921,24.5,2.5
+Naive DQN (No Experience Replay),922,60.5,18.5
+Naive DQN (No Experience Replay),923,22.5,10.5
+Naive DQN (No Experience Replay),924,58.0,22.0
+Naive DQN (No Experience Replay),925,50.0,4.0
+Naive DQN (No Experience Replay),926,66.5,19.5
+Naive DQN (No Experience Replay),927,45.5,4.5
+Naive DQN (No Experience Replay),928,32.5,0.5
+Naive DQN (No Experience Replay),929,51.5,11.5
+Naive DQN (No Experience Replay),930,31.5,5.5
+Naive DQN (No Experience Replay),931,36.5,5.5
+Naive DQN (No Experience Replay),932,42.0,13.0
+Naive DQN (No Experience Replay),933,56.5,0.5
+Naive DQN (No Experience Replay),934,34.0,11.0
+Naive DQN (No Experience Replay),935,53.5,34.5
+Naive DQN (No Experience Replay),936,29.5,5.5
+Naive DQN (No Experience Replay),937,28.5,11.5
+Naive DQN (No Experience Replay),938,41.5,19.5
+Naive DQN (No Experience Replay),939,21.5,5.5
+Naive DQN (No Experience Replay),940,22.0,2.0
+Naive DQN (No Experience Replay),941,24.0,4.0
+Naive DQN (No Experience Replay),942,22.5,0.5
+Naive DQN (No Experience Replay),943,21.5,1.5
+Naive DQN (No Experience Replay),944,20.0,2.0
+Naive DQN (No Experience Replay),945,43.5,17.5
+Naive DQN (No Experience Replay),946,30.5,6.5
+Naive DQN (No Experience Replay),947,25.5,7.5
+Naive DQN (No Experience Replay),948,35.0,18.0
+Naive DQN (No Experience Replay),949,31.0,12.0
+Naive DQN (No Experience Replay),950,31.5,13.5
+Naive DQN (No Experience Replay),951,91.0,54.0
+Naive DQN (No Experience Replay),952,36.5,8.5
+Naive DQN (No Experience Replay),953,38.5,2.5
+Naive DQN (No Experience Replay),954,53.5,6.5
+Naive DQN (No Experience Replay),955,62.5,28.5
+Naive DQN (No Experience Replay),956,93.0,62.0
+Naive DQN (No Experience Replay),957,54.5,0.5
+Naive DQN (No Experience Replay),958,38.0,9.0
+Naive DQN (No Experience Replay),959,43.5,18.5
+Naive DQN (No Experience Replay),960,35.5,20.5
+Naive DQN (No Experience Replay),961,50.0,2.0
+Naive DQN (No Experience Replay),962,30.5,6.5
+Naive DQN (No Experience Replay),963,34.5,16.5
+Naive DQN (No Experience Replay),964,46.5,16.5
+Naive DQN (No Experience Replay),965,92.0,52.0
+Naive DQN (No Experience Replay),966,42.5,6.5
+Naive DQN (No Experience Replay),967,46.5,23.5
+Naive DQN (No Experience Replay),968,44.5,21.5
+Naive DQN (No Experience Replay),969,38.0,21.0
+Naive DQN (No Experience Replay),970,29.5,4.5
+Naive DQN (No Experience Replay),971,30.0,6.0
+Naive DQN (No Experience Replay),972,20.0,1.0
+Naive DQN (No Experience Replay),973,41.5,18.5
+Naive DQN (No Experience Replay),974,63.5,8.5
+Naive DQN (No Experience Replay),975,56.5,8.5
+Naive DQN (No Experience Replay),976,34.0,3.0
+Naive DQN (No Experience Replay),977,40.5,5.5
+Naive DQN (No Experience Replay),978,37.5,5.5
+Naive DQN (No Experience Replay),979,37.0,13.0
+Naive DQN (No Experience Replay),980,41.0,10.0
+Naive DQN (No Experience Replay),981,33.5,4.5
+Naive DQN (No Experience Replay),982,41.0,13.0
+Naive DQN (No Experience Replay),983,44.5,10.5
+Naive DQN (No Experience Replay),984,51.0,29.0
+Naive DQN (No Experience Replay),985,29.0,1.0
+Naive DQN (No Experience Replay),986,52.0,12.0
+Naive DQN (No Experience Replay),987,58.5,14.5
+Naive DQN (No Experience Replay),988,31.0,2.0
+Naive DQN (No Experience Replay),989,93.0,56.0
+Naive DQN (No Experience Replay),990,31.5,11.5
+Naive DQN (No Experience Replay),991,36.5,4.5
+Naive DQN (No Experience Replay),992,36.5,13.5
+Naive DQN (No Experience Replay),993,35.0,2.0
+Naive DQN (No Experience Replay),994,39.5,1.5
+Naive DQN (No Experience Replay),995,39.0,18.0
+Naive DQN (No Experience Replay),996,60.5,13.5
+Naive DQN (No Experience Replay),997,88.5,17.5
+Naive DQN (No Experience Replay),998,43.0,16.0
+Naive DQN (No Experience Replay),999,41.0,8.0
+Naive DQN (No Experience Replay),1000,53.0,34.0
+Naive DQN (No Experience Replay),1001,60.0,41.0
+Naive DQN (No Experience Replay),1002,24.0,5.0
+Naive DQN (No Experience Replay),1003,20.5,6.5
+Naive DQN (No Experience Replay),1004,21.5,9.5
+Naive DQN (No Experience Replay),1005,24.5,1.5
+Naive DQN (No Experience Replay),1006,29.5,2.5
+Naive DQN (No Experience Replay),1007,33.5,8.5
+Naive DQN (No Experience Replay),1008,69.0,14.0
+Naive DQN (No Experience Replay),1009,67.0,4.0
+Naive DQN (No Experience Replay),1010,72.5,56.5
+Naive DQN (No Experience Replay),1011,33.5,11.5
+Naive DQN (No Experience Replay),1012,28.5,8.5
+Naive DQN (No Experience Replay),1013,45.5,3.5
+Naive DQN (No Experience Replay),1014,67.5,9.5
+Naive DQN (No Experience Replay),1015,120.0,80.0
+Naive DQN (No Experience Replay),1016,43.5,18.5
+Naive DQN (No Experience Replay),1017,75.5,11.5
+Naive DQN (No Experience Replay),1018,72.0,36.0
+Naive DQN (No Experience Replay),1019,49.5,17.5
+Naive DQN (No Experience Replay),1020,20.0,2.0
+Naive DQN (No Experience Replay),1021,29.0,13.0
+Naive DQN (No Experience Replay),1022,25.5,12.5
+Naive DQN (No Experience Replay),1023,26.0,7.0
+Naive DQN (No Experience Replay),1024,38.5,15.5
+Naive DQN (No Experience Replay),1025,46.0,13.0
+Naive DQN (No Experience Replay),1026,59.0,23.0
+Naive DQN (No Experience Replay),1027,86.5,6.5
+Naive DQN (No Experience Replay),1028,36.0,6.0
+Naive DQN (No Experience Replay),1029,74.5,36.5
+Naive DQN (No Experience Replay),1030,35.5,7.5
+Naive DQN (No Experience Replay),1031,65.0,14.0
+Naive DQN (No Experience Replay),1032,45.5,5.5
+Naive DQN (No Experience Replay),1033,51.5,22.5
+Naive DQN (No Experience Replay),1034,36.5,15.5
+Naive DQN (No Experience Replay),1035,26.0,0.0
+Naive DQN (No Experience Replay),1036,31.5,0.5
+Naive DQN (No Experience Replay),1037,29.5,7.5
+Naive DQN (No Experience Replay),1038,83.5,35.5
+Naive DQN (No Experience Replay),1039,36.5,5.5
+Naive DQN (No Experience Replay),1040,28.0,2.0
+Naive DQN (No Experience Replay),1041,27.0,3.0
+Naive DQN (No Experience Replay),1042,34.5,15.5
+Naive DQN (No Experience Replay),1043,49.0,17.0
+Naive DQN (No Experience Replay),1044,71.5,46.5
+Naive DQN (No Experience Replay),1045,49.0,11.0
+Naive DQN (No Experience Replay),1046,41.5,19.5
+Naive DQN (No Experience Replay),1047,41.0,4.0
+Naive DQN (No Experience Replay),1048,81.0,30.0
+Naive DQN (No Experience Replay),1049,83.5,38.5
+Naive DQN (No Experience Replay),1050,73.0,48.0
+Naive DQN (No Experience Replay),1051,110.0,90.0
+Naive DQN (No Experience Replay),1052,120.5,79.5
+Naive DQN (No Experience Replay),1053,45.5,4.5
+Naive DQN (No Experience Replay),1054,128.0,72.0
+Naive DQN (No Experience Replay),1055,106.5,34.5
+Naive DQN (No Experience Replay),1056,39.0,9.0
+Naive DQN (No Experience Replay),1057,56.0,11.0
+Naive DQN (No Experience Replay),1058,54.5,14.5
+Naive DQN (No Experience Replay),1059,84.0,28.0
+Naive DQN (No Experience Replay),1060,45.0,12.0
+Naive DQN (No Experience Replay),1061,28.5,0.5
+Naive DQN (No Experience Replay),1062,59.5,22.5
+Naive DQN (No Experience Replay),1063,71.5,11.5
+Naive DQN (No Experience Replay),1064,39.0,13.0
+Naive DQN (No Experience Replay),1065,28.0,10.0
+Naive DQN (No Experience Replay),1066,122.5,77.5
+Naive DQN (No Experience Replay),1067,45.0,6.0
+Naive DQN (No Experience Replay),1068,107.0,67.0
+Naive DQN (No Experience Replay),1069,29.5,9.5
+Naive DQN (No Experience Replay),1070,39.0,1.0
+Naive DQN (No Experience Replay),1071,35.0,1.0
+Naive DQN (No Experience Replay),1072,51.0,31.0
+Naive DQN (No Experience Replay),1073,24.0,4.0
+Naive DQN (No Experience Replay),1074,43.5,25.5
+Naive DQN (No Experience Replay),1075,35.5,14.5
+Naive DQN (No Experience Replay),1076,77.0,52.0
+Naive DQN (No Experience Replay),1077,41.5,22.5
+Naive DQN (No Experience Replay),1078,44.0,22.0
+Naive DQN (No Experience Replay),1079,26.0,3.0
+Naive DQN (No Experience Replay),1080,61.5,41.5
+Naive DQN (No Experience Replay),1081,33.0,9.0
+Naive DQN (No Experience Replay),1082,59.0,38.0
+Naive DQN (No Experience Replay),1083,20.0,2.0
+Naive DQN (No Experience Replay),1084,37.0,13.0
+Naive DQN (No Experience Replay),1085,31.0,5.0
+Naive DQN (No Experience Replay),1086,52.5,2.5
+Naive DQN (No Experience Replay),1087,95.0,39.0
+Naive DQN (No Experience Replay),1088,119.0,81.0
+Naive DQN (No Experience Replay),1089,116.5,83.5
+Naive DQN (No Experience Replay),1090,116.5,83.5
+Naive DQN (No Experience Replay),1091,55.5,1.5
+Naive DQN (No Experience Replay),1092,35.0,4.0
+Naive DQN (No Experience Replay),1093,116.5,83.5
+Naive DQN (No Experience Replay),1094,110.5,15.5
+Naive DQN (No Experience Replay),1095,80.0,22.0
+Naive DQN (No Experience Replay),1096,89.0,28.0
+Naive DQN (No Experience Replay),1097,145.0,55.0
+Naive DQN (No Experience Replay),1098,89.5,19.5
+Naive DQN (No Experience Replay),1099,43.0,10.0
+Naive DQN (No Experience Replay),1100,38.0,5.0
+Naive DQN (No Experience Replay),1101,33.0,18.0
+Naive DQN (No Experience Replay),1102,39.0,19.0
+Naive DQN (No Experience Replay),1103,27.5,11.5
+Naive DQN (No Experience Replay),1104,27.5,10.5
+Naive DQN (No Experience Replay),1105,28.0,14.0
+Naive DQN (No Experience Replay),1106,31.0,14.0
+Naive DQN (No Experience Replay),1107,28.5,14.5
+Naive DQN (No Experience Replay),1108,45.5,32.5
+Naive DQN (No Experience Replay),1109,43.5,23.5
+Naive DQN (No Experience Replay),1110,38.0,14.0
+Naive DQN (No Experience Replay),1111,32.5,10.5
+Naive DQN (No Experience Replay),1112,87.5,75.5
+Naive DQN (No Experience Replay),1113,22.0,7.0
+Naive DQN (No Experience Replay),1114,33.5,16.5
+Naive DQN (No Experience Replay),1115,51.5,27.5
+Naive DQN (No Experience Replay),1116,27.5,3.5
+Naive DQN (No Experience Replay),1117,31.0,3.0
+Naive DQN (No Experience Replay),1118,45.0,20.0
+Naive DQN (No Experience Replay),1119,34.5,4.5
+Naive DQN (No Experience Replay),1120,67.0,38.0
+Naive DQN (No Experience Replay),1121,60.5,22.5
+Naive DQN (No Experience Replay),1122,71.0,23.0
+Naive DQN (No Experience Replay),1123,72.0,0.0
+Naive DQN (No Experience Replay),1124,118.0,82.0
+Naive DQN (No Experience Replay),1125,80.0,26.0
+Naive DQN (No Experience Replay),1126,105.5,44.5
+Naive DQN (No Experience Replay),1127,98.0,32.0
+Naive DQN (No Experience Replay),1128,46.5,10.5
+Naive DQN (No Experience Replay),1129,88.5,37.5
+Naive DQN (No Experience Replay),1130,91.0,63.0
+Naive DQN (No Experience Replay),1131,43.0,1.0
+Naive DQN (No Experience Replay),1132,26.5,2.5
+Naive DQN (No Experience Replay),1133,57.0,24.0
+Naive DQN (No Experience Replay),1134,21.5,0.5
+Naive DQN (No Experience Replay),1135,28.0,0.0
+Naive DQN (No Experience Replay),1136,19.0,6.0
+Naive DQN (No Experience Replay),1137,29.5,6.5
+Naive DQN (No Experience Replay),1138,33.5,14.5
+Naive DQN (No Experience Replay),1139,38.5,0.5
+Naive DQN (No Experience Replay),1140,45.0,17.0
+Naive DQN (No Experience Replay),1141,84.0,57.0
+Naive DQN (No Experience Replay),1142,28.0,9.0
+Naive DQN (No Experience Replay),1143,32.5,6.5
+Naive DQN (No Experience Replay),1144,22.0,4.0
+Naive DQN (No Experience Replay),1145,25.0,9.0
+Naive DQN (No Experience Replay),1146,38.5,18.5
+Naive DQN (No Experience Replay),1147,88.0,75.0
+Naive DQN (No Experience Replay),1148,111.5,88.5
+Naive DQN (No Experience Replay),1149,108.0,92.0
+Naive DQN (No Experience Replay),1150,18.0,2.0
+Naive DQN (No Experience Replay),1151,31.5,12.5
+Naive DQN (No Experience Replay),1152,23.0,2.0
+Naive DQN (No Experience Replay),1153,20.5,4.5
+Naive DQN (No Experience Replay),1154,26.0,5.0
+Naive DQN (No Experience Replay),1155,24.0,2.0
+Naive DQN (No Experience Replay),1156,36.0,23.0
+Naive DQN (No Experience Replay),1157,76.0,56.0
+Naive DQN (No Experience Replay),1158,101.5,78.5
+Naive DQN (No Experience Replay),1159,56.0,34.0
+Naive DQN (No Experience Replay),1160,68.5,36.5
+Naive DQN (No Experience Replay),1161,113.0,87.0
+Naive DQN (No Experience Replay),1162,74.5,53.5
+Naive DQN (No Experience Replay),1163,66.5,20.5
+Naive DQN (No Experience Replay),1164,120.5,79.5
+Naive DQN (No Experience Replay),1165,116.0,77.0
+Naive DQN (No Experience Replay),1166,115.0,39.0
+Naive DQN (No Experience Replay),1167,74.5,23.5
+Naive DQN (No Experience Replay),1168,92.0,5.0
+Naive DQN (No Experience Replay),1169,94.0,14.0
+Naive DQN (No Experience Replay),1170,149.0,51.0
+Naive DQN (No Experience Replay),1171,67.0,41.0
+Naive DQN (No Experience Replay),1172,117.0,83.0
+Naive DQN (No Experience Replay),1173,65.5,31.5
+Naive DQN (No Experience Replay),1174,101.0,71.0
+Naive DQN (No Experience Replay),1175,59.0,37.0
+Naive DQN (No Experience Replay),1176,87.0,60.0
+Naive DQN (No Experience Replay),1177,94.0,77.0
+Naive DQN (No Experience Replay),1178,67.0,36.0
+Naive DQN (No Experience Replay),1179,116.5,83.5
+Naive DQN (No Experience Replay),1180,31.5,6.5
+Naive DQN (No Experience Replay),1181,111.0,89.0
+Naive DQN (No Experience Replay),1182,54.0,27.0
+Naive DQN (No Experience Replay),1183,98.0,77.0
+Naive DQN (No Experience Replay),1184,104.5,84.5
+Naive DQN (No Experience Replay),1185,28.5,9.5
+Naive DQN (No Experience Replay),1186,74.5,37.5
+Naive DQN (No Experience Replay),1187,44.5,1.5
+Naive DQN (No Experience Replay),1188,33.5,5.5
+Naive DQN (No Experience Replay),1189,35.0,3.0
+Naive DQN (No Experience Replay),1190,101.5,75.5
+Naive DQN (No Experience Replay),1191,57.5,19.5
+Naive DQN (No Experience Replay),1192,118.0,82.0
+Naive DQN (No Experience Replay),1193,97.0,42.0
+Naive DQN (No Experience Replay),1194,52.0,21.0
+Naive DQN (No Experience Replay),1195,106.0,85.0
+Naive DQN (No Experience Replay),1196,33.5,8.5
+Naive DQN (No Experience Replay),1197,37.5,20.5
+Naive DQN (No Experience Replay),1198,34.0,16.0
+Naive DQN (No Experience Replay),1199,50.5,33.5
+Naive DQN (No Experience Replay),1200,61.5,49.5
+Naive DQN (No Experience Replay),1201,53.5,36.5
+Naive DQN (No Experience Replay),1202,45.0,21.0
+Naive DQN (No Experience Replay),1203,27.0,7.0
+Naive DQN (No Experience Replay),1204,57.0,44.0
+Naive DQN (No Experience Replay),1205,23.5,8.5
+Naive DQN (No Experience Replay),1206,47.5,31.5
+Naive DQN (No Experience Replay),1207,30.5,13.5
+Naive DQN (No Experience Replay),1208,23.5,9.5
+Naive DQN (No Experience Replay),1209,31.0,9.0
+Naive DQN (No Experience Replay),1210,21.5,9.5
+Naive DQN (No Experience Replay),1211,37.0,25.0
+Naive DQN (No Experience Replay),1212,64.5,38.5
+Naive DQN (No Experience Replay),1213,34.5,7.5
+Naive DQN (No Experience Replay),1214,28.0,0.0
+Naive DQN (No Experience Replay),1215,36.0,18.0
+Naive DQN (No Experience Replay),1216,23.0,4.0
+Naive DQN (No Experience Replay),1217,27.5,6.5
+Naive DQN (No Experience Replay),1218,113.0,72.0
+Naive DQN (No Experience Replay),1219,112.0,74.0
+Naive DQN (No Experience Replay),1220,156.0,21.0
+Naive DQN (No Experience Replay),1221,115.5,0.5
+Naive DQN (No Experience Replay),1222,84.0,46.0
+Naive DQN (No Experience Replay),1223,112.5,62.5
+Naive DQN (No Experience Replay),1224,95.5,48.5
+Naive DQN (No Experience Replay),1225,103.0,70.0
+Naive DQN (No Experience Replay),1226,116.0,62.0
+Naive DQN (No Experience Replay),1227,118.5,33.5
+Naive DQN (No Experience Replay),1228,61.0,24.0
+Naive DQN (No Experience Replay),1229,78.5,35.5
+Naive DQN (No Experience Replay),1230,44.0,5.0
+Naive DQN (No Experience Replay),1231,127.0,5.0
+Naive DQN (No Experience Replay),1232,173.5,26.5
+Naive DQN (No Experience Replay),1233,143.5,37.5
+Naive DQN (No Experience Replay),1234,114.0,86.0
+Naive DQN (No Experience Replay),1235,85.5,54.5
+Naive DQN (No Experience Replay),1236,129.5,4.5
+Naive DQN (No Experience Replay),1237,109.0,91.0
+Naive DQN (No Experience Replay),1238,107.0,47.0
+Naive DQN (No Experience Replay),1239,125.5,32.5
+Naive DQN (No Experience Replay),1240,93.0,26.0
+Naive DQN (No Experience Replay),1241,129.5,31.5
+Naive DQN (No Experience Replay),1242,133.5,11.5
+Naive DQN (No Experience Replay),1243,107.5,81.5
+Naive DQN (No Experience Replay),1244,52.0,8.0
+Naive DQN (No Experience Replay),1245,53.5,8.5
+Naive DQN (No Experience Replay),1246,59.0,26.0
+Naive DQN (No Experience Replay),1247,153.0,40.0
+Naive DQN (No Experience Replay),1248,154.0,28.0
+Naive DQN (No Experience Replay),1249,113.0,87.0
+Naive DQN (No Experience Replay),1250,97.0,52.0
+Naive DQN (No Experience Replay),1251,105.0,83.0
+Naive DQN (No Experience Replay),1252,25.0,3.0
+Naive DQN (No Experience Replay),1253,63.5,39.5
+Naive DQN (No Experience Replay),1254,77.0,21.0
+Naive DQN (No Experience Replay),1255,45.5,6.5
+Naive DQN (No Experience Replay),1256,147.5,52.5
+Naive DQN (No Experience Replay),1257,134.5,65.5
+Naive DQN (No Experience Replay),1258,103.0,46.0
+Naive DQN (No Experience Replay),1259,169.0,31.0
+Naive DQN (No Experience Replay),1260,102.0,73.0
+Naive DQN (No Experience Replay),1261,56.5,20.5
+Naive DQN (No Experience Replay),1262,107.5,63.5
+Naive DQN (No Experience Replay),1263,136.5,5.5
+Naive DQN (No Experience Replay),1264,133.5,6.5
+Naive DQN (No Experience Replay),1265,73.0,30.0
+Naive DQN (No Experience Replay),1266,90.5,48.5
+Naive DQN (No Experience Replay),1267,107.5,57.5
+Naive DQN (No Experience Replay),1268,88.0,37.0
+Naive DQN (No Experience Replay),1269,144.0,56.0
+Naive DQN (No Experience Replay),1270,94.0,4.0
+Naive DQN (No Experience Replay),1271,148.0,28.0
+Naive DQN (No Experience Replay),1272,116.0,84.0
+Naive DQN (No Experience Replay),1273,115.5,69.5
+Naive DQN (No Experience Replay),1274,70.5,43.5
+Naive DQN (No Experience Replay),1275,31.5,1.5
+Naive DQN (No Experience Replay),1276,23.5,0.5
+Naive DQN (No Experience Replay),1277,21.0,1.0
+Naive DQN (No Experience Replay),1278,23.5,1.5
+Naive DQN (No Experience Replay),1279,89.5,51.5
+Naive DQN (No Experience Replay),1280,36.5,11.5
+Naive DQN (No Experience Replay),1281,117.5,64.5
+Naive DQN (No Experience Replay),1282,171.0,29.0
+Naive DQN (No Experience Replay),1283,127.5,72.5
+Naive DQN (No Experience Replay),1284,106.0,34.0
+Naive DQN (No Experience Replay),1285,82.0,59.0
+Naive DQN (No Experience Replay),1286,94.5,75.5
+Naive DQN (No Experience Replay),1287,72.0,59.0
+Naive DQN (No Experience Replay),1288,106.0,94.0
+Naive DQN (No Experience Replay),1289,62.5,49.5
+Naive DQN (No Experience Replay),1290,77.5,62.5
+Naive DQN (No Experience Replay),1291,20.0,7.0
+Naive DQN (No Experience Replay),1292,14.5,2.5
+Naive DQN (No Experience Replay),1293,15.5,3.5
+Naive DQN (No Experience Replay),1294,18.0,6.0
+Naive DQN (No Experience Replay),1295,20.0,7.0
+Naive DQN (No Experience Replay),1296,13.5,1.5
+Naive DQN (No Experience Replay),1297,20.5,4.5
+Naive DQN (No Experience Replay),1298,18.5,6.5
+Naive DQN (No Experience Replay),1299,14.5,4.5
+Naive DQN (No Experience Replay),1300,17.0,1.0
+Naive DQN (No Experience Replay),1301,17.5,6.5
+Naive DQN (No Experience Replay),1302,16.5,6.5
+Naive DQN (No Experience Replay),1303,25.0,10.0
+Naive DQN (No Experience Replay),1304,31.0,17.0
+Naive DQN (No Experience Replay),1305,46.0,32.0
+Naive DQN (No Experience Replay),1306,107.0,93.0
+Naive DQN (No Experience Replay),1307,29.0,15.0
+Naive DQN (No Experience Replay),1308,107.0,93.0
+Naive DQN (No Experience Replay),1309,61.5,49.5
+Naive DQN (No Experience Replay),1310,69.5,52.5
+Naive DQN (No Experience Replay),1311,86.5,69.5
+Naive DQN (No Experience Replay),1312,63.0,50.0
+Naive DQN (No Experience Replay),1313,97.0,84.0
+Naive DQN (No Experience Replay),1314,29.5,11.5
+Naive DQN (No Experience Replay),1315,67.5,53.5
+Naive DQN (No Experience Replay),1316,69.0,48.0
+Naive DQN (No Experience Replay),1317,35.5,11.5
+Naive DQN (No Experience Replay),1318,82.0,13.0
+Naive DQN (No Experience Replay),1319,107.0,4.0
+Naive DQN (No Experience Replay),1320,102.0,80.0
+Naive DQN (No Experience Replay),1321,20.0,2.0
+Naive DQN (No Experience Replay),1322,23.5,6.5
+Naive DQN (No Experience Replay),1323,19.5,6.5
+Naive DQN (No Experience Replay),1324,16.5,2.5
+Naive DQN (No Experience Replay),1325,15.0,4.0
+Naive DQN (No Experience Replay),1326,60.0,45.0
+Naive DQN (No Experience Replay),1327,68.0,55.0
+Naive DQN (No Experience Replay),1328,72.5,61.5
+Naive DQN (No Experience Replay),1329,72.5,61.5
+Naive DQN (No Experience Replay),1330,105.5,94.5
+Naive DQN (No Experience Replay),1331,106.0,94.0
+Naive DQN (No Experience Replay),1332,105.0,95.0
+Naive DQN (No Experience Replay),1333,107.0,93.0
+Naive DQN (No Experience Replay),1334,58.5,46.5
+Naive DQN (No Experience Replay),1335,58.0,48.0
+Naive DQN (No Experience Replay),1336,21.5,5.5
+Naive DQN (No Experience Replay),1337,21.0,7.0
+Naive DQN (No Experience Replay),1338,103.5,93.5
+Naive DQN (No Experience Replay),1339,105.5,94.5
+Naive DQN (No Experience Replay),1340,107.0,93.0
+Naive DQN (No Experience Replay),1341,105.5,94.5
+Naive DQN (No Experience Replay),1342,106.5,93.5
+Naive DQN (No Experience Replay),1343,74.5,63.5
+Naive DQN (No Experience Replay),1344,19.5,5.5
+Naive DQN (No Experience Replay),1345,43.0,29.0
+Naive DQN (No Experience Replay),1346,56.0,44.0
+Naive DQN (No Experience Replay),1347,85.5,75.5
+Naive DQN (No Experience Replay),1348,107.0,93.0
+Naive DQN (No Experience Replay),1349,105.5,94.5
+Naive DQN (No Experience Replay),1350,108.5,91.5
+Naive DQN (No Experience Replay),1351,14.5,3.5
+Naive DQN (No Experience Replay),1352,21.0,8.0
+Naive DQN (No Experience Replay),1353,14.5,2.5
+Naive DQN (No Experience Replay),1354,12.0,1.0
+Naive DQN (No Experience Replay),1355,13.5,1.5
+Naive DQN (No Experience Replay),1356,12.5,1.5
+Naive DQN (No Experience Replay),1357,16.0,5.0
+Naive DQN (No Experience Replay),1358,42.5,34.5
+Naive DQN (No Experience Replay),1359,82.5,70.5
+Naive DQN (No Experience Replay),1360,95.5,83.5
+Naive DQN (No Experience Replay),1361,97.0,83.0
+Naive DQN (No Experience Replay),1362,21.0,4.0
+Naive DQN (No Experience Replay),1363,18.0,3.0
+Naive DQN (No Experience Replay),1364,13.5,3.5
+Naive DQN (No Experience Replay),1365,20.0,1.0
+Naive DQN (No Experience Replay),1366,16.5,2.5
+Naive DQN (No Experience Replay),1367,22.5,4.5
+Naive DQN (No Experience Replay),1368,29.0,19.0
+Naive DQN (No Experience Replay),1369,26.0,12.0
+Naive DQN (No Experience Replay),1370,64.5,53.5
+Naive DQN (No Experience Replay),1371,84.0,69.0
+Naive DQN (No Experience Replay),1372,50.0,39.0
+Naive DQN (No Experience Replay),1373,107.0,93.0
+Naive DQN (No Experience Replay),1374,105.5,94.5
+Naive DQN (No Experience Replay),1375,97.5,82.5
+Naive DQN (No Experience Replay),1376,40.5,22.5
+Naive DQN (No Experience Replay),1377,109.5,90.5
+Naive DQN (No Experience Replay),1378,90.5,73.5
+Naive DQN (No Experience Replay),1379,40.5,22.5
+Naive DQN (No Experience Replay),1380,54.0,39.0
+Naive DQN (No Experience Replay),1381,35.5,19.5
+Naive DQN (No Experience Replay),1382,110.0,90.0
+Naive DQN (No Experience Replay),1383,117.5,79.5
+Naive DQN (No Experience Replay),1384,110.0,90.0
+Naive DQN (No Experience Replay),1385,87.0,51.0
+Naive DQN (No Experience Replay),1386,81.0,61.0
+Naive DQN (No Experience Replay),1387,101.5,73.5
+Naive DQN (No Experience Replay),1388,109.5,90.5
+Naive DQN (No Experience Replay),1389,116.0,84.0
+Naive DQN (No Experience Replay),1390,98.5,79.5
+Naive DQN (No Experience Replay),1391,142.5,39.5
+Naive DQN (No Experience Replay),1392,162.5,37.5
+Naive DQN (No Experience Replay),1393,119.0,81.0
+Naive DQN (No Experience Replay),1394,124.0,76.0
+Naive DQN (No Experience Replay),1395,129.5,19.5
+Naive DQN (No Experience Replay),1396,117.0,83.0
+Naive DQN (No Experience Replay),1397,122.0,78.0
+Naive DQN (No Experience Replay),1398,116.0,18.0
+Naive DQN (No Experience Replay),1399,200.0,0.0
+Naive DQN (No Experience Replay),1400,200.0,0.0
+Naive DQN (No Experience Replay),1401,160.0,13.0
+Naive DQN (No Experience Replay),1402,72.0,48.0
+Naive DQN (No Experience Replay),1403,52.5,38.5
+Naive DQN (No Experience Replay),1404,57.0,44.0
+Naive DQN (No Experience Replay),1405,49.5,35.5
+Naive DQN (No Experience Replay),1406,34.5,25.5
+Naive DQN (No Experience Replay),1407,53.5,43.5
+Naive DQN (No Experience Replay),1408,59.5,40.5
+Naive DQN (No Experience Replay),1409,43.5,28.5
+Naive DQN (No Experience Replay),1410,107.5,92.5
+Naive DQN (No Experience Replay),1411,93.5,82.5
+Naive DQN (No Experience Replay),1412,106.5,93.5
+Naive DQN (No Experience Replay),1413,66.0,55.0
+Naive DQN (No Experience Replay),1414,66.0,54.0
+Naive DQN (No Experience Replay),1415,59.0,46.0
+Naive DQN (No Experience Replay),1416,84.5,70.5
+Naive DQN (No Experience Replay),1417,76.5,62.5
+Naive DQN (No Experience Replay),1418,68.5,57.5
+Naive DQN (No Experience Replay),1419,105.5,94.5
+Naive DQN (No Experience Replay),1420,109.0,91.0
+Naive DQN (No Experience Replay),1421,72.0,56.0
+Naive DQN (No Experience Replay),1422,97.0,82.0
+Naive DQN (No Experience Replay),1423,25.5,7.5
+Naive DQN (No Experience Replay),1424,43.5,5.5
+Naive DQN (No Experience Replay),1425,131.5,68.5
+Naive DQN (No Experience Replay),1426,192.5,7.5
+Naive DQN (No Experience Replay),1427,119.0,1.0
+Naive DQN (No Experience Replay),1428,158.0,25.0
+Naive DQN (No Experience Replay),1429,57.0,40.0
+Naive DQN (No Experience Replay),1430,73.0,48.0
+Naive DQN (No Experience Replay),1431,110.5,89.5
+Naive DQN (No Experience Replay),1432,109.0,91.0
+Naive DQN (No Experience Replay),1433,108.0,92.0
+Naive DQN (No Experience Replay),1434,109.5,90.5
+Naive DQN (No Experience Replay),1435,46.0,31.0
+Naive DQN (No Experience Replay),1436,107.5,92.5
+Naive DQN (No Experience Replay),1437,108.0,92.0
+Naive DQN (No Experience Replay),1438,73.0,58.0
+Naive DQN (No Experience Replay),1439,81.5,62.5
+Naive DQN (No Experience Replay),1440,51.5,42.5
+Naive DQN (No Experience Replay),1441,51.5,39.5
+Naive DQN (No Experience Replay),1442,58.0,44.0
+Naive DQN (No Experience Replay),1443,61.5,49.5
+Naive DQN (No Experience Replay),1444,108.5,91.5
+Naive DQN (No Experience Replay),1445,27.0,14.0
+Naive DQN (No Experience Replay),1446,59.5,46.5
+Naive DQN (No Experience Replay),1447,89.5,76.5
+Naive DQN (No Experience Replay),1448,108.5,91.5
+Naive DQN (No Experience Replay),1449,106.5,93.5
+Naive DQN (No Experience Replay),1450,61.0,45.0
+Naive DQN (No Experience Replay),1451,93.5,76.5
+Naive DQN (No Experience Replay),1452,109.5,90.5
+Naive DQN (No Experience Replay),1453,16.5,0.5
+Naive DQN (No Experience Replay),1454,18.5,1.5
+Naive DQN (No Experience Replay),1455,52.0,35.0
+Naive DQN (No Experience Replay),1456,49.0,37.0
+Naive DQN (No Experience Replay),1457,73.5,53.5
+Naive DQN (No Experience Replay),1458,70.0,50.0
+Naive DQN (No Experience Replay),1459,26.0,6.0
+Naive DQN (No Experience Replay),1460,98.5,81.5
+Naive DQN (No Experience Replay),1461,64.5,42.5
+Naive DQN (No Experience Replay),1462,55.5,31.5
+Naive DQN (No Experience Replay),1463,54.5,38.5
+Naive DQN (No Experience Replay),1464,35.0,13.0
+Naive DQN (No Experience Replay),1465,40.5,19.5
+Naive DQN (No Experience Replay),1466,27.5,11.5
+Naive DQN (No Experience Replay),1467,47.5,29.5
+Naive DQN (No Experience Replay),1468,76.0,57.0
+Naive DQN (No Experience Replay),1469,51.0,30.0
+Naive DQN (No Experience Replay),1470,86.0,54.0
+Naive DQN (No Experience Replay),1471,80.0,54.0
+Naive DQN (No Experience Replay),1472,112.5,87.5
+Naive DQN (No Experience Replay),1473,103.5,77.5
+Naive DQN (No Experience Replay),1474,85.5,52.5
+Naive DQN (No Experience Replay),1475,130.5,16.5
+Naive DQN (No Experience Replay),1476,155.0,18.0
+Naive DQN (No Experience Replay),1477,178.5,21.5
+Naive DQN (No Experience Replay),1478,158.0,42.0
+Naive DQN (No Experience Replay),1479,181.0,19.0
+Naive DQN (No Experience Replay),1480,200.0,0.0
+Naive DQN (No Experience Replay),1481,164.5,35.5
+Naive DQN (No Experience Replay),1482,200.0,0.0
+Naive DQN (No Experience Replay),1483,200.0,0.0
+Naive DQN (No Experience Replay),1484,200.0,0.0
+Naive DQN (No Experience Replay),1485,199.0,1.0
+Naive DQN (No Experience Replay),1486,200.0,0.0
+Naive DQN (No Experience Replay),1487,198.5,1.5
+Naive DQN (No Experience Replay),1488,189.0,11.0
+Naive DQN (No Experience Replay),1489,190.0,10.0
+Naive DQN (No Experience Replay),1490,116.5,83.5
+Naive DQN (No Experience Replay),1491,113.0,87.0
+Naive DQN (No Experience Replay),1492,110.0,90.0
+Naive DQN (No Experience Replay),1493,107.0,93.0
+Naive DQN (No Experience Replay),1494,112.0,88.0
+Naive DQN (No Experience Replay),1495,99.0,78.0
+Naive DQN (No Experience Replay),1496,49.5,26.5
+Naive DQN (No Experience Replay),1497,21.5,1.5
+Naive DQN (No Experience Replay),1498,14.5,0.5
+Naive DQN (No Experience Replay),1499,14.5,2.5
+Naive DQN (No Experience Replay),1500,15.5,1.5
+Naive DQN (No Experience Replay),1501,15.0,3.0
+Naive DQN (No Experience Replay),1502,17.5,1.5
+Naive DQN (No Experience Replay),1503,24.0,3.0
+Naive DQN (No Experience Replay),1504,21.5,2.5
+Naive DQN (No Experience Replay),1505,82.5,66.5
+Naive DQN (No Experience Replay),1506,87.0,62.0
+Naive DQN (No Experience Replay),1507,76.5,39.5
+Naive DQN (No Experience Replay),1508,121.5,12.5
+Naive DQN (No Experience Replay),1509,154.5,45.5
+Naive DQN (No Experience Replay),1510,196.0,4.0
+Naive DQN (No Experience Replay),1511,187.0,13.0
+Naive DQN (No Experience Replay),1512,157.0,43.0
+Naive DQN (No Experience Replay),1513,148.0,52.0
+Naive DQN (No Experience Replay),1514,149.0,51.0
+Naive DQN (No Experience Replay),1515,162.5,4.5
+Naive DQN (No Experience Replay),1516,200.0,0.0
+Naive DQN (No Experience Replay),1517,164.0,36.0
+Naive DQN (No Experience Replay),1518,200.0,0.0
+Naive DQN (No Experience Replay),1519,200.0,0.0
+Naive DQN (No Experience Replay),1520,181.0,19.0
+Naive DQN (No Experience Replay),1521,155.0,45.0
+Naive DQN (No Experience Replay),1522,200.0,0.0
+Naive DQN (No Experience Replay),1523,154.0,46.0
+Naive DQN (No Experience Replay),1524,192.5,7.5
+Naive DQN (No Experience Replay),1525,111.5,88.5
+Naive DQN (No Experience Replay),1526,111.5,88.5
+Naive DQN (No Experience Replay),1527,107.5,92.5
+Naive DQN (No Experience Replay),1528,107.5,92.5
+Naive DQN (No Experience Replay),1529,109.0,91.0
+Naive DQN (No Experience Replay),1530,110.5,89.5
+Naive DQN (No Experience Replay),1531,109.5,90.5
+Naive DQN (No Experience Replay),1532,107.5,92.5
+Naive DQN (No Experience Replay),1533,109.0,91.0
+Naive DQN (No Experience Replay),1534,108.5,91.5
+Naive DQN (No Experience Replay),1535,106.5,93.5
+Naive DQN (No Experience Replay),1536,109.5,90.5
+Naive DQN (No Experience Replay),1537,106.5,93.5
+Naive DQN (No Experience Replay),1538,108.5,89.5
+Naive DQN (No Experience Replay),1539,15.5,0.5
+Naive DQN (No Experience Replay),1540,16.5,0.5
+Naive DQN (No Experience Replay),1541,14.5,0.5
+Naive DQN (No Experience Replay),1542,19.5,4.5
+Naive DQN (No Experience Replay),1543,102.5,88.5
+Naive DQN (No Experience Replay),1544,69.0,43.0
+Naive DQN (No Experience Replay),1545,112.0,88.0
+Naive DQN (No Experience Replay),1546,95.0,71.0
+Naive DQN (No Experience Replay),1547,107.5,78.5
+Naive DQN (No Experience Replay),1548,28.0,9.0
+Naive DQN (No Experience Replay),1549,17.5,3.5
+Naive DQN (No Experience Replay),1550,34.0,20.0
+Naive DQN (No Experience Replay),1551,104.5,90.5
+Naive DQN (No Experience Replay),1552,28.0,16.0
+Naive DQN (No Experience Replay),1553,19.0,4.0
+Naive DQN (No Experience Replay),1554,14.5,3.5
+Naive DQN (No Experience Replay),1555,17.0,1.0
+Naive DQN (No Experience Replay),1556,16.5,3.5
+Naive DQN (No Experience Replay),1557,23.0,4.0
+Naive DQN (No Experience Replay),1558,18.0,6.0
+Naive DQN (No Experience Replay),1559,18.0,2.0
+Naive DQN (No Experience Replay),1560,20.5,3.5
+Naive DQN (No Experience Replay),1561,25.5,10.5
+Naive DQN (No Experience Replay),1562,16.0,2.0
+Naive DQN (No Experience Replay),1563,16.5,0.5
+Naive DQN (No Experience Replay),1564,13.5,0.5
+Naive DQN (No Experience Replay),1565,16.0,0.0
+Naive DQN (No Experience Replay),1566,14.5,2.5
+Naive DQN (No Experience Replay),1567,15.0,2.0
+Naive DQN (No Experience Replay),1568,15.0,1.0
+Naive DQN (No Experience Replay),1569,11.5,0.5
+Naive DQN (No Experience Replay),1570,15.5,4.5
+Naive DQN (No Experience Replay),1571,14.0,2.0
+Naive DQN (No Experience Replay),1572,18.5,7.5
+Naive DQN (No Experience Replay),1573,19.5,8.5
+Naive DQN (No Experience Replay),1574,16.5,3.5
+Naive DQN (No Experience Replay),1575,15.5,1.5
+Naive DQN (No Experience Replay),1576,16.0,4.0
+Naive DQN (No Experience Replay),1577,18.0,6.0
+Naive DQN (No Experience Replay),1578,21.0,4.0
+Naive DQN (No Experience Replay),1579,57.0,42.0
+Naive DQN (No Experience Replay),1580,107.0,91.0
+Naive DQN (No Experience Replay),1581,108.0,92.0
+Naive DQN (No Experience Replay),1582,79.0,57.0
+Naive DQN (No Experience Replay),1583,74.0,60.0
+Naive DQN (No Experience Replay),1584,60.0,45.0
+Naive DQN (No Experience Replay),1585,20.5,1.5
+Naive DQN (No Experience Replay),1586,20.0,1.0
+Naive DQN (No Experience Replay),1587,22.0,6.0
+Naive DQN (No Experience Replay),1588,17.5,3.5
+Naive DQN (No Experience Replay),1589,23.5,11.5
+Naive DQN (No Experience Replay),1590,26.5,16.5
+Naive DQN (No Experience Replay),1591,61.5,49.5
+Naive DQN (No Experience Replay),1592,84.0,73.0
+Naive DQN (No Experience Replay),1593,105.5,94.5
+Naive DQN (No Experience Replay),1594,102.0,82.0
+Naive DQN (No Experience Replay),1595,65.5,56.5
+Naive DQN (No Experience Replay),1596,90.5,79.5
+Naive DQN (No Experience Replay),1597,66.5,55.5
+Naive DQN (No Experience Replay),1598,106.0,94.0
+Naive DQN (No Experience Replay),1599,89.5,77.5
+Naive DQN (No Experience Replay),1600,87.0,75.0
+Naive DQN (No Experience Replay),1601,105.5,94.5
+Naive DQN (No Experience Replay),1602,99.5,88.5
+Naive DQN (No Experience Replay),1603,72.5,57.5
+Naive DQN (No Experience Replay),1604,72.5,62.5
+Naive DQN (No Experience Replay),1605,72.5,59.5
+Naive DQN (No Experience Replay),1606,106.0,94.0
+Naive DQN (No Experience Replay),1607,77.0,63.0
+Naive DQN (No Experience Replay),1608,65.5,52.5
+Naive DQN (No Experience Replay),1609,105.5,94.5
+Naive DQN (No Experience Replay),1610,68.0,56.0
+Naive DQN (No Experience Replay),1611,64.0,53.0
+Naive DQN (No Experience Replay),1612,99.0,89.0
+Naive DQN (No Experience Replay),1613,56.5,43.5
+Naive DQN (No Experience Replay),1614,64.5,50.5
+Naive DQN (No Experience Replay),1615,30.5,17.5
+Naive DQN (No Experience Replay),1616,52.5,38.5
+Naive DQN (No Experience Replay),1617,23.5,11.5
+Naive DQN (No Experience Replay),1618,56.5,43.5
+Naive DQN (No Experience Replay),1619,65.0,52.0
+Naive DQN (No Experience Replay),1620,61.0,46.0
+Naive DQN (No Experience Replay),1621,68.5,52.5
+Naive DQN (No Experience Replay),1622,23.0,8.0
+Naive DQN (No Experience Replay),1623,61.0,41.0
+Naive DQN (No Experience Replay),1624,60.0,42.0
+Naive DQN (No Experience Replay),1625,62.0,50.0
+Naive DQN (No Experience Replay),1626,31.5,13.5
+Naive DQN (No Experience Replay),1627,63.5,45.5
+Naive DQN (No Experience Replay),1628,26.5,10.5
+Naive DQN (No Experience Replay),1629,18.5,1.5
+Naive DQN (No Experience Replay),1630,26.5,9.5
+Naive DQN (No Experience Replay),1631,29.0,12.0
+Naive DQN (No Experience Replay),1632,18.5,2.5
+Naive DQN (No Experience Replay),1633,26.0,1.0
+Naive DQN (No Experience Replay),1634,22.0,1.0
+Naive DQN (No Experience Replay),1635,25.0,5.0
+Naive DQN (No Experience Replay),1636,75.0,31.0
+Naive DQN (No Experience Replay),1637,107.5,8.5
+Naive DQN (No Experience Replay),1638,164.0,36.0
+Naive DQN (No Experience Replay),1639,165.5,34.5
+Naive DQN (No Experience Replay),1640,150.5,12.5
+Naive DQN (No Experience Replay),1641,118.5,3.5
+Naive DQN (No Experience Replay),1642,120.5,3.5
+Naive DQN (No Experience Replay),1643,111.0,2.0
+Naive DQN (No Experience Replay),1644,106.0,12.0
+Naive DQN (No Experience Replay),1645,74.5,36.5
+Naive DQN (No Experience Replay),1646,84.0,53.0
+Naive DQN (No Experience Replay),1647,69.0,46.0
+Naive DQN (No Experience Replay),1648,124.5,26.5
+Naive DQN (No Experience Replay),1649,111.5,18.5
+Naive DQN (No Experience Replay),1650,89.5,56.5
+Naive DQN (No Experience Replay),1651,92.5,59.5
+Naive DQN (No Experience Replay),1652,73.5,44.5
+Naive DQN (No Experience Replay),1653,81.5,61.5
+Naive DQN (No Experience Replay),1654,67.0,50.0
+Naive DQN (No Experience Replay),1655,78.5,58.5
+Naive DQN (No Experience Replay),1656,60.5,39.5
+Naive DQN (No Experience Replay),1657,67.0,44.0
+Naive DQN (No Experience Replay),1658,68.0,49.0
+Naive DQN (No Experience Replay),1659,66.0,35.0
+Naive DQN (No Experience Replay),1660,56.5,41.5
+Naive DQN (No Experience Replay),1661,34.0,14.0
+Naive DQN (No Experience Replay),1662,26.5,11.5
+Naive DQN (No Experience Replay),1663,21.0,11.0
+Naive DQN (No Experience Replay),1664,54.0,39.0
+Naive DQN (No Experience Replay),1665,47.0,31.0
+Naive DQN (No Experience Replay),1666,68.0,44.0
+Naive DQN (No Experience Replay),1667,72.5,55.5
+Naive DQN (No Experience Replay),1668,75.0,52.0
+Naive DQN (No Experience Replay),1669,68.5,43.5
+Naive DQN (No Experience Replay),1670,88.5,68.5
+Naive DQN (No Experience Replay),1671,77.0,51.0
+Naive DQN (No Experience Replay),1672,69.0,49.0
+Naive DQN (No Experience Replay),1673,91.5,69.5
+Naive DQN (No Experience Replay),1674,79.5,59.5
+Naive DQN (No Experience Replay),1675,71.0,49.0
+Naive DQN (No Experience Replay),1676,31.5,16.5
+Naive DQN (No Experience Replay),1677,64.5,40.5
+Naive DQN (No Experience Replay),1678,83.0,54.0
+Naive DQN (No Experience Replay),1679,74.5,49.5
+Naive DQN (No Experience Replay),1680,86.5,66.5
+Naive DQN (No Experience Replay),1681,89.0,60.0
+Naive DQN (No Experience Replay),1682,77.5,48.5
+Naive DQN (No Experience Replay),1683,91.0,66.0
+Naive DQN (No Experience Replay),1684,83.0,51.0
+Naive DQN (No Experience Replay),1685,87.5,32.5
+Naive DQN (No Experience Replay),1686,71.5,58.5
+Naive DQN (No Experience Replay),1687,99.5,6.5
+Naive DQN (No Experience Replay),1688,114.0,3.0
+Naive DQN (No Experience Replay),1689,154.0,41.0
+Naive DQN (No Experience Replay),1690,150.0,50.0
+Naive DQN (No Experience Replay),1691,156.0,44.0
+Naive DQN (No Experience Replay),1692,122.0,78.0
+Naive DQN (No Experience Replay),1693,123.0,77.0
+Naive DQN (No Experience Replay),1694,156.0,44.0
+Naive DQN (No Experience Replay),1695,162.5,37.5
+Naive DQN (No Experience Replay),1696,175.5,24.5
+Naive DQN (No Experience Replay),1697,168.5,31.5
+Naive DQN (No Experience Replay),1698,170.5,29.5
+Naive DQN (No Experience Replay),1699,172.0,28.0
+Naive DQN (No Experience Replay),1700,161.5,38.5
+Naive DQN (No Experience Replay),1701,159.5,40.5
+Naive DQN (No Experience Replay),1702,171.5,28.5
+Naive DQN (No Experience Replay),1703,169.5,30.5
+Naive DQN (No Experience Replay),1704,167.0,33.0
+Naive DQN (No Experience Replay),1705,158.5,41.5
+Naive DQN (No Experience Replay),1706,158.5,41.5
+Naive DQN (No Experience Replay),1707,163.5,36.5
+Naive DQN (No Experience Replay),1708,163.5,36.5
+Naive DQN (No Experience Replay),1709,166.5,33.5
+Naive DQN (No Experience Replay),1710,158.0,42.0
+Naive DQN (No Experience Replay),1711,158.0,42.0
+Naive DQN (No Experience Replay),1712,157.5,42.5
+Naive DQN (No Experience Replay),1713,161.5,38.5
+Naive DQN (No Experience Replay),1714,157.0,43.0
+Naive DQN (No Experience Replay),1715,162.5,37.5
+Naive DQN (No Experience Replay),1716,162.5,37.5
+Naive DQN (No Experience Replay),1717,155.5,44.5
+Naive DQN (No Experience Replay),1718,157.0,43.0
+Naive DQN (No Experience Replay),1719,155.5,44.5
+Naive DQN (No Experience Replay),1720,150.5,49.5
+Naive DQN (No Experience Replay),1721,148.5,51.5
+Naive DQN (No Experience Replay),1722,150.0,50.0
+Naive DQN (No Experience Replay),1723,148.0,52.0
+Naive DQN (No Experience Replay),1724,145.0,40.0
+Naive DQN (No Experience Replay),1725,154.5,45.5
+Naive DQN (No Experience Replay),1726,152.5,46.5
+Naive DQN (No Experience Replay),1727,117.5,12.5
+Naive DQN (No Experience Replay),1728,151.5,48.5
+Naive DQN (No Experience Replay),1729,147.0,53.0
+Naive DQN (No Experience Replay),1730,131.0,33.0
+Naive DQN (No Experience Replay),1731,148.5,51.5
+Naive DQN (No Experience Replay),1732,146.0,27.0
+Naive DQN (No Experience Replay),1733,153.0,47.0
+Naive DQN (No Experience Replay),1734,156.5,43.5
+Naive DQN (No Experience Replay),1735,114.5,8.5
+Naive DQN (No Experience Replay),1736,90.0,76.0
+Naive DQN (No Experience Replay),1737,71.5,54.5
+Naive DQN (No Experience Replay),1738,14.0,3.0
+Naive DQN (No Experience Replay),1739,15.0,1.0
+Naive DQN (No Experience Replay),1740,18.5,4.5
+Naive DQN (No Experience Replay),1741,65.5,51.5
+Naive DQN (No Experience Replay),1742,107.5,92.5
+Naive DQN (No Experience Replay),1743,85.5,73.5
+Naive DQN (No Experience Replay),1744,101.5,90.5
+Naive DQN (No Experience Replay),1745,106.5,93.5
+Naive DQN (No Experience Replay),1746,104.5,92.5
+Naive DQN (No Experience Replay),1747,105.0,95.0
+Naive DQN (No Experience Replay),1748,105.0,95.0
+Naive DQN (No Experience Replay),1749,105.0,95.0
+Naive DQN (No Experience Replay),1750,107.0,93.0
+Naive DQN (No Experience Replay),1751,108.0,92.0
+Naive DQN (No Experience Replay),1752,107.5,92.5
+Naive DQN (No Experience Replay),1753,107.0,93.0
+Naive DQN (No Experience Replay),1754,111.0,89.0
+Naive DQN (No Experience Replay),1755,110.0,90.0
+Naive DQN (No Experience Replay),1756,110.5,89.5
+Naive DQN (No Experience Replay),1757,118.5,81.5
+Naive DQN (No Experience Replay),1758,117.0,83.0
+Naive DQN (No Experience Replay),1759,120.0,80.0
+Naive DQN (No Experience Replay),1760,149.0,51.0
+Naive DQN (No Experience Replay),1761,175.0,25.0
+Naive DQN (No Experience Replay),1762,140.5,20.5
+Naive DQN (No Experience Replay),1763,85.5,22.5
+Naive DQN (No Experience Replay),1764,71.5,55.5
+Naive DQN (No Experience Replay),1765,84.0,70.0
+Naive DQN (No Experience Replay),1766,62.0,45.0
+Naive DQN (No Experience Replay),1767,61.0,47.0
+Naive DQN (No Experience Replay),1768,69.0,58.0
+Naive DQN (No Experience Replay),1769,55.0,46.0
+Naive DQN (No Experience Replay),1770,58.5,47.5
+Naive DQN (No Experience Replay),1771,54.0,44.0
+Naive DQN (No Experience Replay),1772,38.5,29.5
+Naive DQN (No Experience Replay),1773,22.5,12.5
+Naive DQN (No Experience Replay),1774,19.5,9.5
+Naive DQN (No Experience Replay),1775,16.5,6.5
+Naive DQN (No Experience Replay),1776,13.5,1.5
+Naive DQN (No Experience Replay),1777,11.5,2.5
+Naive DQN (No Experience Replay),1778,12.5,3.5
+Naive DQN (No Experience Replay),1779,15.5,3.5
+Naive DQN (No Experience Replay),1780,13.5,3.5
+Naive DQN (No Experience Replay),1781,16.0,4.0
+Naive DQN (No Experience Replay),1782,13.5,2.5
+Naive DQN (No Experience Replay),1783,12.0,2.0
+Naive DQN (No Experience Replay),1784,14.0,2.0
+Naive DQN (No Experience Replay),1785,12.0,1.0
+Naive DQN (No Experience Replay),1786,15.0,2.0
+Naive DQN (No Experience Replay),1787,13.5,1.5
+Naive DQN (No Experience Replay),1788,15.5,1.5
+Naive DQN (No Experience Replay),1789,15.5,2.5
+Naive DQN (No Experience Replay),1790,12.5,0.5
+Naive DQN (No Experience Replay),1791,15.0,2.0
+Naive DQN (No Experience Replay),1792,14.5,0.5
+Naive DQN (No Experience Replay),1793,18.0,4.0
+Naive DQN (No Experience Replay),1794,21.0,7.0
+Naive DQN (No Experience Replay),1795,25.5,10.5
+Naive DQN (No Experience Replay),1796,22.5,7.5
+Naive DQN (No Experience Replay),1797,46.5,31.5
+Naive DQN (No Experience Replay),1798,67.0,52.0
+Naive DQN (No Experience Replay),1799,14.5,4.5
+Naive DQN (No Experience Replay),1800,14.0,2.0
+Naive DQN (No Experience Replay),1801,13.0,0.0
+Naive DQN (No Experience Replay),1802,11.0,0.0
+Naive DQN (No Experience Replay),1803,13.0,2.0
+Naive DQN (No Experience Replay),1804,13.0,1.0
+Naive DQN (No Experience Replay),1805,11.5,2.5
+Naive DQN (No Experience Replay),1806,11.5,1.5
+Naive DQN (No Experience Replay),1807,11.0,2.0
+Naive DQN (No Experience Replay),1808,14.0,4.0
+Naive DQN (No Experience Replay),1809,12.5,3.5
+Naive DQN (No Experience Replay),1810,14.0,2.0
+Naive DQN (No Experience Replay),1811,19.5,9.5
+Naive DQN (No Experience Replay),1812,13.5,4.5
+Naive DQN (No Experience Replay),1813,19.0,8.0
+Naive DQN (No Experience Replay),1814,20.0,11.0
+Naive DQN (No Experience Replay),1815,22.0,10.0
+Naive DQN (No Experience Replay),1816,20.0,11.0
+Naive DQN (No Experience Replay),1817,55.0,45.0
+Naive DQN (No Experience Replay),1818,77.5,66.5
+Naive DQN (No Experience Replay),1819,104.5,95.5
+Naive DQN (No Experience Replay),1820,105.0,95.0
+Naive DQN (No Experience Replay),1821,73.5,63.5
+Naive DQN (No Experience Replay),1822,69.5,60.5
+Naive DQN (No Experience Replay),1823,58.0,48.0
+Naive DQN (No Experience Replay),1824,61.5,51.5
+Naive DQN (No Experience Replay),1825,62.5,49.5
+Naive DQN (No Experience Replay),1826,65.0,54.0
+Naive DQN (No Experience Replay),1827,48.0,37.0
+Naive DQN (No Experience Replay),1828,38.5,27.5
+Naive DQN (No Experience Replay),1829,46.0,37.0
+Naive DQN (No Experience Replay),1830,41.0,31.0
+Naive DQN (No Experience Replay),1831,43.5,32.5
+Naive DQN (No Experience Replay),1832,42.5,30.5
+Naive DQN (No Experience Replay),1833,40.5,30.5
+Naive DQN (No Experience Replay),1834,33.5,22.5
+Naive DQN (No Experience Replay),1835,76.0,67.0
+Naive DQN (No Experience Replay),1836,54.0,45.0
+Naive DQN (No Experience Replay),1837,31.5,18.5
+Naive DQN (No Experience Replay),1838,46.0,36.0
+Naive DQN (No Experience Replay),1839,41.0,31.0
+Naive DQN (No Experience Replay),1840,46.5,35.5
+Naive DQN (No Experience Replay),1841,34.0,24.0
+Naive DQN (No Experience Replay),1842,47.5,34.5
+Naive DQN (No Experience Replay),1843,42.0,30.0
+Naive DQN (No Experience Replay),1844,41.0,31.0
+Naive DQN (No Experience Replay),1845,57.5,46.5
+Naive DQN (No Experience Replay),1846,62.5,50.5
+Naive DQN (No Experience Replay),1847,106.0,94.0
+Naive DQN (No Experience Replay),1848,45.5,34.5
+Naive DQN (No Experience Replay),1849,51.0,38.0
+Naive DQN (No Experience Replay),1850,53.0,42.0
+Naive DQN (No Experience Replay),1851,61.0,50.0
+Naive DQN (No Experience Replay),1852,103.0,92.0
+Naive DQN (No Experience Replay),1853,68.0,53.0
+Naive DQN (No Experience Replay),1854,62.5,46.5
+Naive DQN (No Experience Replay),1855,63.5,53.5
+Naive DQN (No Experience Replay),1856,57.0,45.0
+Naive DQN (No Experience Replay),1857,57.5,43.5
+Naive DQN (No Experience Replay),1858,44.0,32.0
+Naive DQN (No Experience Replay),1859,42.0,28.0
+Naive DQN (No Experience Replay),1860,44.5,34.5
+Naive DQN (No Experience Replay),1861,33.0,21.0
+Naive DQN (No Experience Replay),1862,15.0,0.0
+Naive DQN (No Experience Replay),1863,13.0,0.0
+Naive DQN (No Experience Replay),1864,21.0,0.0
+Naive DQN (No Experience Replay),1865,20.0,0.0
+Naive DQN (No Experience Replay),1866,17.0,0.0
+Naive DQN (No Experience Replay),1867,24.0,0.0
+Naive DQN (No Experience Replay),1868,27.0,0.0
+Naive DQN (No Experience Replay),1869,36.0,0.0
+Naive DQN (No Experience Replay),1870,122.0,0.0
+Naive DQN (No Experience Replay),1871,163.0,0.0
+Naive DQN (No Experience Replay),1872,45.0,0.0
+Naive DQN (No Experience Replay),1873,37.0,0.0
+Naive DQN (No Experience Replay),1874,30.0,0.0
+Naive DQN (No Experience Replay),1875,26.0,0.0
+Naive DQN (No Experience Replay),1876,21.0,0.0
+Naive DQN (No Experience Replay),1877,14.0,0.0
+Naive DQN (No Experience Replay),1878,20.0,0.0
+Naive DQN (No Experience Replay),1879,17.0,0.0
+Naive DQN (No Experience Replay),1880,13.0,0.0
+Naive DQN (No Experience Replay),1881,14.0,0.0
+Naive DQN (No Experience Replay),1882,13.0,0.0
+Naive DQN (No Experience Replay),1883,14.0,0.0
+Naive DQN (No Experience Replay),1884,11.0,0.0
+Naive DQN (No Experience Replay),1885,10.0,0.0
+Naive DQN (No Experience Replay),1886,15.0,0.0
+Naive DQN (No Experience Replay),1887,14.0,0.0
+Naive DQN (No Experience Replay),1888,11.0,0.0
+Naive DQN (No Experience Replay),1889,11.0,0.0
+Naive DQN (No Experience Replay),1890,12.0,0.0
+Naive DQN (No Experience Replay),1891,10.0,0.0
+Naive DQN (No Experience Replay),1892,12.0,0.0
+Naive DQN (No Experience Replay),1893,14.0,0.0
+Naive DQN (No Experience Replay),1894,21.0,0.0
+Naive DQN (No Experience Replay),1895,10.0,0.0
+Naive DQN (No Experience Replay),1896,12.0,0.0
+Naive DQN (No Experience Replay),1897,12.0,0.0
+Naive DQN (No Experience Replay),1898,13.0,0.0
+Naive DQN (No Experience Replay),1899,11.0,0.0
+Naive DQN (No Experience Replay),1900,14.0,0.0
+Naive DQN (No Experience Replay),1901,19.0,0.0
+Naive DQN (No Experience Replay),1902,12.0,0.0
+Naive DQN (No Experience Replay),1903,16.0,0.0
+Naive DQN (No Experience Replay),1904,14.0,0.0
+Naive DQN (No Experience Replay),1905,15.0,0.0
+Naive DQN (No Experience Replay),1906,12.0,0.0
+Naive DQN (No Experience Replay),1907,13.0,0.0
+Naive DQN (No Experience Replay),1908,15.0,0.0
+Naive DQN (No Experience Replay),1909,13.0,0.0
+Naive DQN (No Experience Replay),1910,13.0,0.0
+Naive DQN (No Experience Replay),1911,12.0,0.0
+Naive DQN (No Experience Replay),1912,10.0,0.0
+Naive DQN (No Experience Replay),1913,13.0,0.0
+Naive DQN (No Experience Replay),1914,16.0,0.0
+Naive DQN (No Experience Replay),1915,14.0,0.0
+Naive DQN (No Experience Replay),1916,16.0,0.0
+Naive DQN (No Experience Replay),1917,18.0,0.0
+Naive DQN (No Experience Replay),1918,16.0,0.0
+Naive DQN (No Experience Replay),1919,19.0,0.0
+Naive DQN (No Experience Replay),1920,13.0,0.0
+Naive DQN (No Experience Replay),1921,17.0,0.0
+Naive DQN (No Experience Replay),1922,14.0,0.0
+Naive DQN (No Experience Replay),1923,19.0,0.0
+Naive DQN (No Experience Replay),1924,20.0,0.0
+Naive DQN (No Experience Replay),1925,22.0,0.0
+Naive DQN (No Experience Replay),1926,40.0,0.0
+Naive DQN (No Experience Replay),1927,26.0,0.0
+Naive DQN (No Experience Replay),1928,33.0,0.0
+Naive DQN (No Experience Replay),1929,48.0,0.0
+Naive DQN (No Experience Replay),1930,59.0,0.0
+Naive DQN (No Experience Replay),1931,41.0,0.0
+Naive DQN (No Experience Replay),1932,44.0,0.0
+Naive DQN (No Experience Replay),1933,50.0,0.0
+Naive DQN (No Experience Replay),1934,143.0,0.0
+Naive DQN (No Experience Replay),1935,164.0,0.0
+Naive DQN (No Experience Replay),1936,144.0,0.0
+Naive DQN (No Experience Replay),1937,200.0,0.0
+Naive DQN (No Experience Replay),1938,119.0,0.0
+Naive DQN (No Experience Replay),1939,166.0,0.0
+Naive DQN (No Experience Replay),1940,200.0,0.0
+Naive DQN (No Experience Replay),1941,190.0,0.0
+Naive DQN (No Experience Replay),1942,200.0,0.0
+Naive DQN (No Experience Replay),1943,200.0,0.0
+Naive DQN (No Experience Replay),1944,200.0,0.0
+Naive DQN (No Experience Replay),1945,189.0,0.0
+Naive DQN (No Experience Replay),1946,191.0,0.0
+Naive DQN (No Experience Replay),1947,139.0,0.0
+Naive DQN (No Experience Replay),1948,200.0,0.0
+Naive DQN (No Experience Replay),1949,140.0,0.0
+Naive DQN (No Experience Replay),1950,128.0,0.0
+Naive DQN (No Experience Replay),1951,168.0,0.0
+Naive DQN (No Experience Replay),1952,164.0,0.0
+Naive DQN (No Experience Replay),1953,192.0,0.0
+Naive DQN (No Experience Replay),1954,118.0,0.0
+Naive DQN (No Experience Replay),1955,118.0,0.0
+Naive DQN (No Experience Replay),1956,116.0,0.0
+Naive DQN (No Experience Replay),1957,140.0,0.0
+Naive DQN (No Experience Replay),1958,200.0,0.0
+Naive DQN (No Experience Replay),1959,104.0,0.0
+Naive DQN (No Experience Replay),1960,178.0,0.0
+Naive DQN (No Experience Replay),1961,200.0,0.0
+Naive DQN (No Experience Replay),1962,122.0,0.0
+Naive DQN (No Experience Replay),1963,200.0,0.0
+Naive DQN (No Experience Replay),1964,200.0,0.0
+Naive DQN (No Experience Replay),1965,187.0,0.0
+Naive DQN (No Experience Replay),1966,157.0,0.0
+Naive DQN (No Experience Replay),1967,171.0,0.0
+Naive DQN (No Experience Replay),1968,200.0,0.0
+Naive DQN (No Experience Replay),1969,200.0,0.0
+Naive DQN (No Experience Replay),1970,170.0,0.0
+Naive DQN (No Experience Replay),1971,148.0,0.0
+Naive DQN (No Experience Replay),1972,200.0,0.0
+Naive DQN (No Experience Replay),1973,70.0,0.0
+Naive DQN (No Experience Replay),1974,123.0,0.0
+Naive DQN (No Experience Replay),1975,200.0,0.0
+Naive DQN (No Experience Replay),1976,77.0,0.0
+Naive DQN (No Experience Replay),1977,133.0,0.0
+Naive DQN (No Experience Replay),1978,200.0,0.0
+Naive DQN (No Experience Replay),1979,180.0,0.0
+Naive DQN (No Experience Replay),1980,200.0,0.0
+Naive DQN (No Experience Replay),1981,40.0,0.0
+Naive DQN (No Experience Replay),1982,74.0,0.0
+Naive DQN (No Experience Replay),1983,130.0,0.0
+Naive DQN (No Experience Replay),1984,200.0,0.0
+Naive DQN (No Experience Replay),1985,139.0,0.0
+Naive DQN (No Experience Replay),1986,113.0,0.0
+Naive DQN (No Experience Replay),1987,152.0,0.0
+Naive DQN (No Experience Replay),1988,97.0,0.0
+Naive DQN (No Experience Replay),1989,154.0,0.0
+Naive DQN (No Experience Replay),1990,127.0,0.0
+Naive DQN (No Experience Replay),1991,120.0,0.0
+Naive DQN (No Experience Replay),1992,149.0,0.0
+Naive DQN (No Experience Replay),1993,52.0,0.0
+Naive DQN (No Experience Replay),1994,45.0,0.0
+Naive DQN (No Experience Replay),1995,60.0,0.0
+Naive DQN (No Experience Replay),1996,174.0,0.0
+Naive DQN (No Experience Replay),1997,180.0,0.0
+Naive DQN (No Experience Replay),1998,194.0,0.0
+Naive DQN (No Experience Replay),1999,63.0,0.0
+Naive DQN (No Experience Replay),2000,200.0,0.0
+Naive DQN (No Experience Replay),2001,129.0,0.0
+Naive DQN (No Experience Replay),2002,118.0,0.0
+Naive DQN (No Experience Replay),2003,200.0,0.0
+Naive DQN (No Experience Replay),2004,200.0,0.0
+Naive DQN (No Experience Replay),2005,126.0,0.0
+Naive DQN (No Experience Replay),2006,132.0,0.0
+Naive DQN (No Experience Replay),2007,131.0,0.0
+Naive DQN (No Experience Replay),2008,144.0,0.0
+Naive DQN (No Experience Replay),2009,139.0,0.0
+Naive DQN (No Experience Replay),2010,200.0,0.0
+Naive DQN (No Experience Replay),2011,139.0,0.0
+Naive DQN (No Experience Replay),2012,200.0,0.0
+Naive DQN (No Experience Replay),2013,200.0,0.0
+Naive DQN (No Experience Replay),2014,200.0,0.0
+Naive DQN (No Experience Replay),2015,200.0,0.0
+Naive DQN (No Experience Replay),2016,200.0,0.0
+Naive DQN (No Experience Replay),2017,200.0,0.0
+Naive DQN (No Experience Replay),2018,200.0,0.0
+Naive DQN (No Experience Replay),2019,200.0,0.0
+Naive DQN (No Experience Replay),2020,178.0,0.0
+DQN with Experience Replay,1,18.5,1.5
+DQN with Experience Replay,2,14.5,3.5
+DQN with Experience Replay,3,14.5,2.5
+DQN with Experience Replay,4,14.0,1.0
+DQN with Experience Replay,5,22.0,3.0
+DQN with Experience Replay,6,11.0,0.0
+DQN with Experience Replay,7,18.0,4.0
+DQN with Experience Replay,8,22.0,7.0
+DQN with Experience Replay,9,44.0,23.0
+DQN with Experience Replay,10,14.0,1.0
+DQN with Experience Replay,11,26.5,5.5
+DQN with Experience Replay,12,9.5,0.5
+DQN with Experience Replay,13,18.5,5.5
+DQN with Experience Replay,14,36.5,13.5
+DQN with Experience Replay,15,15.5,1.5
+DQN with Experience Replay,16,12.5,3.5
+DQN with Experience Replay,17,30.0,0.0
+DQN with Experience Replay,18,19.5,1.5
+DQN with Experience Replay,19,34.0,14.0
+DQN with Experience Replay,20,16.0,4.0
+DQN with Experience Replay,21,16.5,1.5
+DQN with Experience Replay,22,13.0,3.0
+DQN with Experience Replay,23,19.0,1.0
+DQN with Experience Replay,24,18.5,3.5
+DQN with Experience Replay,25,16.5,3.5
+DQN with Experience Replay,26,15.0,3.0
+DQN with Experience Replay,27,21.5,8.5
+DQN with Experience Replay,28,16.0,3.0
+DQN with Experience Replay,29,28.0,11.0
+DQN with Experience Replay,30,13.0,1.0
+DQN with Experience Replay,31,15.0,2.0
+DQN with Experience Replay,32,15.5,3.5
+DQN with Experience Replay,33,22.0,9.0
+DQN with Experience Replay,34,26.0,11.0
+DQN with Experience Replay,35,14.5,2.5
+DQN with Experience Replay,36,25.0,0.0
+DQN with Experience Replay,37,23.0,5.0
+DQN with Experience Replay,38,17.5,4.5
+DQN with Experience Replay,39,34.5,16.5
+DQN with Experience Replay,40,36.5,8.5
+DQN with Experience Replay,41,19.5,8.5
+DQN with Experience Replay,42,10.5,2.5
+DQN with Experience Replay,43,22.0,7.0
+DQN with Experience Replay,44,28.0,8.0
+DQN with Experience Replay,45,26.0,0.0
+DQN with Experience Replay,46,33.0,7.0
+DQN with Experience Replay,47,35.5,4.5
+DQN with Experience Replay,48,21.5,4.5
+DQN with Experience Replay,49,29.5,18.5
+DQN with Experience Replay,50,16.5,3.5
+DQN with Experience Replay,51,24.5,5.5
+DQN with Experience Replay,52,15.0,4.0
+DQN with Experience Replay,53,27.5,4.5
+DQN with Experience Replay,54,35.0,15.0
+DQN with Experience Replay,55,28.0,1.0
+DQN with Experience Replay,56,18.5,8.5
+DQN with Experience Replay,57,16.0,7.0
+DQN with Experience Replay,58,28.0,12.0
+DQN with Experience Replay,59,17.0,3.0
+DQN with Experience Replay,60,29.5,11.5
+DQN with Experience Replay,61,25.0,1.0
+DQN with Experience Replay,62,26.5,8.5
+DQN with Experience Replay,63,41.0,11.0
+DQN with Experience Replay,64,29.5,10.5
+DQN with Experience Replay,65,23.5,1.5
+DQN with Experience Replay,66,15.0,2.0
+DQN with Experience Replay,67,19.0,6.0
+DQN with Experience Replay,68,19.5,2.5
+DQN with Experience Replay,69,18.5,2.5
+DQN with Experience Replay,70,24.0,4.0
+DQN with Experience Replay,71,34.5,14.5
+DQN with Experience Replay,72,22.0,4.0
+DQN with Experience Replay,73,21.0,2.0
+DQN with Experience Replay,74,26.5,14.5
+DQN with Experience Replay,75,19.5,4.5
+DQN with Experience Replay,76,34.0,7.0
+DQN with Experience Replay,77,26.5,12.5
+DQN with Experience Replay,78,14.0,2.0
+DQN with Experience Replay,79,24.0,2.0
+DQN with Experience Replay,80,30.5,12.5
+DQN with Experience Replay,81,37.5,6.5
+DQN with Experience Replay,82,25.0,8.0
+DQN with Experience Replay,83,29.5,14.5
+DQN with Experience Replay,84,49.0,17.0
+DQN with Experience Replay,85,23.5,2.5
+DQN with Experience Replay,86,22.5,2.5
+DQN with Experience Replay,87,32.0,4.0
+DQN with Experience Replay,88,16.5,1.5
+DQN with Experience Replay,89,27.0,11.0
+DQN with Experience Replay,90,18.0,3.0
+DQN with Experience Replay,91,21.5,8.5
+DQN with Experience Replay,92,34.0,8.0
+DQN with Experience Replay,93,20.5,4.5
+DQN with Experience Replay,94,41.5,13.5
+DQN with Experience Replay,95,15.0,2.0
+DQN with Experience Replay,96,29.5,8.5
+DQN with Experience Replay,97,43.0,15.0
+DQN with Experience Replay,98,22.5,0.5
+DQN with Experience Replay,99,46.5,26.5
+DQN with Experience Replay,100,49.5,6.5
+DQN with Experience Replay,101,14.5,1.5
+DQN with Experience Replay,102,31.0,10.0
+DQN with Experience Replay,103,29.0,8.0
+DQN with Experience Replay,104,20.5,6.5
+DQN with Experience Replay,105,22.5,6.5
+DQN with Experience Replay,106,15.5,0.5
+DQN with Experience Replay,107,16.5,6.5
+DQN with Experience Replay,108,21.5,1.5
+DQN with Experience Replay,109,26.0,3.0
+DQN with Experience Replay,110,46.0,25.0
+DQN with Experience Replay,111,20.5,3.5
+DQN with Experience Replay,112,24.0,14.0
+DQN with Experience Replay,113,17.0,8.0
+DQN with Experience Replay,114,36.0,7.0
+DQN with Experience Replay,115,16.0,1.0
+DQN with Experience Replay,116,23.0,6.0
+DQN with Experience Replay,117,13.5,1.5
+DQN with Experience Replay,118,17.5,6.5
+DQN with Experience Replay,119,43.0,8.0
+DQN with Experience Replay,120,21.5,3.5
+DQN with Experience Replay,121,32.5,0.5
+DQN with Experience Replay,122,31.0,12.0
+DQN with Experience Replay,123,18.0,1.0
+DQN with Experience Replay,124,24.0,5.0
+DQN with Experience Replay,125,24.5,0.5
+DQN with Experience Replay,126,19.0,10.0
+DQN with Experience Replay,127,27.5,5.5
+DQN with Experience Replay,128,22.5,4.5
+DQN with Experience Replay,129,11.5,0.5
+DQN with Experience Replay,130,18.0,4.0
+DQN with Experience Replay,131,23.0,5.0
+DQN with Experience Replay,132,22.0,13.0
+DQN with Experience Replay,133,14.5,1.5
+DQN with Experience Replay,134,25.5,9.5
+DQN with Experience Replay,135,27.0,10.0
+DQN with Experience Replay,136,22.5,4.5
+DQN with Experience Replay,137,23.0,6.0
+DQN with Experience Replay,138,16.5,5.5
+DQN with Experience Replay,139,20.0,6.0
+DQN with Experience Replay,140,25.5,4.5
+DQN with Experience Replay,141,13.0,2.0
+DQN with Experience Replay,142,24.0,6.0
+DQN with Experience Replay,143,37.5,10.5
+DQN with Experience Replay,144,19.5,6.5
+DQN with Experience Replay,145,30.5,16.5
+DQN with Experience Replay,146,29.5,7.5
+DQN with Experience Replay,147,26.0,6.0
+DQN with Experience Replay,148,28.0,7.0
+DQN with Experience Replay,149,45.0,8.0
+DQN with Experience Replay,150,30.5,7.5
+DQN with Experience Replay,151,31.5,5.5
+DQN with Experience Replay,152,21.5,9.5
+DQN with Experience Replay,153,17.0,2.0
+DQN with Experience Replay,154,19.0,1.0
+DQN with Experience Replay,155,31.5,15.5
+DQN with Experience Replay,156,22.5,10.5
+DQN with Experience Replay,157,42.0,6.0
+DQN with Experience Replay,158,31.5,13.5
+DQN with Experience Replay,159,19.5,0.5
+DQN with Experience Replay,160,51.5,34.5
+DQN with Experience Replay,161,24.5,1.5
+DQN with Experience Replay,162,32.5,18.5
+DQN with Experience Replay,163,24.5,2.5
+DQN with Experience Replay,164,15.0,0.0
+DQN with Experience Replay,165,20.5,6.5
+DQN with Experience Replay,166,35.0,1.0
+DQN with Experience Replay,167,34.0,0.0
+DQN with Experience Replay,168,40.0,13.0
+DQN with Experience Replay,169,22.5,1.5
+DQN with Experience Replay,170,14.0,1.0
+DQN with Experience Replay,171,29.0,7.0
+DQN with Experience Replay,172,19.0,3.0
+DQN with Experience Replay,173,18.5,3.5
+DQN with Experience Replay,174,23.0,14.0
+DQN with Experience Replay,175,11.0,0.0
+DQN with Experience Replay,176,56.5,32.5
+DQN with Experience Replay,177,60.0,7.0
+DQN with Experience Replay,178,25.0,13.0
+DQN with Experience Replay,179,20.0,8.0
+DQN with Experience Replay,180,18.5,6.5
+DQN with Experience Replay,181,40.5,7.5
+DQN with Experience Replay,182,23.5,1.5
+DQN with Experience Replay,183,27.0,12.0
+DQN with Experience Replay,184,38.0,2.0
+DQN with Experience Replay,185,45.0,16.0
+DQN with Experience Replay,186,44.0,21.0
+DQN with Experience Replay,187,23.0,11.0
+DQN with Experience Replay,188,28.5,10.5
+DQN with Experience Replay,189,26.5,1.5
+DQN with Experience Replay,190,29.0,3.0
+DQN with Experience Replay,191,37.0,5.0
+DQN with Experience Replay,192,24.5,7.5
+DQN with Experience Replay,193,18.0,6.0
+DQN with Experience Replay,194,31.0,12.0
+DQN with Experience Replay,195,23.0,9.0
+DQN with Experience Replay,196,52.5,30.5
+DQN with Experience Replay,197,24.5,9.5
+DQN with Experience Replay,198,48.0,23.0
+DQN with Experience Replay,199,21.0,10.0
+DQN with Experience Replay,200,34.5,19.5
+DQN with Experience Replay,201,33.5,8.5
+DQN with Experience Replay,202,21.0,9.0
+DQN with Experience Replay,203,29.5,16.5
+DQN with Experience Replay,204,56.5,26.5
+DQN with Experience Replay,205,43.0,3.0
+DQN with Experience Replay,206,53.5,25.5
+DQN with Experience Replay,207,16.5,2.5
+DQN with Experience Replay,208,20.0,7.0
+DQN with Experience Replay,209,25.0,11.0
+DQN with Experience Replay,210,29.0,7.0
+DQN with Experience Replay,211,49.5,24.5
+DQN with Experience Replay,212,24.0,10.0
+DQN with Experience Replay,213,24.5,10.5
+DQN with Experience Replay,214,81.0,22.0
+DQN with Experience Replay,215,21.0,5.0
+DQN with Experience Replay,216,38.5,17.5
+DQN with Experience Replay,217,27.0,2.0
+DQN with Experience Replay,218,30.5,13.5
+DQN with Experience Replay,219,27.5,9.5
+DQN with Experience Replay,220,35.5,6.5
+DQN with Experience Replay,221,28.5,8.5
+DQN with Experience Replay,222,24.5,7.5
+DQN with Experience Replay,223,17.5,4.5
+DQN with Experience Replay,224,26.0,8.0
+DQN with Experience Replay,225,57.0,45.0
+DQN with Experience Replay,226,23.5,4.5
+DQN with Experience Replay,227,43.5,5.5
+DQN with Experience Replay,228,25.0,10.0
+DQN with Experience Replay,229,18.0,6.0
+DQN with Experience Replay,230,29.0,2.0
+DQN with Experience Replay,231,17.0,1.0
+DQN with Experience Replay,232,39.5,10.5
+DQN with Experience Replay,233,22.5,4.5
+DQN with Experience Replay,234,28.0,2.0
+DQN with Experience Replay,235,47.5,1.5
+DQN with Experience Replay,236,26.0,8.0
+DQN with Experience Replay,237,30.0,3.0
+DQN with Experience Replay,238,38.5,1.5
+DQN with Experience Replay,239,25.0,7.0
+DQN with Experience Replay,240,26.5,17.5
+DQN with Experience Replay,241,25.0,5.0
+DQN with Experience Replay,242,45.0,26.0
+DQN with Experience Replay,243,13.0,2.0
+DQN with Experience Replay,244,34.0,14.0
+DQN with Experience Replay,245,65.5,10.5
+DQN with Experience Replay,246,45.0,29.0
+DQN with Experience Replay,247,24.5,9.5
+DQN with Experience Replay,248,14.5,4.5
+DQN with Experience Replay,249,33.0,5.0
+DQN with Experience Replay,250,42.5,21.5
+DQN with Experience Replay,251,41.5,28.5
+DQN with Experience Replay,252,30.0,6.0
+DQN with Experience Replay,253,49.5,18.5
+DQN with Experience Replay,254,37.5,0.5
+DQN with Experience Replay,255,29.0,2.0
+DQN with Experience Replay,256,29.0,4.0
+DQN with Experience Replay,257,24.0,3.0
+DQN with Experience Replay,258,33.0,7.0
+DQN with Experience Replay,259,19.0,6.0
+DQN with Experience Replay,260,56.5,38.5
+DQN with Experience Replay,261,18.0,2.0
+DQN with Experience Replay,262,17.0,7.0
+DQN with Experience Replay,263,52.0,16.0
+DQN with Experience Replay,264,29.0,7.0
+DQN with Experience Replay,265,35.0,4.0
+DQN with Experience Replay,266,30.5,3.5
+DQN with Experience Replay,267,57.5,8.5
+DQN with Experience Replay,268,36.0,17.0
+DQN with Experience Replay,269,47.5,16.5
+DQN with Experience Replay,270,24.5,4.5
+DQN with Experience Replay,271,57.0,27.0
+DQN with Experience Replay,272,56.0,7.0
+DQN with Experience Replay,273,14.0,1.0
+DQN with Experience Replay,274,64.0,14.0
+DQN with Experience Replay,275,33.5,7.5
+DQN with Experience Replay,276,27.5,4.5
+DQN with Experience Replay,277,32.0,3.0
+DQN with Experience Replay,278,15.5,3.5
+DQN with Experience Replay,279,18.5,3.5
+DQN with Experience Replay,280,44.5,17.5
+DQN with Experience Replay,281,22.0,11.0
+DQN with Experience Replay,282,35.0,2.0
+DQN with Experience Replay,283,34.5,6.5
+DQN with Experience Replay,284,39.5,3.5
+DQN with Experience Replay,285,31.5,4.5
+DQN with Experience Replay,286,24.0,3.0
+DQN with Experience Replay,287,34.0,14.0
+DQN with Experience Replay,288,60.5,47.5
+DQN with Experience Replay,289,50.5,2.5
+DQN with Experience Replay,290,68.0,33.0
+DQN with Experience Replay,291,18.5,3.5
+DQN with Experience Replay,292,37.0,10.0
+DQN with Experience Replay,293,43.5,23.5
+DQN with Experience Replay,294,44.0,2.0
+DQN with Experience Replay,295,36.0,4.0
+DQN with Experience Replay,296,19.5,2.5
+DQN with Experience Replay,297,26.5,4.5
+DQN with Experience Replay,298,37.0,23.0
+DQN with Experience Replay,299,29.0,1.0
+DQN with Experience Replay,300,39.0,14.0
+DQN with Experience Replay,301,30.5,15.5
+DQN with Experience Replay,302,40.0,8.0
+DQN with Experience Replay,303,51.5,6.5
+DQN with Experience Replay,304,26.5,7.5
+DQN with Experience Replay,305,16.5,2.5
+DQN with Experience Replay,306,17.5,6.5
+DQN with Experience Replay,307,56.5,20.5
+DQN with Experience Replay,308,36.5,9.5
+DQN with Experience Replay,309,21.5,1.5
+DQN with Experience Replay,310,46.5,27.5
+DQN with Experience Replay,311,40.0,9.0
+DQN with Experience Replay,312,41.0,22.0
+DQN with Experience Replay,313,65.5,33.5
+DQN with Experience Replay,314,33.5,18.5
+DQN with Experience Replay,315,23.5,8.5
+DQN with Experience Replay,316,45.5,9.5
+DQN with Experience Replay,317,30.5,5.5
+DQN with Experience Replay,318,26.0,11.0
+DQN with Experience Replay,319,55.0,40.0
+DQN with Experience Replay,320,101.5,28.5
+DQN with Experience Replay,321,19.0,5.0
+DQN with Experience Replay,322,48.0,0.0
+DQN with Experience Replay,323,67.5,27.5
+DQN with Experience Replay,324,41.0,21.0
+DQN with Experience Replay,325,32.0,7.0
+DQN with Experience Replay,326,60.0,2.0
+DQN with Experience Replay,327,55.5,32.5
+DQN with Experience Replay,328,45.5,10.5
+DQN with Experience Replay,329,15.5,4.5
+DQN with Experience Replay,330,46.0,36.0
+DQN with Experience Replay,331,69.0,20.0
+DQN with Experience Replay,332,52.0,17.0
+DQN with Experience Replay,333,58.0,42.0
+DQN with Experience Replay,334,31.0,0.0
+DQN with Experience Replay,335,46.5,4.5
+DQN with Experience Replay,336,51.0,25.0
+DQN with Experience Replay,337,45.5,26.5
+DQN with Experience Replay,338,78.0,1.0
+DQN with Experience Replay,339,40.0,14.0
+DQN with Experience Replay,340,38.0,7.0
+DQN with Experience Replay,341,86.5,1.5
+DQN with Experience Replay,342,58.5,15.5
+DQN with Experience Replay,343,29.5,0.5
+DQN with Experience Replay,344,26.0,6.0
+DQN with Experience Replay,345,44.0,16.0
+DQN with Experience Replay,346,50.5,31.5
+DQN with Experience Replay,347,48.0,5.0
+DQN with Experience Replay,348,84.5,45.5
+DQN with Experience Replay,349,15.5,2.5
+DQN with Experience Replay,350,19.0,1.0
+DQN with Experience Replay,351,36.0,21.0
+DQN with Experience Replay,352,23.5,7.5
+DQN with Experience Replay,353,22.0,6.0
+DQN with Experience Replay,354,35.5,8.5
+DQN with Experience Replay,355,24.5,8.5
+DQN with Experience Replay,356,36.0,22.0
+DQN with Experience Replay,357,48.5,32.5
+DQN with Experience Replay,358,48.5,30.5
+DQN with Experience Replay,359,81.5,0.5
+DQN with Experience Replay,360,38.0,1.0
+DQN with Experience Replay,361,25.5,6.5
+DQN with Experience Replay,362,51.5,27.5
+DQN with Experience Replay,363,26.0,10.0
+DQN with Experience Replay,364,43.5,29.5
+DQN with Experience Replay,365,13.0,1.0
+DQN with Experience Replay,366,35.5,14.5
+DQN with Experience Replay,367,65.5,5.5
+DQN with Experience Replay,368,50.0,8.0
+DQN with Experience Replay,369,46.5,7.5
+DQN with Experience Replay,370,51.0,7.0
+DQN with Experience Replay,371,94.5,51.5
+DQN with Experience Replay,372,46.5,7.5
+DQN with Experience Replay,373,48.0,2.0
+DQN with Experience Replay,374,42.5,1.5
+DQN with Experience Replay,375,40.0,22.0
+DQN with Experience Replay,376,25.5,8.5
+DQN with Experience Replay,377,68.0,49.0
+DQN with Experience Replay,378,41.5,19.5
+DQN with Experience Replay,379,21.5,3.5
+DQN with Experience Replay,380,67.5,1.5
+DQN with Experience Replay,381,25.0,13.0
+DQN with Experience Replay,382,32.5,7.5
+DQN with Experience Replay,383,48.5,21.5
+DQN with Experience Replay,384,63.5,25.5
+DQN with Experience Replay,385,105.0,35.0
+DQN with Experience Replay,386,88.5,30.5
+DQN with Experience Replay,387,54.0,15.0
+DQN with Experience Replay,388,37.0,8.0
+DQN with Experience Replay,389,83.5,1.5
+DQN with Experience Replay,390,56.0,35.0
+DQN with Experience Replay,391,73.5,16.5
+DQN with Experience Replay,392,38.0,1.0
+DQN with Experience Replay,393,85.0,51.0
+DQN with Experience Replay,394,23.0,1.0
+DQN with Experience Replay,395,32.5,16.5
+DQN with Experience Replay,396,63.0,23.0
+DQN with Experience Replay,397,24.0,5.0
+DQN with Experience Replay,398,16.5,0.5
+DQN with Experience Replay,399,76.0,49.0
+DQN with Experience Replay,400,18.0,7.0
+DQN with Experience Replay,401,46.5,11.5
+DQN with Experience Replay,402,71.0,29.0
+DQN with Experience Replay,403,83.5,17.5
+DQN with Experience Replay,404,81.5,46.5
+DQN with Experience Replay,405,34.0,12.0
+DQN with Experience Replay,406,42.0,20.0
+DQN with Experience Replay,407,19.5,4.5
+DQN with Experience Replay,408,42.5,7.5
+DQN with Experience Replay,409,38.0,22.0
+DQN with Experience Replay,410,55.0,21.0
+DQN with Experience Replay,411,20.5,7.5
+DQN with Experience Replay,412,35.0,10.0
+DQN with Experience Replay,413,95.5,9.5
+DQN with Experience Replay,414,110.5,41.5
+DQN with Experience Replay,415,24.5,7.5
+DQN with Experience Replay,416,29.0,15.0
+DQN with Experience Replay,417,61.0,32.0
+DQN with Experience Replay,418,89.0,5.0
+DQN with Experience Replay,419,89.0,8.0
+DQN with Experience Replay,420,52.5,12.5
+DQN with Experience Replay,421,31.0,7.0
+DQN with Experience Replay,422,118.0,34.0
+DQN with Experience Replay,423,70.5,55.5
+DQN with Experience Replay,424,111.0,45.0
+DQN with Experience Replay,425,41.0,1.0
+DQN with Experience Replay,426,97.0,4.0
+DQN with Experience Replay,427,86.0,31.0
+DQN with Experience Replay,428,105.5,61.5
+DQN with Experience Replay,429,11.0,1.0
+DQN with Experience Replay,430,52.5,30.5
+DQN with Experience Replay,431,37.0,1.0
+DQN with Experience Replay,432,100.5,13.5
+DQN with Experience Replay,433,90.0,39.0
+DQN with Experience Replay,434,78.5,31.5
+DQN with Experience Replay,435,93.5,3.5
+DQN with Experience Replay,436,43.0,14.0
+DQN with Experience Replay,437,54.0,27.0
+DQN with Experience Replay,438,58.5,43.5
+DQN with Experience Replay,439,93.0,17.0
+DQN with Experience Replay,440,43.5,25.5
+DQN with Experience Replay,441,79.0,6.0
+DQN with Experience Replay,442,37.0,9.0
+DQN with Experience Replay,443,85.0,57.0
+DQN with Experience Replay,444,102.5,52.5
+DQN with Experience Replay,445,98.5,9.5
+DQN with Experience Replay,446,28.0,3.0
+DQN with Experience Replay,447,99.5,24.5
+DQN with Experience Replay,448,115.5,35.5
+DQN with Experience Replay,449,88.0,61.0
+DQN with Experience Replay,450,39.5,16.5
+DQN with Experience Replay,451,31.5,3.5
+DQN with Experience Replay,452,60.5,30.5
+DQN with Experience Replay,453,59.0,8.0
+DQN with Experience Replay,454,90.5,5.5
+DQN with Experience Replay,455,71.0,15.0
+DQN with Experience Replay,456,46.5,7.5
+DQN with Experience Replay,457,80.5,39.5
+DQN with Experience Replay,458,32.0,10.0
+DQN with Experience Replay,459,83.0,37.0
+DQN with Experience Replay,460,31.5,9.5
+DQN with Experience Replay,461,36.0,7.0
+DQN with Experience Replay,462,64.0,21.0
+DQN with Experience Replay,463,36.0,1.0
+DQN with Experience Replay,464,141.5,58.5
+DQN with Experience Replay,465,57.5,34.5
+DQN with Experience Replay,466,114.0,25.0
+DQN with Experience Replay,467,105.0,10.0
+DQN with Experience Replay,468,152.0,21.0
+DQN with Experience Replay,469,38.0,4.0
+DQN with Experience Replay,470,39.0,12.0
+DQN with Experience Replay,471,142.5,57.5
+DQN with Experience Replay,472,139.0,61.0
+DQN with Experience Replay,473,65.0,18.0
+DQN with Experience Replay,474,105.0,20.0
+DQN with Experience Replay,475,115.0,57.0
+DQN with Experience Replay,476,21.5,2.5
+DQN with Experience Replay,477,22.5,3.5
+DQN with Experience Replay,478,39.0,10.0
+DQN with Experience Replay,479,92.0,32.0
+DQN with Experience Replay,480,81.5,4.5
+DQN with Experience Replay,481,83.0,19.0
+DQN with Experience Replay,482,31.0,11.0
+DQN with Experience Replay,483,91.5,76.5
+DQN with Experience Replay,484,61.5,26.5
+DQN with Experience Replay,485,42.5,18.5
+DQN with Experience Replay,486,115.5,48.5
+DQN with Experience Replay,487,31.0,11.0
+DQN with Experience Replay,488,130.5,16.5
+DQN with Experience Replay,489,60.0,1.0
+DQN with Experience Replay,490,110.0,25.0
+DQN with Experience Replay,491,40.0,29.0
+DQN with Experience Replay,492,127.5,20.5
+DQN with Experience Replay,493,15.5,6.5
+DQN with Experience Replay,494,45.0,26.0
+DQN with Experience Replay,495,68.5,32.5
+DQN with Experience Replay,496,13.0,2.0
+DQN with Experience Replay,497,65.0,28.0
+DQN with Experience Replay,498,133.5,5.5
+DQN with Experience Replay,499,102.0,5.0
+DQN with Experience Replay,500,126.5,73.5
+DQN with Experience Replay,501,109.5,37.5
+DQN with Experience Replay,502,97.0,45.0
+DQN with Experience Replay,503,143.5,56.5
+DQN with Experience Replay,504,87.0,22.0
+DQN with Experience Replay,505,129.5,58.5
+DQN with Experience Replay,506,54.5,4.5
+DQN with Experience Replay,507,135.5,22.5
+DQN with Experience Replay,508,38.0,2.0
+DQN with Experience Replay,509,25.5,7.5
+DQN with Experience Replay,510,83.0,6.0
+DQN with Experience Replay,511,127.5,72.5
+DQN with Experience Replay,512,85.5,63.5
+DQN with Experience Replay,513,156.5,43.5
+DQN with Experience Replay,514,103.5,62.5
+DQN with Experience Replay,515,126.0,15.0
+DQN with Experience Replay,516,143.0,55.0
+DQN with Experience Replay,517,110.5,44.5
+DQN with Experience Replay,518,53.0,28.0
+DQN with Experience Replay,519,87.5,68.5
+DQN with Experience Replay,520,49.0,5.0
+DQN with Experience Replay,521,72.5,24.5
+DQN with Experience Replay,522,137.5,62.5
+DQN with Experience Replay,523,117.0,7.0
+DQN with Experience Replay,524,62.0,44.0
+DQN with Experience Replay,525,68.0,53.0
+DQN with Experience Replay,526,23.0,12.0
+DQN with Experience Replay,527,61.0,46.0
+DQN with Experience Replay,528,88.5,5.5
+DQN with Experience Replay,529,92.5,62.5
+DQN with Experience Replay,530,30.5,15.5
+DQN with Experience Replay,531,87.0,37.0
+DQN with Experience Replay,532,90.5,52.5
+DQN with Experience Replay,533,125.0,75.0
+DQN with Experience Replay,534,106.0,65.0
+DQN with Experience Replay,535,125.0,38.0
+DQN with Experience Replay,536,141.5,43.5
+DQN with Experience Replay,537,73.5,41.5
+DQN with Experience Replay,538,106.0,31.0
+DQN with Experience Replay,539,79.5,46.5
+DQN with Experience Replay,540,60.0,44.0
+DQN with Experience Replay,541,127.0,73.0
+DQN with Experience Replay,542,91.5,23.5
+DQN with Experience Replay,543,111.0,82.0
+DQN with Experience Replay,544,129.5,45.5
+DQN with Experience Replay,545,63.5,31.5
+DQN with Experience Replay,546,110.5,89.5
+DQN with Experience Replay,547,41.5,23.5
+DQN with Experience Replay,548,21.0,2.0
+DQN with Experience Replay,549,54.5,4.5
+DQN with Experience Replay,550,110.0,5.0
+DQN with Experience Replay,551,150.5,23.5
+DQN with Experience Replay,552,117.5,6.5
+DQN with Experience Replay,553,80.5,52.5
+DQN with Experience Replay,554,138.0,34.0
+DQN with Experience Replay,555,151.5,18.5
+DQN with Experience Replay,556,188.5,11.5
+DQN with Experience Replay,557,64.5,47.5
+DQN with Experience Replay,558,143.0,57.0
+DQN with Experience Replay,559,60.0,48.0
+DQN with Experience Replay,560,162.5,37.5
+DQN with Experience Replay,561,32.5,0.5
+DQN with Experience Replay,562,121.0,3.0
+DQN with Experience Replay,563,78.0,50.0
+DQN with Experience Replay,564,109.0,25.0
+DQN with Experience Replay,565,79.0,14.0
+DQN with Experience Replay,566,27.0,1.0
+DQN with Experience Replay,567,135.0,17.0
+DQN with Experience Replay,568,78.5,6.5
+DQN with Experience Replay,569,75.0,18.0
+DQN with Experience Replay,570,55.0,8.0
+DQN with Experience Replay,571,121.0,79.0
+DQN with Experience Replay,572,77.5,36.5
+DQN with Experience Replay,573,92.5,45.5
+DQN with Experience Replay,574,157.0,43.0
+DQN with Experience Replay,575,152.0,48.0
+DQN with Experience Replay,576,156.5,7.5
+DQN with Experience Replay,577,142.5,57.5
+DQN with Experience Replay,578,43.0,21.0
+DQN with Experience Replay,579,149.5,50.5
+DQN with Experience Replay,580,108.0,12.0
+DQN with Experience Replay,581,115.5,36.5
+DQN with Experience Replay,582,28.0,12.0
+DQN with Experience Replay,583,80.0,7.0
+DQN with Experience Replay,584,67.0,40.0
+DQN with Experience Replay,585,158.5,41.5
+DQN with Experience Replay,586,152.5,47.5
+DQN with Experience Replay,587,150.0,33.0
+DQN with Experience Replay,588,200.0,0.0
+DQN with Experience Replay,589,197.0,3.0
+DQN with Experience Replay,590,115.0,60.0
+DQN with Experience Replay,591,114.0,86.0
+DQN with Experience Replay,592,133.5,66.5
+DQN with Experience Replay,593,134.0,2.0
+DQN with Experience Replay,594,61.5,15.5
+DQN with Experience Replay,595,109.5,53.5
+DQN with Experience Replay,596,126.0,52.0
+DQN with Experience Replay,597,55.0,5.0
+DQN with Experience Replay,598,132.0,45.0
+DQN with Experience Replay,599,97.5,18.5
+DQN with Experience Replay,600,101.0,8.0
+DQN with Experience Replay,601,180.0,20.0
+DQN with Experience Replay,602,78.5,14.5
+DQN with Experience Replay,603,131.5,68.5
+DQN with Experience Replay,604,78.0,39.0
+DQN with Experience Replay,605,129.5,70.5
+DQN with Experience Replay,606,99.0,71.0
+DQN with Experience Replay,607,74.5,5.5
+DQN with Experience Replay,608,143.0,57.0
+DQN with Experience Replay,609,44.0,23.0
+DQN with Experience Replay,610,43.5,10.5
+DQN with Experience Replay,611,108.5,1.5
+DQN with Experience Replay,612,132.0,4.0
+DQN with Experience Replay,613,54.0,5.0
+DQN with Experience Replay,614,96.0,55.0
+DQN with Experience Replay,615,21.5,7.5
+DQN with Experience Replay,616,95.5,64.5
+DQN with Experience Replay,617,157.5,42.5
+DQN with Experience Replay,618,54.5,26.5
+DQN with Experience Replay,619,121.0,58.0
+DQN with Experience Replay,620,196.5,3.5
+DQN with Experience Replay,621,177.0,23.0
+DQN with Experience Replay,622,77.5,52.5
+DQN with Experience Replay,623,64.0,37.0
+DQN with Experience Replay,624,190.0,9.0
+DQN with Experience Replay,625,60.0,23.0
+DQN with Experience Replay,626,49.0,21.0
+DQN with Experience Replay,627,167.5,32.5
+DQN with Experience Replay,628,119.0,48.0
+DQN with Experience Replay,629,76.0,13.0
+DQN with Experience Replay,630,45.5,16.5
+DQN with Experience Replay,631,140.0,7.0
+DQN with Experience Replay,632,54.0,37.0
+DQN with Experience Replay,633,133.5,66.5
+DQN with Experience Replay,634,154.5,22.5
+DQN with Experience Replay,635,88.0,35.0
+DQN with Experience Replay,636,200.0,0.0
+DQN with Experience Replay,637,115.5,48.5
+DQN with Experience Replay,638,47.0,26.0
+DQN with Experience Replay,639,105.5,94.5
+DQN with Experience Replay,640,143.5,56.5
+DQN with Experience Replay,641,119.5,80.5
+DQN with Experience Replay,642,163.0,37.0
+DQN with Experience Replay,643,81.0,35.0
+DQN with Experience Replay,644,135.5,42.5
+DQN with Experience Replay,645,125.0,75.0
+DQN with Experience Replay,646,144.0,11.0
+DQN with Experience Replay,647,16.5,4.5
+DQN with Experience Replay,648,81.0,64.0
+DQN with Experience Replay,649,44.0,12.0
+DQN with Experience Replay,650,198.5,1.5
+DQN with Experience Replay,651,191.5,8.5
+DQN with Experience Replay,652,140.0,50.0
+DQN with Experience Replay,653,154.0,46.0
+DQN with Experience Replay,654,115.5,84.5
+DQN with Experience Replay,655,150.0,27.0
+DQN with Experience Replay,656,110.0,90.0
+DQN with Experience Replay,657,130.0,70.0
+DQN with Experience Replay,658,142.0,58.0
+DQN with Experience Replay,659,71.0,15.0
+DQN with Experience Replay,660,133.0,67.0
+DQN with Experience Replay,661,166.0,34.0
+DQN with Experience Replay,662,69.0,38.0
+DQN with Experience Replay,663,61.5,32.5
+DQN with Experience Replay,664,54.5,21.5
+DQN with Experience Replay,665,129.5,33.5
+DQN with Experience Replay,666,111.5,79.5
+DQN with Experience Replay,667,179.0,11.0
+DQN with Experience Replay,668,168.5,31.5
+DQN with Experience Replay,669,96.0,64.0
+DQN with Experience Replay,670,135.5,49.5
+DQN with Experience Replay,671,152.0,41.0
+DQN with Experience Replay,672,146.0,37.0
+DQN with Experience Replay,673,92.0,73.0
+DQN with Experience Replay,674,47.0,6.0
+DQN with Experience Replay,675,170.0,30.0
+DQN with Experience Replay,676,158.0,42.0
+DQN with Experience Replay,677,117.0,25.0
+DQN with Experience Replay,678,114.5,85.5
+DQN with Experience Replay,679,117.5,9.5
+DQN with Experience Replay,680,110.5,89.5
+DQN with Experience Replay,681,193.0,7.0
+DQN with Experience Replay,682,108.5,25.5
+DQN with Experience Replay,683,171.0,29.0
+DQN with Experience Replay,684,177.5,22.5
+DQN with Experience Replay,685,17.0,4.0
+DQN with Experience Replay,686,153.0,30.0
+DQN with Experience Replay,687,55.5,20.5
+DQN with Experience Replay,688,200.0,0.0
+DQN with Experience Replay,689,109.0,83.0
+DQN with Experience Replay,690,50.0,29.0
+DQN with Experience Replay,691,70.5,50.5
+DQN with Experience Replay,692,130.0,22.0
+DQN with Experience Replay,693,73.5,1.5
+DQN with Experience Replay,694,113.0,12.0
+DQN with Experience Replay,695,136.0,50.0
+DQN with Experience Replay,696,53.0,27.0
+DQN with Experience Replay,697,177.5,22.5
+DQN with Experience Replay,698,46.0,35.0
+DQN with Experience Replay,699,147.5,52.5
+DQN with Experience Replay,700,186.5,13.5
+DQN with Experience Replay,701,107.0,71.0
+DQN with Experience Replay,702,135.0,65.0
+DQN with Experience Replay,703,185.5,1.5
+DQN with Experience Replay,704,199.5,0.5
+DQN with Experience Replay,705,149.0,30.0
+DQN with Experience Replay,706,200.0,0.0
+DQN with Experience Replay,707,171.0,29.0
+DQN with Experience Replay,708,200.0,0.0
+DQN with Experience Replay,709,140.5,59.5
+DQN with Experience Replay,710,153.5,46.5
+DQN with Experience Replay,711,184.5,15.5
+DQN with Experience Replay,712,177.5,22.5
+DQN with Experience Replay,713,112.5,3.5
+DQN with Experience Replay,714,109.0,91.0
+DQN with Experience Replay,715,176.5,23.5
+DQN with Experience Replay,716,107.5,92.5
+DQN with Experience Replay,717,200.0,0.0
+DQN with Experience Replay,718,182.0,11.0
+DQN with Experience Replay,719,139.0,61.0
+DQN with Experience Replay,720,99.5,68.5
+DQN with Experience Replay,721,133.5,66.5
+DQN with Experience Replay,722,145.0,24.0
+DQN with Experience Replay,723,179.5,20.5
+DQN with Experience Replay,724,106.5,93.5
+DQN with Experience Replay,725,137.0,63.0
+DQN with Experience Replay,726,110.0,90.0
+DQN with Experience Replay,727,111.0,37.0
+DQN with Experience Replay,728,156.0,44.0
+DQN with Experience Replay,729,194.5,5.5
+DQN with Experience Replay,730,179.5,20.5
+DQN with Experience Replay,731,110.5,30.5
+DQN with Experience Replay,732,164.5,35.5
+DQN with Experience Replay,733,99.5,34.5
+DQN with Experience Replay,734,156.0,44.0
+DQN with Experience Replay,735,81.0,42.0
+DQN with Experience Replay,736,94.0,81.0
+DQN with Experience Replay,737,168.5,31.5
+DQN with Experience Replay,738,173.0,27.0
+DQN with Experience Replay,739,130.0,70.0
+DQN with Experience Replay,740,104.0,39.0
+DQN with Experience Replay,741,124.0,76.0
+DQN with Experience Replay,742,129.5,30.5
+DQN with Experience Replay,743,47.5,24.5
+DQN with Experience Replay,744,200.0,0.0
+DQN with Experience Replay,745,120.5,79.5
+DQN with Experience Replay,746,200.0,0.0
+DQN with Experience Replay,747,127.0,73.0
+DQN with Experience Replay,748,200.0,0.0
+DQN with Experience Replay,749,150.0,50.0
+DQN with Experience Replay,750,176.0,5.0
+DQN with Experience Replay,751,200.0,0.0
+DQN with Experience Replay,752,175.5,24.5
+DQN with Experience Replay,753,200.0,0.0
+DQN with Experience Replay,754,181.5,18.5
+DQN with Experience Replay,755,200.0,0.0
+DQN with Experience Replay,756,160.5,3.5
+DQN with Experience Replay,757,112.5,87.5
+DQN with Experience Replay,758,105.5,94.5
+DQN with Experience Replay,759,175.0,25.0
+DQN with Experience Replay,760,149.5,50.5
+DQN with Experience Replay,761,181.0,19.0
+DQN with Experience Replay,762,57.0,25.0
+DQN with Experience Replay,763,200.0,0.0
+DQN with Experience Replay,764,149.5,50.5
+DQN with Experience Replay,765,164.5,25.5
+DQN with Experience Replay,766,113.0,60.0
+DQN with Experience Replay,767,144.5,22.5
+DQN with Experience Replay,768,147.5,52.5
+DQN with Experience Replay,769,174.5,25.5
+DQN with Experience Replay,770,166.0,34.0
+DQN with Experience Replay,771,132.5,67.5
+DQN with Experience Replay,772,137.5,62.5
+DQN with Experience Replay,773,160.0,40.0
+DQN with Experience Replay,774,164.5,35.5
+DQN with Experience Replay,775,177.0,23.0
+DQN with Experience Replay,776,199.5,0.5
+DQN with Experience Replay,777,163.5,36.5
+DQN with Experience Replay,778,200.0,0.0
+DQN with Experience Replay,779,188.0,12.0
+DQN with Experience Replay,780,167.5,32.5
+DQN with Experience Replay,781,136.5,63.5
+DQN with Experience Replay,782,141.0,59.0
+DQN with Experience Replay,783,116.5,83.5
+DQN with Experience Replay,784,200.0,0.0
+DQN with Experience Replay,785,153.5,46.5
+DQN with Experience Replay,786,129.5,70.5
+DQN with Experience Replay,787,114.0,55.0
+DQN with Experience Replay,788,200.0,0.0
+DQN with Experience Replay,789,200.0,0.0
+DQN with Experience Replay,790,197.0,3.0
+DQN with Experience Replay,791,67.5,9.5
+DQN with Experience Replay,792,117.0,83.0
+DQN with Experience Replay,793,191.5,8.5
+DQN with Experience Replay,794,149.5,1.5
+DQN with Experience Replay,795,200.0,0.0
+DQN with Experience Replay,796,184.0,16.0
+DQN with Experience Replay,797,184.0,16.0
+DQN with Experience Replay,798,108.5,41.5
+DQN with Experience Replay,799,196.0,4.0
+DQN with Experience Replay,800,104.5,95.5
+DQN with Experience Replay,801,190.5,9.5
+DQN with Experience Replay,802,200.0,0.0
+DQN with Experience Replay,803,200.0,0.0
+DQN with Experience Replay,804,200.0,0.0
+DQN with Experience Replay,805,96.5,38.5
+DQN with Experience Replay,806,200.0,0.0
+DQN with Experience Replay,807,155.5,44.5
+DQN with Experience Replay,808,143.0,11.0
+DQN with Experience Replay,809,188.0,12.0
+DQN with Experience Replay,810,60.5,11.5
+DQN with Experience Replay,811,200.0,0.0
+DQN with Experience Replay,812,200.0,0.0
+DQN with Experience Replay,813,200.0,0.0
+DQN with Experience Replay,814,200.0,0.0
+DQN with Experience Replay,815,200.0,0.0
+DQN with Experience Replay,816,137.0,63.0
+DQN with Experience Replay,817,200.0,0.0
+DQN with Experience Replay,818,147.5,52.5
+DQN with Experience Replay,819,184.5,5.5
+DQN with Experience Replay,820,200.0,0.0
+DQN with Experience Replay,821,151.0,49.0
+DQN with Experience Replay,822,200.0,0.0
+DQN with Experience Replay,823,200.0,0.0
+DQN with Experience Replay,824,26.5,8.5
+DQN with Experience Replay,825,180.0,20.0
+DQN with Experience Replay,826,200.0,0.0
+DQN with Experience Replay,827,192.5,7.5
+DQN with Experience Replay,828,115.0,85.0
+DQN with Experience Replay,829,182.5,17.5
+DQN with Experience Replay,830,99.0,42.0
+DQN with Experience Replay,831,200.0,0.0
+DQN with Experience Replay,832,114.0,4.0
+DQN with Experience Replay,833,138.0,62.0
+DQN with Experience Replay,834,200.0,0.0
+DQN with Experience Replay,835,132.5,67.5
+DQN with Experience Replay,836,101.0,53.0
+DQN with Experience Replay,837,133.5,66.5
+DQN with Experience Replay,838,200.0,0.0
+DQN with Experience Replay,839,200.0,0.0
+DQN with Experience Replay,840,200.0,0.0
+DQN with Experience Replay,841,135.0,44.0
+DQN with Experience Replay,842,170.5,29.5
+DQN with Experience Replay,843,200.0,0.0
+DQN with Experience Replay,844,200.0,0.0
+DQN with Experience Replay,845,180.0,20.0
+DQN with Experience Replay,846,200.0,0.0
+DQN with Experience Replay,847,187.0,13.0
+DQN with Experience Replay,848,163.5,25.5
+DQN with Experience Replay,849,200.0,0.0
+DQN with Experience Replay,850,200.0,0.0
+DQN with Experience Replay,851,168.5,31.5
+DQN with Experience Replay,852,200.0,0.0
+DQN with Experience Replay,853,198.0,2.0
+DQN with Experience Replay,854,170.0,30.0
+DQN with Experience Replay,855,118.5,81.5
+DQN with Experience Replay,856,200.0,0.0
+DQN with Experience Replay,857,62.5,46.5
+DQN with Experience Replay,858,101.5,49.5
+DQN with Experience Replay,859,133.5,26.5
+DQN with Experience Replay,860,121.5,78.5
+DQN with Experience Replay,861,132.5,67.5
+DQN with Experience Replay,862,200.0,0.0
+DQN with Experience Replay,863,200.0,0.0
+DQN with Experience Replay,864,200.0,0.0
+DQN with Experience Replay,865,179.0,21.0
+DQN with Experience Replay,866,180.5,19.5
+DQN with Experience Replay,867,200.0,0.0
+DQN with Experience Replay,868,145.0,55.0
+DQN with Experience Replay,869,148.5,51.5
+DQN with Experience Replay,870,123.5,61.5
+DQN with Experience Replay,871,172.0,28.0
+DQN with Experience Replay,872,180.5,19.5
+DQN with Experience Replay,873,200.0,0.0
+DQN with Experience Replay,874,106.0,94.0
+DQN with Experience Replay,875,200.0,0.0
+DQN with Experience Replay,876,179.5,20.5
+DQN with Experience Replay,877,110.0,90.0
+DQN with Experience Replay,878,43.0,4.0
+DQN with Experience Replay,879,106.0,1.0
+DQN with Experience Replay,880,200.0,0.0
+DQN with Experience Replay,881,200.0,0.0
+DQN with Experience Replay,882,154.5,45.5
+DQN with Experience Replay,883,145.5,54.5
+DQN with Experience Replay,884,160.0,24.0
+DQN with Experience Replay,885,102.0,6.0
+DQN with Experience Replay,886,40.5,13.5
+DQN with Experience Replay,887,200.0,0.0
+DQN with Experience Replay,888,140.0,60.0
+DQN with Experience Replay,889,200.0,0.0
+DQN with Experience Replay,890,109.0,91.0
+DQN with Experience Replay,891,200.0,0.0
+DQN with Experience Replay,892,105.5,94.5
+DQN with Experience Replay,893,127.5,72.5
+DQN with Experience Replay,894,195.0,5.0
+DQN with Experience Replay,895,200.0,0.0
+DQN with Experience Replay,896,112.5,87.5
+DQN with Experience Replay,897,137.0,63.0
+DQN with Experience Replay,898,107.0,93.0
+DQN with Experience Replay,899,200.0,0.0
+DQN with Experience Replay,900,200.0,0.0
+DQN with Experience Replay,901,173.5,15.5
+DQN with Experience Replay,902,143.5,52.5
+DQN with Experience Replay,903,200.0,0.0
+DQN with Experience Replay,904,200.0,0.0
+DQN with Experience Replay,905,200.0,0.0
+DQN with Experience Replay,906,200.0,0.0
+DQN with Experience Replay,907,81.5,39.5
+DQN with Experience Replay,908,195.5,4.5
+DQN with Experience Replay,909,121.5,78.5
+DQN with Experience Replay,910,200.0,0.0
+DQN with Experience Replay,911,200.0,0.0
+DQN with Experience Replay,912,108.0,92.0
+DQN with Experience Replay,913,178.0,22.0
+DQN with Experience Replay,914,148.0,52.0
+DQN with Experience Replay,915,200.0,0.0
+DQN with Experience Replay,916,112.5,87.5
+DQN with Experience Replay,917,200.0,0.0
+DQN with Experience Replay,918,113.5,26.5
+DQN with Experience Replay,919,123.5,76.5
+DQN with Experience Replay,920,168.0,32.0
+DQN with Experience Replay,921,200.0,0.0
+DQN with Experience Replay,922,110.0,90.0
+DQN with Experience Replay,923,200.0,0.0
+DQN with Experience Replay,924,200.0,0.0
+DQN with Experience Replay,925,110.5,89.5
+DQN with Experience Replay,926,200.0,0.0
+DQN with Experience Replay,927,196.5,3.5
+DQN with Experience Replay,928,200.0,0.0
+DQN with Experience Replay,929,200.0,0.0
+DQN with Experience Replay,930,200.0,0.0
+DQN with Experience Replay,931,29.5,17.5
+DQN with Experience Replay,932,197.0,3.0
+DQN with Experience Replay,933,200.0,0.0
+DQN with Experience Replay,934,200.0,0.0
+DQN with Experience Replay,935,200.0,0.0
+DQN with Experience Replay,936,200.0,0.0
+DQN with Experience Replay,937,200.0,0.0
+DQN with Experience Replay,938,200.0,0.0
+DQN with Experience Replay,939,200.0,0.0
+DQN with Experience Replay,940,200.0,0.0
+DQN with Experience Replay,941,193.5,6.5
+DQN with Experience Replay,942,200.0,0.0
+DQN with Experience Replay,943,141.5,58.5
+DQN with Experience Replay,944,200.0,0.0
+DQN with Experience Replay,945,200.0,0.0
+DQN with Experience Replay,946,200.0,0.0
+DQN with Experience Replay,947,154.0,46.0
+DQN with Experience Replay,948,200.0,0.0
+DQN with Experience Replay,949,200.0,0.0
+DQN with Experience Replay,950,200.0,0.0
+DQN with Experience Replay,951,124.5,75.5
+DQN with Experience Replay,952,200.0,0.0
+DQN with Experience Replay,953,200.0,0.0
+DQN with Experience Replay,954,200.0,0.0
+DQN with Experience Replay,955,163.5,36.5
+DQN with Experience Replay,956,200.0,0.0
+DQN with Experience Replay,957,178.5,21.5
+DQN with Experience Replay,958,126.5,73.5
+DQN with Experience Replay,959,199.5,0.5
+DQN with Experience Replay,960,134.5,65.5
+DQN with Experience Replay,961,143.0,57.0
+DQN with Experience Replay,962,134.5,65.5
+DQN with Experience Replay,963,200.0,0.0
+DQN with Experience Replay,964,122.5,77.5
+DQN with Experience Replay,965,155.5,44.5
+DQN with Experience Replay,966,200.0,0.0
+DQN with Experience Replay,967,200.0,0.0
+DQN with Experience Replay,968,194.5,5.5
+DQN with Experience Replay,969,200.0,0.0
+DQN with Experience Replay,970,166.5,33.5
+DQN with Experience Replay,971,200.0,0.0
+DQN with Experience Replay,972,147.5,52.5
+DQN with Experience Replay,973,200.0,0.0
+DQN with Experience Replay,974,200.0,0.0
+DQN with Experience Replay,975,200.0,0.0
+DQN with Experience Replay,976,198.5,1.5
+DQN with Experience Replay,977,156.5,43.5
+DQN with Experience Replay,978,200.0,0.0
+DQN with Experience Replay,979,157.0,43.0
+DQN with Experience Replay,980,164.5,35.5
+DQN with Experience Replay,981,184.0,16.0
+DQN with Experience Replay,982,149.5,50.5
+DQN with Experience Replay,983,200.0,0.0
+DQN with Experience Replay,984,199.0,1.0
+DQN with Experience Replay,985,139.5,60.5
+DQN with Experience Replay,986,200.0,0.0
+DQN with Experience Replay,987,114.0,86.0
+DQN with Experience Replay,988,158.5,41.5
+DQN with Experience Replay,989,200.0,0.0
+DQN with Experience Replay,990,144.5,55.5
+DQN with Experience Replay,991,163.0,37.0
+DQN with Experience Replay,992,200.0,0.0
+DQN with Experience Replay,993,200.0,0.0
+DQN with Experience Replay,994,148.0,52.0
+DQN with Experience Replay,995,136.5,63.5
+DQN with Experience Replay,996,200.0,0.0
+DQN with Experience Replay,997,131.0,69.0
+DQN with Experience Replay,998,200.0,0.0
+DQN with Experience Replay,999,200.0,0.0
+DQN with Experience Replay,1000,200.0,0.0
+DQN with Experience Replay,1001,200.0,0.0
+DQN with Experience Replay,1002,200.0,0.0
+DQN with Experience Replay,1003,200.0,0.0
+DQN with Experience Replay,1004,144.5,55.5
+DQN with Experience Replay,1005,200.0,0.0
+DQN with Experience Replay,1006,153.5,46.5
+DQN with Experience Replay,1007,200.0,0.0
+DQN with Experience Replay,1008,200.0,0.0
+DQN with Experience Replay,1009,107.5,47.5
+DQN with Experience Replay,1010,194.0,6.0
+DQN with Experience Replay,1011,186.0,14.0
+DQN with Experience Replay,1012,200.0,0.0
+DQN with Experience Replay,1013,140.0,50.0
+DQN with Experience Replay,1014,141.0,59.0
+DQN with Experience Replay,1015,172.0,28.0
+DQN with Experience Replay,1016,200.0,0.0
+DQN with Experience Replay,1017,119.0,81.0
+DQN with Experience Replay,1018,143.5,56.5
+DQN with Experience Replay,1019,200.0,0.0
+DQN with Experience Replay,1020,200.0,0.0
+DQN with Experience Replay,1021,168.5,31.5
+DQN with Experience Replay,1022,200.0,0.0
+DQN with Experience Replay,1023,200.0,0.0
+DQN with Experience Replay,1024,130.5,69.5
+DQN with Experience Replay,1025,200.0,0.0
+DQN with Experience Replay,1026,200.0,0.0
+DQN with Experience Replay,1027,74.5,36.5
+DQN with Experience Replay,1028,162.5,37.5
+DQN with Experience Replay,1029,200.0,0.0
+DQN with Experience Replay,1030,149.0,51.0
+DQN with Experience Replay,1031,181.5,18.5
+DQN with Experience Replay,1032,150.0,50.0
+DQN with Experience Replay,1033,116.0,84.0
+DQN with Experience Replay,1034,166.5,33.5
+DQN with Experience Replay,1035,200.0,0.0
+DQN with Experience Replay,1036,200.0,0.0
+DQN with Experience Replay,1037,195.5,4.5
+DQN with Experience Replay,1038,200.0,0.0
+DQN with Experience Replay,1039,190.5,9.5
+DQN with Experience Replay,1040,200.0,0.0
+DQN with Experience Replay,1041,200.0,0.0
+DQN with Experience Replay,1042,200.0,0.0
+DQN with Experience Replay,1043,200.0,0.0
+DQN with Experience Replay,1044,200.0,0.0
+DQN with Experience Replay,1045,200.0,0.0
+DQN with Experience Replay,1046,149.5,50.5
+DQN with Experience Replay,1047,200.0,0.0
+DQN with Experience Replay,1048,185.0,15.0
+DQN with Experience Replay,1049,200.0,0.0
+DQN with Experience Replay,1050,200.0,0.0
+DQN with Experience Replay,1051,77.0,17.0
+DQN with Experience Replay,1052,200.0,0.0
+DQN with Experience Replay,1053,151.0,0.0
+DQN with Experience Replay,1054,200.0,0.0
+DQN with Experience Replay,1055,193.0,0.0

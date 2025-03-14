@@ -4,3 +4,4 @@ pygame
 torch
 matplotlib
 pandas
+seaborn
