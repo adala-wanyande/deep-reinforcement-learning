@@ -4,13 +4,12 @@ import torch.optim as optim
 import gymnasium as gym
 import numpy as np
 import pandas as pd
-import matplotlib.pyplot as plt
 import os
 import random
 
 # Experiment parameters
 NUM_RUNS = 5  # Number of independent runs per gamma setting
-MAX_ENV_STEPS = int(10e6)  # 10 million environment steps per run
+MAX_ENV_STEPS = int(1e6)  # 1 million environment steps per run
 LEARNING_RATE = 0.0005
 EPSILON = 1.0
 EPSILON_DECAY = 0.999
@@ -29,7 +28,7 @@ class QNetwork(nn.Module):
     def __init__(self, input_dim, output_dim):
         super(QNetwork, self).__init__()
         self.fc = nn.Sequential(
-            nn.Linear(input_dim, 64),  # Single hidden layer with 64 neurons
+            nn.Linear(input_dim, 64),  
             nn.ReLU(),
             nn.Linear(64, output_dim)
         )
@@ -41,7 +40,7 @@ class QNetwork(nn.Module):
 class NaiveDQN:
     def __init__(self, env, gamma):
         self.env = env
-        self.gamma = gamma  # Discount factor for future rewards
+        self.gamma = gamma  
         self.q_network = QNetwork(env.observation_space.shape[0], env.action_space.n)
         self.optimizer = optim.Adam(self.q_network.parameters(), lr=LEARNING_RATE)
         self.criterion = nn.MSELoss()
@@ -68,7 +67,7 @@ class NaiveDQN:
 
         # Compute TD target (bootstrapped target)
         next_q_value = self.q_network(next_state).max().detach()
-        target = reward + self.gamma * next_q_value * (1 - done)  # Use different gamma values
+        target = reward + self.gamma * next_q_value * (1 - done)
 
         # Compute loss and update
         loss = self.criterion(q_value, target)
@@ -82,92 +81,72 @@ class NaiveDQN:
 
 # Training function
 def train_dqn(gamma):
-    """Trains the DQN agent with a specific gamma value and averages over NUM_RUNS."""
+    """Trains the DQN agent with a specific gamma value and logs steps vs episode rewards."""
     all_results = []
 
     for run in range(NUM_RUNS):
         agent = NaiveDQN(env, gamma)
         run_results = []
-        total_steps = 0  # Track total environment steps
+        total_steps = 0  
 
         while total_steps < MAX_ENV_STEPS:
             state, _ = env.reset()
             done = False
-            total_reward = 0
-            step_count = 0
+            episode_reward = 0  
 
-            while not done and step_count < 200:
+            while not done:
                 action = agent.select_action(state)
                 next_state, reward, terminated, truncated, _ = env.step(action)
                 done = terminated or truncated
 
-                # Train on only the most recent transition
+                # Train on the most recent transition
                 agent.train(state, action, reward, next_state, done)
 
                 state = next_state
-                total_reward += reward
-                step_count += 1
-                total_steps += 1  # Update global step count
+                episode_reward += reward
+                total_steps += 1  
 
-                # Stop if we've reached the total step limit
+                # Stop if max steps are reached
                 if total_steps >= MAX_ENV_STEPS:
                     break
 
+            # Log **steps vs episode rewards**
+            run_results.append((total_steps, episode_reward))
+            
+            # Decay epsilon after each episode
             agent.decay_epsilon()
-            run_results.append(total_reward)
 
-            print(f"Gamma={gamma}, Run {run+1}, Step {total_steps}: Episode {len(run_results)}, Reward = {total_reward}")
+            print(f"Gamma={gamma}, Run {run+1}, Steps={total_steps}, Episode Reward={episode_reward}")
+
+            # Stop if max steps are reached
+            if total_steps >= MAX_ENV_STEPS:
+                break
 
         all_results.append(run_results)
 
-    # Pad all runs to the same length
-    max_episodes = max(len(run) for run in all_results)
-    for run in all_results:
-        while len(run) < max_episodes:
-            run.append(np.nan)  # Fill missing episodes with NaN for uniformity
-
-    return np.array(all_results)  # Now has uniform shape
+    return all_results  
 
 # Run experiments for each gamma setting
 results_dict = {}
 for setting, gamma in GAMMA_SETTINGS.items():
     results = train_dqn(gamma)
-    mean_results = np.nanmean(results, axis=0)  # Average over runs
-    std_results = np.nanstd(results, axis=0)  # Standard deviation
-    results_dict[setting] = (mean_results, std_results)
+    results_dict[setting] = results
 
 # Create a DataFrame for CSV storage
 csv_data = []
-for setting, (mean_results, std_results) in results_dict.items():
-    for episode, (mean, std) in enumerate(zip(mean_results, std_results), start=1):
-        csv_data.append([setting, episode, mean, std])
+for setting, results in results_dict.items():
+    for run_results in results:
+        for step, episode_reward in run_results:
+            csv_data.append([setting, step, episode_reward])
 
-df = pd.DataFrame(csv_data, columns=["Gamma Setting", "Episode", "Mean Total Reward", "Std Dev"])
+df = pd.DataFrame(csv_data, columns=["Gamma Setting", "Total Steps", "Episode Reward"])
 
-# Ensure output directory exists
-output_dir = os.getcwd()  # Saves in the current working directory
-csv_path = os.path.join(output_dir, "ablation_gamma_results.csv")
-plot_path = os.path.join(output_dir, "ablation_gamma_plot.png")
+# Ensure the "data" directory exists
+os.makedirs("../data", exist_ok=True)
 
-# Save results to CSV
+# Save results to CSV inside "data" folder
+csv_path = os.path.join("../data", "ablation_gamma_results.csv")
 df.to_csv(csv_path, index=False)
 print(f"Results saved to {csv_path}")
-
-# Plot results
-plt.figure(figsize=(10, 5))
-for setting, (mean_results, _) in results_dict.items():
-    smoothed = pd.Series(mean_results).rolling(window=20, min_periods=1).mean()
-    plt.plot(range(1, len(mean_results) + 1), smoothed, label=f"{setting}")
-
-plt.xlabel("Episodes")
-plt.ylabel("Total Reward")
-plt.title("CartPole Performance - Ablation Study on Discount Factor (Gamma)")
-plt.legend()
-plt.grid()
-
-# Save plot
-plt.savefig(plot_path)
-plt.show()
-print(f"Plot saved to {plot_path}")
 
 env.close()

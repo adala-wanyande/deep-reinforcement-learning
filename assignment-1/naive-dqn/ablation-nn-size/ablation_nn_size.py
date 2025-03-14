@@ -4,7 +4,6 @@ import torch.optim as optim
 import gymnasium as gym
 import numpy as np
 import pandas as pd
-import matplotlib.pyplot as plt
 import os
 import random
 
@@ -87,21 +86,20 @@ class NaiveDQN:
 
 # Training function
 def train_dqn(hidden_layers):
-    """Trains the DQN agent with a specific network architecture and averages over NUM_RUNS."""
+    """Trains the DQN agent with a specific network architecture while capping total steps globally."""
     all_results = []
 
     for run in range(NUM_RUNS):
+        total_steps = 0  # ✅ Reset step count per run
         agent = NaiveDQN(env, hidden_layers)
         run_results = []
-        total_steps = 0  # Track total environment steps
 
         while total_steps < MAX_ENV_STEPS:
             state, _ = env.reset()
             done = False
-            total_reward = 0
-            step_count = 0
+            episode_reward = 0
 
-            while not done and step_count < 200:
+            while not done:
                 action = agent.select_action(state)
                 next_state, reward, terminated, truncated, _ = env.step(action)
                 done = terminated or truncated
@@ -110,69 +108,50 @@ def train_dqn(hidden_layers):
                 agent.train(state, action, reward, next_state, done)
 
                 state = next_state
-                total_reward += reward
-                step_count += 1
-                total_steps += 1  # Update global step count
+                episode_reward += reward
+                total_steps += 1  # ✅ Now tracks correctly within a run
 
-                # Stop if we've reached the total step limit
+                # Stop if max steps are reached
                 if total_steps >= MAX_ENV_STEPS:
                     break
 
+            # Log the reward **after each episode**
+            run_results.append((total_steps, episode_reward))
+            
+            # Decay epsilon after each episode
             agent.decay_epsilon()
-            run_results.append(total_reward)
 
-            print(f"Network={hidden_layers}, Run {run+1}, Step {total_steps}: Episode {len(run_results)}, Reward = {total_reward}")
+            print(f"Network={hidden_layers}, Run={run+1}, Steps={total_steps}, Episode Reward={episode_reward}")
+
+            # Stop if max steps are reached
+            if total_steps >= MAX_ENV_STEPS:
+                break
 
         all_results.append(run_results)
 
-    # Pad all runs to the same length
-    max_episodes = max(len(run) for run in all_results)
-    for run in all_results:
-        while len(run) < max_episodes:
-            run.append(np.nan)  # Fill missing episodes with NaN for uniformity
-
-    return np.array(all_results)  # Now has uniform shape
+    return all_results  # Store step-based rewards
 
 # Run experiments for each network size
 results_dict = {}
 for setting, hidden_layers in NETWORK_SIZES.items():
     results = train_dqn(hidden_layers)
-    mean_results = np.nanmean(results, axis=0)  # Average over runs
-    std_results = np.nanstd(results, axis=0)  # Standard deviation
-    results_dict[setting] = (mean_results, std_results)
+    results_dict[setting] = results
 
 # Create a DataFrame for CSV storage
 csv_data = []
-for setting, (mean_results, std_results) in results_dict.items():
-    for episode, (mean, std) in enumerate(zip(mean_results, std_results), start=1):
-        csv_data.append([setting, episode, mean, std])
+for setting, results in results_dict.items():
+    for run_results in results:
+        for step, avg_reward in run_results:
+            csv_data.append([setting, step, avg_reward])
 
-df = pd.DataFrame(csv_data, columns=["Network Size", "Episode", "Mean Total Reward", "Std Dev"])
+df = pd.DataFrame(csv_data, columns=["Network Size", "Total Steps", "Average Reward"])
 
-# Ensure output directory exists
-output_dir = os.getcwd()  # Saves in the current working directory
-csv_path = os.path.join(output_dir, "ablation_network_size_results.csv")
-plot_path = os.path.join(output_dir, "ablation_network_size_plot.png")
+# Ensure the "data" directory exists
+os.makedirs("../data", exist_ok=True)
 
 # Save results to CSV
+csv_path = os.path.join("../data", "ablation_network_size_results.csv")
 df.to_csv(csv_path, index=False)
 print(f"Results saved to {csv_path}")
-
-# Plot results
-plt.figure(figsize=(10, 5))
-for setting, (mean_results, _) in results_dict.items():
-    smoothed = pd.Series(mean_results).rolling(window=20, min_periods=1).mean()
-    plt.plot(range(1, len(mean_results) + 1), smoothed, label=f"{setting}")
-
-plt.xlabel("Episodes")
-plt.ylabel("Total Reward")
-plt.title("CartPole Performance - Ablation Study on Neural Network Size")
-plt.legend()
-plt.grid()
-
-# Save plot
-plt.savefig(plot_path)
-plt.show()
-print(f"Plot saved to {plot_path}")
 
 env.close()

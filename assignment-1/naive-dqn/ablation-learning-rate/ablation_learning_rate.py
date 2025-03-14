@@ -4,13 +4,12 @@ import torch.optim as optim
 import gymnasium as gym
 import numpy as np
 import pandas as pd
-import matplotlib.pyplot as plt
 import os
 import random
 
 # Experiment parameters
 NUM_RUNS = 5  # Number of independent runs per learning rate
-MAX_ENV_STEPS = int(10e6)  # Total environment steps per run
+MAX_ENV_STEPS = int(1e6)  # 1 million environment steps per run
 GAMMA = 0.99
 EPSILON = 1.0
 EPSILON_DECAY = 0.999
@@ -25,7 +24,7 @@ class QNetwork(nn.Module):
     def __init__(self, input_dim, output_dim):
         super(QNetwork, self).__init__()
         self.fc = nn.Sequential(
-            nn.Linear(input_dim, 64),
+            nn.Linear(input_dim, 64),  # Single hidden layer with 64 neurons
             nn.ReLU(),
             nn.Linear(64, output_dim)
         )
@@ -77,21 +76,20 @@ class NaiveDQN:
 
 # Training function
 def train_dqn(learning_rate):
-    """Trains the DQN agent with a specific learning rate and averages over NUM_RUNS."""
+    """Trains the DQN agent with a specific learning rate while capping total steps globally."""
     all_results = []
 
     for run in range(NUM_RUNS):
+        total_steps = 0  # ✅ Reset step count per run
         agent = NaiveDQN(env, learning_rate)
         run_results = []
-        total_steps = 0  # Track total environment steps
 
         while total_steps < MAX_ENV_STEPS:
             state, _ = env.reset()
             done = False
-            total_reward = 0
-            step_count = 0
+            episode_reward = 0
 
-            while not done and step_count < 200:
+            while not done:
                 action = agent.select_action(state)
                 next_state, reward, terminated, truncated, _ = env.step(action)
                 done = terminated or truncated
@@ -100,69 +98,50 @@ def train_dqn(learning_rate):
                 agent.train(state, action, reward, next_state, done)
 
                 state = next_state
-                total_reward += reward
-                step_count += 1
-                total_steps += 1  # Update global step count
+                episode_reward += reward
+                total_steps += 1  # ✅ Now tracks correctly within a run
 
-                # Stop if we've reached the total step limit
+                # Stop if max steps are reached
                 if total_steps >= MAX_ENV_STEPS:
                     break
 
+            # Log the reward **after each episode**
+            run_results.append((total_steps, episode_reward))
+            
+            # Decay epsilon after each episode
             agent.decay_epsilon()
-            run_results.append(total_reward)
 
-            print(f"LR={learning_rate}, Run {run+1}, Step {total_steps}: Episode {len(run_results)}, Reward = {total_reward}")
+            print(f"LR={learning_rate}, Run={run+1}, Steps={total_steps}, Episode Reward={episode_reward}")
+
+            # Stop if max steps are reached
+            if total_steps >= MAX_ENV_STEPS:
+                break
 
         all_results.append(run_results)
 
-    # Pad all runs to the same length
-    max_episodes = max(len(run) for run in all_results)
-    for run in all_results:
-        while len(run) < max_episodes:
-            run.append(np.nan)  # Fill missing episodes with NaN for uniformity
-
-    return np.array(all_results)  # Now has uniform shape
+    return all_results  # Store step-based rewards
 
 # Run experiments for each learning rate
 results_dict = {}
 for lr in LEARNING_RATES:
     results = train_dqn(lr)
-    mean_results = np.nanmean(results, axis=0)  # Average over runs
-    std_results = np.nanstd(results, axis=0)  # Standard deviation
-    results_dict[lr] = (mean_results, std_results)
+    results_dict[lr] = results
 
 # Create a DataFrame for CSV storage
 csv_data = []
-for lr, (mean_results, std_results) in results_dict.items():
-    for episode, (mean, std) in enumerate(zip(mean_results, std_results), start=1):
-        csv_data.append([lr, episode, mean, std])
+for lr, results in results_dict.items():
+    for run_results in results:
+        for step, avg_reward in run_results:
+            csv_data.append([lr, step, avg_reward])
 
-df = pd.DataFrame(csv_data, columns=["Learning Rate", "Episode", "Mean Total Reward", "Std Dev"])
+df = pd.DataFrame(csv_data, columns=["Learning Rate", "Total Steps", "Average Reward"])
 
-# Ensure output directory exists
-output_dir = os.getcwd()  # Saves in the current working directory
-csv_path = os.path.join(output_dir, "ablation_learning_rate_results.csv")
-plot_path = os.path.join(output_dir, "ablation_learning_rate_plot.png")
+# Ensure the "data" directory exists
+os.makedirs("../data", exist_ok=True)
 
 # Save results to CSV
+csv_path = os.path.join("../data", "ablation_learning_rate_results.csv")
 df.to_csv(csv_path, index=False)
 print(f"Results saved to {csv_path}")
-
-# Plot results
-plt.figure(figsize=(10, 5))
-for lr, (mean_results, _) in results_dict.items():
-    smoothed = pd.Series(mean_results).rolling(window=20, min_periods=1).mean()
-    plt.plot(range(1, len(mean_results) + 1), smoothed, label=f"LR={lr}")
-
-plt.xlabel("Episodes")
-plt.ylabel("Total Reward")
-plt.title("CartPole Performance - Ablation Study on Learning Rate")
-plt.legend()
-plt.grid()
-
-# Save plot
-plt.savefig(plot_path)
-plt.show()
-print(f"Plot saved to {plot_path}")
 
 env.close()

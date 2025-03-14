@@ -4,20 +4,19 @@ import torch.optim as optim
 import gymnasium as gym
 import numpy as np
 import pandas as pd
-import matplotlib.pyplot as plt
 import os
 import random
 
 # Experiment parameters
 NUM_RUNS = 5  # Number of independent runs per epsilon setting
-MAX_ENV_STEPS = int(10e6) # Total environment steps per run
+MAX_ENV_STEPS = int(1e6)  # Total environment steps per run
 LEARNING_RATE = 0.0005
 GAMMA = 0.99
 MIN_EPSILON = 0.01
 EPSILON_SETTINGS = {
-    "High Exploration": 0.9999,  # Very slow decay (explores longer)
-    "Medium Exploration": 0.999,  # Balanced decay
-    "Low Exploration": 0.99  # Decays fast (less exploration)
+    "High Exploration (Decay 0.9999)": 0.9999,  # Very slow decay (explores longer)
+    "Medium Exploration (Decay 0.999)": 0.999,  # Balanced decay
+    "Low Exploration (Decay 0.99)": 0.99  # Decays fast (less exploration)
 }
 
 # Create the environment
@@ -81,7 +80,7 @@ class NaiveDQN:
 
 # Training function
 def train_dqn(epsilon_decay):
-    """Trains the DQN agent with a specific epsilon decay rate and averages over NUM_RUNS."""
+    """Trains the DQN agent with a specific epsilon decay rate and logs step-based rewards."""
     all_results = []
 
     for run in range(NUM_RUNS):
@@ -92,10 +91,9 @@ def train_dqn(epsilon_decay):
         while total_steps < MAX_ENV_STEPS:
             state, _ = env.reset()
             done = False
-            total_reward = 0
-            step_count = 0
+            episode_reward = 0
 
-            while not done and step_count < 200:
+            while not done:
                 action = agent.select_action(state)
                 next_state, reward, terminated, truncated, _ = env.step(action)
                 done = terminated or truncated
@@ -104,69 +102,50 @@ def train_dqn(epsilon_decay):
                 agent.train(state, action, reward, next_state, done)
 
                 state = next_state
-                total_reward += reward
-                step_count += 1
-                total_steps += 1  # Update global step count
+                episode_reward += reward
+                total_steps += 1  # ✅ Now tracks steps instead of episodes
 
                 # Stop if we've reached the total step limit
                 if total_steps >= MAX_ENV_STEPS:
                     break
 
-            agent.decay_epsilon()
-            run_results.append(total_reward)
+            # Log results **by step count** instead of episode count
+            run_results.append((total_steps, episode_reward))
 
-            print(f"Epsilon Decay={epsilon_decay}, Run {run+1}, Step {total_steps}: Episode {len(run_results)}, Reward = {total_reward}")
+            # Decay epsilon after each episode
+            agent.decay_epsilon()
+
+            print(f"Epsilon Decay={epsilon_decay}, Run {run+1}, Steps={total_steps}, Episode Reward={episode_reward}")
+
+            # Stop if max steps are reached
+            if total_steps >= MAX_ENV_STEPS:
+                break
 
         all_results.append(run_results)
 
-    # Pad all runs to the same length
-    max_episodes = max(len(run) for run in all_results)
-    for run in all_results:
-        while len(run) < max_episodes:
-            run.append(np.nan)  # Fill missing episodes with NaN for uniformity
-
-    return np.array(all_results)  # Now has uniform shape
+    return all_results  # ✅ Now tracks per-step performance instead of per-episode
 
 # Run experiments for each epsilon decay setting
 results_dict = {}
 for setting, epsilon_decay in EPSILON_SETTINGS.items():
     results = train_dqn(epsilon_decay)
-    mean_results = np.nanmean(results, axis=0)  # Average over runs
-    std_results = np.nanstd(results, axis=0)  # Standard deviation
-    results_dict[setting] = (mean_results, std_results)
+    results_dict[setting] = results
 
 # Create a DataFrame for CSV storage
 csv_data = []
-for setting, (mean_results, std_results) in results_dict.items():
-    for episode, (mean, std) in enumerate(zip(mean_results, std_results), start=1):
-        csv_data.append([setting, episode, mean, std])
+for setting, results in results_dict.items():
+    for run_results in results:
+        for step, avg_reward in run_results:
+            csv_data.append([setting, step, avg_reward])
 
-df = pd.DataFrame(csv_data, columns=["Epsilon Setting", "Episode", "Mean Total Reward", "Std Dev"])
+df = pd.DataFrame(csv_data, columns=["Epsilon Setting", "Total Steps", "Average Reward"])
 
-# Ensure output directory exists
-output_dir = os.getcwd()  # Saves in the current working directory
-csv_path = os.path.join(output_dir, "ablation_epsilon_results.csv")
-plot_path = os.path.join(output_dir, "ablation_epsilon_plot.png")
+# Ensure the "data" directory exists
+os.makedirs("../data", exist_ok=True)
 
-# Save results to CSV
+# Save results to CSV inside "data" folder
+csv_path = os.path.join("../data", "ablation_epsilon_results.csv")
 df.to_csv(csv_path, index=False)
 print(f"Results saved to {csv_path}")
-
-# Plot results
-plt.figure(figsize=(10, 5))
-for setting, (mean_results, _) in results_dict.items():
-    smoothed = pd.Series(mean_results).rolling(window=20, min_periods=1).mean()
-    plt.plot(range(1, len(mean_results) + 1), smoothed, label=f"{setting}")
-
-plt.xlabel("Episodes")
-plt.ylabel("Total Reward")
-plt.title("CartPole Performance - Ablation Study on Epsilon (Exploration)")
-plt.legend()
-plt.grid()
-
-# Save plot
-plt.savefig(plot_path)
-plt.show()
-print(f"Plot saved to {plot_path}")
 
 env.close()
