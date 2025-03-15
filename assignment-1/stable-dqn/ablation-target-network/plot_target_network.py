@@ -5,7 +5,7 @@ import os
 import numpy as np
 
 # Load CSV file from the "data" folder
-csv_path = "../data/stable_dqn_experience_replay_results.csv"
+csv_path = "../data/stable_dqn_target_results.csv"
 df = pd.read_csv(csv_path)
 
 # Ensure "visuals" directory exists
@@ -15,23 +15,19 @@ os.makedirs("../visuals", exist_ok=True)
 sns.set_palette("colorblind")  
 sns.set_style("whitegrid")  
 
-# Define downsampling and smoothing parameters
-DOWNSAMPLE_FACTOR = 10  # Adjusted for clarity
-SMOOTHING_WINDOW = 10000  # Ensures balanced smoothing
+# Downsampling factor (set to None for full resolution)
+DOWNSAMPLE_FACTOR = 10  # Adjusted to prevent excessive skipping
+SMOOTHING_WINDOW = 10000  # Rolling window size for smoothing
 
 # Prepare the figure
 plt.figure(figsize=(10, 5))
 
-# Group data by "Total Steps"
-grouped = df.groupby("Total Steps")
-
-# Compute mean and standard deviation of "Episode Reward" at each step
-mean_rewards = grouped["Episode Reward"].mean()
-std_rewards = grouped["Episode Reward"].std()
+# Group by total steps to compute mean and std
+grouped = df.groupby("Total Steps")["Episode Reward"]
+mean_rewards = grouped.mean()
+std_rewards = grouped.std()
 
 steps = mean_rewards.index
-
-# Apply smoothing using rolling mean
 smoothed_means = mean_rewards.rolling(window=SMOOTHING_WINDOW, min_periods=1).mean()
 smoothed_stds = std_rewards.rolling(window=SMOOTHING_WINDOW, min_periods=1).mean()
 
@@ -41,29 +37,28 @@ if DOWNSAMPLE_FACTOR:
     smoothed_means = smoothed_means[::DOWNSAMPLE_FACTOR]
     smoothed_stds = smoothed_stds[::DOWNSAMPLE_FACTOR]
 
-# Plot mean rewards
-plt.plot(steps, smoothed_means, label="Mean Episode Reward", linewidth=2)
+# Plot mean reward
+plt.plot(steps, smoothed_means, label="Stable DQN (Target Network Only)", color="blue")
 
-# Add error boundary (Standard Deviation)
+# Fill standard deviation region
 plt.fill_between(
     steps,
     smoothed_means - smoothed_stds,
     smoothed_means + smoothed_stds,
-    alpha=0.3,
-    label="Standard Deviation"
+    alpha=0.2,
+    color="blue"
 )
 
 # Force the axes to start at (0,0)
 plt.xlim(left=0)
 plt.ylim(bottom=0)
 
-# Labels and Title
 plt.xlabel("Total Steps", fontsize=12)
 plt.ylabel("Episode Reward", fontsize=12)
-plt.title("Stable DQN Experience Replay Only Performance (Steps vs Reward)", fontsize=14)
+plt.title("Stable DQN with Target Network Only (Steps vs Reward)", fontsize=14)
 
 # Improve the legend
-plt.legend(title="Performance Metrics", fontsize=10, title_fontsize=12, loc="upper left", frameon=True)
+plt.legend(title="DQN Variant", fontsize=10, title_fontsize=12, loc="upper left", frameon=True)
 
 # **Adding Enhanced Grid Lines**
 plt.grid(True, which="major", linestyle="--", linewidth=0.7, alpha=0.7)  # Major grid
@@ -71,7 +66,7 @@ plt.grid(True, which="minor", linestyle=":", linewidth=0.5, alpha=0.5)  # Minor 
 plt.minorticks_on()  # Enable minor ticks
 
 # Save and show the plot
-plot_path = "../visuals/stable_dqn_experience_replay_plot.png"
+plot_path = "../visuals/stable_dqn_target_plot.png"
 plt.savefig(plot_path, dpi=300)  # High-resolution save
 plt.show()
 
