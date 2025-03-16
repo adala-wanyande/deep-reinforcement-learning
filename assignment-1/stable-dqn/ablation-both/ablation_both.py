@@ -18,7 +18,7 @@ MIN_EPSILON = 0.01         # Minimum epsilon
 LEARNING_RATE = 0.001      # High learning rate
 BATCH_SIZE = 64            # Mini-batch size for experience replay
 BUFFER_SIZE = 10000        # Experience replay buffer size
-TARGET_UPDATE_FREQ = 1000  # Frequency for updating target network
+TARGET_UPDATE_FREQ = 500  # Frequency for updating target network
 
 # Define Neural Network (Medium-sized: 64-64-2)
 class QNetwork(nn.Module):
