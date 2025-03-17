@@ -8,46 +8,33 @@ import matplotlib.pyplot as plt
 import os
 import random
 
-# Experiment parameters
-MAX_ENV_STEPS = 100000  # Total environment steps per run
-LEARNING_RATE = 0.0005
-GAMMA = 0.99
-EPSILON = 1.0
-EPSILON_DECAY = 0.999
-MIN_EPSILON = 0.01
+# Experiment parameters (Updated to best values)
+MAX_ENV_STEPS = 1_000_000  # 1 million total environment steps
+LEARNING_RATE = 0.001  # Best-performing learning rate
+GAMMA = 0.99  # High discount factor for long-term planning
+EPSILON = 1.0  # Initial exploration probability
+EPSILON_DECAY = 0.999  # Optimal exploration decay rate
+MIN_EPSILON = 0.01  # Minimum epsilon for stable exploitation
 
 # Create the environment
 env = gym.make("CartPole-v1")
 
-# Define a minimal neural network for Q-learning
+# Define the improved Q-network
 class QNetwork(nn.Module):
     def __init__(self, input_dim, output_dim):
         super(QNetwork, self).__init__()
         self.fc = nn.Sequential(
-            nn.Linear(input_dim, 24),  # Minimal network with small hidden layer
+            nn.Linear(input_dim, 64),  # Optimized: Increased units for better representation
             nn.ReLU(),
-            nn.Linear(24, output_dim)
+            nn.Linear(64, 64),  # Optimized: Added second hidden layer for improved learning
+            nn.ReLU(),
+            nn.Linear(64, output_dim)
         )
 
     def forward(self, x):
         return self.fc(x)
 
-class QNetwork(nn.Module):
-    def __init__(self, input_dim, output_dim):
-        super(QNetwork, self).__init__()
-        self.fc = nn.Sequential(
-            nn.Linear(input_dim, 64),  # Increase from 24 to 64 units
-            nn.ReLU(),
-            nn.Linear(64, 64),  # New hidden layer for better function approximation
-            nn.ReLU(),
-            nn.Linear(64, output_dim)  # Output layer remains unchanged
-        )
-
-    def forward(self, x):
-        return self.fc(x)
-
-
-# Truly Naive DQN Agent (No Experience Replay, No Target Network)
+# Naive DQN Agent (No Experience Replay, No Target Network)
 class NaiveDQN:
     def __init__(self, env):
         self.env = env
@@ -66,18 +53,19 @@ class NaiveDQN:
 
     def train(self, state, action, reward, next_state, done):
         """Trains the Q-network using only the most recent experience."""
-        state = torch.tensor(state, dtype=torch.float32)
-        next_state = torch.tensor(next_state, dtype=torch.float32)
-        action = torch.tensor(action).unsqueeze(0)
-        reward = torch.tensor(reward, dtype=torch.float32)
-        done = torch.tensor(done, dtype=torch.float32)
+        state = torch.tensor(state, dtype=torch.float32).unsqueeze(0)
+        next_state = torch.tensor(next_state, dtype=torch.float32).unsqueeze(0)
+        action = torch.tensor([action], dtype=torch.int64)
+        reward = torch.tensor([reward], dtype=torch.float32)
+        done = torch.tensor([done], dtype=torch.float32)
 
         # Compute Q-values
-        q_value = self.q_network(state).gather(0, action)
+        q_value = self.q_network(state).gather(1, action.unsqueeze(1)).squeeze(1)
 
         # Compute TD target (bootstrapped target)
-        next_q_value = self.q_network(next_state).max().detach()
-        target = reward + GAMMA * next_q_value * (1 - done)
+        with torch.no_grad():
+            next_q_value = self.q_network(next_state).max(1)[0]
+            target = reward + GAMMA * next_q_value * (1 - done)
 
         # Compute loss and update
         loss = self.criterion(q_value, target)
@@ -119,22 +107,24 @@ def train_dqn():
                 break
 
         agent.decay_epsilon()
-        results.append([len(results) + 1, total_reward])
+        results.append([total_steps, total_reward])
 
         print(f"Step {total_steps}: Episode {len(results)}, Reward = {total_reward}")
 
-    return np.array(results)  # Shape: (num_episodes, 2) [Episode, Reward]
+    return np.array(results)  # Shape: (num_episodes, 2) [Total Steps, Reward]
 
-# Run single iteration of Naive DQN
+# Run Naive DQN
 results = train_dqn()
 
 # Create Pandas DataFrame
-df = pd.DataFrame(results, columns=["Episode", "Total Reward"])
+df = pd.DataFrame(results, columns=["Total Steps", "Episode Reward"])
 
 # Ensure output directory exists
-output_dir = os.getcwd()  # Saves in the current working directory
-csv_path = os.path.join(output_dir, "naive_dqn_single_run_results.csv")
-plot_path = os.path.join(output_dir, "naive_dqn_single_run_plot.png")
+output_dir = "./naive-dqn/data"
+os.makedirs(output_dir, exist_ok=True)
+
+csv_path = os.path.join(output_dir, "naive_dqn_best_hyperparams_results.csv")
+plot_path = os.path.join(output_dir, "naive_dqn_best_hyperparams_plot.png")
 
 # Save results to CSV
 df.to_csv(csv_path, index=False)
@@ -142,10 +132,10 @@ print(f"Results saved to {csv_path}")
 
 # Plot results
 plt.figure(figsize=(10, 5))
-plt.plot(df["Episode"], df["Total Reward"], label="Episodic Return", alpha=0.8, color="blue")
-plt.xlabel("Episodes")
-plt.ylabel("Total Reward")
-plt.title("CartPole Performance - Naive Deep Q-Learning (Single Run)")
+plt.plot(df["Total Steps"], df["Episode Reward"], label="Episodic Return", alpha=0.8, color="blue")
+plt.xlabel("Total Steps")
+plt.ylabel("Episode Reward")
+plt.title("CartPole Performance - Optimized Naive Deep Q-Learning")
 plt.legend()
 plt.grid()
 

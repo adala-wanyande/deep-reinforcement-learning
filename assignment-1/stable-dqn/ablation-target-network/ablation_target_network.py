@@ -15,7 +15,7 @@ EPSILON = 0.99             # Low exploration (high exploitation)
 EPSILON_DECAY = 0.999      # Decay rate
 MIN_EPSILON = 0.01         # Minimum epsilon
 LEARNING_RATE = 0.001      # High learning rate
-TARGET_UPDATE_FREQ = 1000  # Frequency for updating target network
+TARGET_UPDATE_FREQ = 500  # Frequency for updating target network
 
 # Define Neural Network (Medium-sized: 64-64-2)
 class QNetwork(nn.Module):
