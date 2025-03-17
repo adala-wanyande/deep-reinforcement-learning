@@ -55,7 +55,7 @@ python stable-dqn/ablation-target-network/ablation_target_network.py
 python stable-dqn/ablation-both/ablation_both.py
 ```
 
-### 4️⃣ Visualizing Results
+### Visualizing Results
 All results are stored as CSV files in `naive-dqn/data/` and `stable-dqn/data/`. To generate plots for all experiments, run:
 ```bash
 python plot_all.py
