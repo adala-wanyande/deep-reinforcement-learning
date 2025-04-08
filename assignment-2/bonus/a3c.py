@@ -1,3 +1,4 @@
+# a3c_lunarlander_continuous.py
 import gymnasium as gym
 import torch
 import torch.nn as nn
@@ -18,7 +19,7 @@ torch.manual_seed(42)
 np.random.seed(42)
 
 # Environment setup
-envs = [gym.make("HalfCheetah-v4") for _ in range(NUM_ENVS)]
+envs = [gym.make("LunarLanderContinuous-v2") for _ in range(NUM_ENVS)]
 obs_dim = envs[0].observation_space.shape[0]
 act_dim = envs[0].action_space.shape[0]
 act_low = torch.tensor(envs[0].action_space.low, dtype=torch.float32)
@@ -117,5 +118,5 @@ for env in envs:
 # Save
 os.makedirs("data", exist_ok=True)
 df = pd.DataFrame({"Episode": list(range(1, len(reward_log)+1)), "Return": reward_log})
-df.to_csv("data/a3c_halfcheetah_returns.csv", index=False)
-print("Saved returns to data/a3c_halfcheetah_returns.csv")  
+df.to_csv("data/a3c_lunarlander_continuous_returns.csv", index=False)
+print("Saved returns to data/a3c_lunarlander_continuous_returns.csv")

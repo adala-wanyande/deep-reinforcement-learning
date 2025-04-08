@@ -1,22 +1,26 @@
+# a3c.py
 import gymnasium as gym
 import torch
-import torch.nn as nn
 import torch.optim as optim
 import numpy as np
 import pandas as pd
 import os
+
+from models import SharedActorCritic  # 👈 shared import
+
 from collections import deque
 
 # Hyperparameters
 LEARNING_RATE = 0.001
 GAMMA = 0.99
 EPISODES = 5000
-NUM_ENVS = 4  # Simulate async workers
+NUM_ENVS = 4
 N_STEPS = 5
+SEED = 42
 
 # Reproducibility
-torch.manual_seed(42)
-np.random.seed(42)
+torch.manual_seed(SEED)
+np.random.seed(SEED)
 
 # Environment
 envs = [gym.make("CartPole-v1") for _ in range(NUM_ENVS)]
@@ -24,25 +28,8 @@ obs_dim = envs[0].observation_space.shape[0]
 n_actions = envs[0].action_space.n
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
-# Shared model definitions
-class ActorCritic(nn.Module):
-    def __init__(self):
-        super().__init__()
-        self.shared = nn.Sequential(
-            nn.Linear(obs_dim, 128),
-            nn.ReLU()
-        )
-        self.actor = nn.Sequential(
-            nn.Linear(128, n_actions),
-            nn.Softmax(dim=-1)
-        )
-        self.critic = nn.Linear(128, 1)
-
-    def forward(self, x):
-        features = self.shared(x)
-        return self.actor(features), self.critic(features).squeeze(-1)
-
-model = ActorCritic().to(device)
+# Shared model and optimizer
+model = SharedActorCritic(obs_dim, n_actions).to(device)
 optimizer = optim.Adam(model.parameters(), lr=LEARNING_RATE)
 
 episode_returns = [0 for _ in range(NUM_ENVS)]
@@ -77,9 +64,9 @@ while episode_counter < EPISODES:
                 episode_returns[i] = 0
                 states[i], _ = envs[i].reset()
 
-    # Train after collecting trajectories
+    # Train on trajectories
     for env_traj in trajectories:
-        if len(env_traj) == 0:
+        if not env_traj:
             continue
 
         states_batch, actions_batch, rewards_batch, next_states_batch, dones_batch = zip(*env_traj)
@@ -104,7 +91,6 @@ while episode_counter < EPISODES:
 
         actor_loss = -(log_probs * advantage.detach()).mean()
         critic_loss = advantage.pow(2).mean()
-
         loss = actor_loss + critic_loss
 
         optimizer.zero_grad()

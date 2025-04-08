@@ -7,7 +7,7 @@ import numpy as np
 # File paths
 paths = {
     "REINFORCE": "data/reinforce_returns.csv",
-    "Actor-Critic (AC)": "data/actor_critic_returns.csv",
+    "Actor-Critic (AC)": "data/actor_critic_best_combo.csv",
     "Advantage Actor-Critic (A2C)": "data/a2c_returns.csv",
     "Asynchronous Actor-Critic (A3C)": "data/a3c_returns.csv"
 }

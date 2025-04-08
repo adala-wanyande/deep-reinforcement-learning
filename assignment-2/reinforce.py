@@ -1,10 +1,11 @@
+# reinforce.py
 import gymnasium as gym
 import torch
-import torch.nn as nn
 import torch.optim as optim
 import numpy as np
 import pandas as pd
 import os
+from models import SharedActorCritic
 
 # Hyperparameters
 LEARNING_RATE = 0.001
@@ -12,7 +13,7 @@ GAMMA = 0.99
 EPISODES = 5000
 SEED = 42
 
-# Set seeds for reproducibility
+# Set seeds
 torch.manual_seed(SEED)
 np.random.seed(SEED)
 
@@ -22,20 +23,11 @@ obs_dim = env.observation_space.shape[0]
 n_actions = env.action_space.n
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
-# Policy Network
-class PolicyNetwork(nn.Module):
-    def __init__(self):
-        super().__init__()
-        self.fc = nn.Sequential(
-            nn.Linear(obs_dim, 64),
-            nn.ReLU(),
-            nn.Linear(64, n_actions),
-            nn.Softmax(dim=-1)
-        )
+# Initialize model and optimizer
+model = SharedActorCritic(obs_dim, n_actions).to(device)
+optimizer = optim.Adam(model.parameters(), lr=LEARNING_RATE)
 
-    def forward(self, x):
-        return self.fc(x)
-
+# Return computation
 def compute_returns(rewards, gamma):
     returns = []
     G = 0
@@ -44,9 +36,7 @@ def compute_returns(rewards, gamma):
         returns.insert(0, G)
     return torch.tensor(returns, dtype=torch.float32)
 
-# Training Loop
-policy = PolicyNetwork().to(device)
-optimizer = optim.Adam(policy.parameters(), lr=LEARNING_RATE)
+# Training loop
 episode_returns = []
 
 for episode in range(EPISODES):
@@ -58,23 +48,22 @@ for episode in range(EPISODES):
 
     while not done:
         state_tensor = torch.tensor(state, dtype=torch.float32).to(device)
-        probs = policy(state_tensor)
-        dist = torch.distributions.Categorical(probs)
+        action_probs, _ = model(state_tensor)
+        dist = torch.distributions.Categorical(action_probs)
         action = dist.sample()
 
         log_probs.append(dist.log_prob(action))
         next_state, reward, terminated, truncated, _ = env.step(action.item())
         done = terminated or truncated
+
         rewards.append(reward)
         total_reward += reward
         state = next_state
 
     returns = compute_returns(rewards, GAMMA)
-    returns = (returns - returns.mean()) / (returns.std() + 1e-8)  # Normalize
+    returns = (returns - returns.mean()) / (returns.std() + 1e-8)
 
-    loss = 0
-    for log_prob, G in zip(log_probs, returns):
-        loss -= log_prob * G
+    loss = -torch.sum(torch.stack(log_probs) * returns)
 
     optimizer.zero_grad()
     loss.backward()
@@ -85,7 +74,7 @@ for episode in range(EPISODES):
 
 env.close()
 
-# Save results
+# Save returns
 os.makedirs("data", exist_ok=True)
 df = pd.DataFrame({"Episode": list(range(1, EPISODES + 1)), "Return": episode_returns})
 df.to_csv("data/reinforce_returns.csv", index=False)

@@ -1,33 +1,52 @@
-# actor_critic_lunarlander.py
+# actor_critic_capacity.py
 import gymnasium as gym
 import torch
 import torch.optim as optim
 import numpy as np
 import pandas as pd
 import os
-
+import argparse
+import ast
 from models import SharedActorCritic
 
+# CLI args
+parser = argparse.ArgumentParser()
+parser.add_argument('--actor-lr', type=float, default=1e-3)
+parser.add_argument('--critic-lr', type=float, default=1e-3)
+parser.add_argument('--episodes', type=int, default=1000)
+parser.add_argument('--critic-dims', type=str, default='[128,128]', help="Critic architecture like '[256,128]'")
+parser.add_argument('--save-path', type=str, default=None, help="Path to save results CSV")
+args = parser.parse_args()
+
 # Hyperparameters
-LEARNING_RATE = 0.001
+ACTOR_LR = args.actor_lr
+CRITIC_LR = args.critic_lr
+EPISODES = args.episodes
+CRITIC_DIMS = ast.literal_eval(args.critic_dims)
 GAMMA = 0.99
-EPISODES = 5000
 SEED = 42
 
-# Set seeds
+# Reproducibility
 torch.manual_seed(SEED)
 np.random.seed(SEED)
 
-# Environment setup
-env = gym.make("LunarLander-v2")
+# Environment
+env = gym.make("CartPole-v1")
 obs_dim = env.observation_space.shape[0]
-n_actions = env.action_space.n  # Discrete action space
+n_actions = env.action_space.n
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
-# Shared model and optimizer
-model = SharedActorCritic(obs_dim, n_actions).to(device)
-optimizer = optim.Adam(model.parameters(), lr=LEARNING_RATE)
+# Model
+model = SharedActorCritic(obs_dim, n_actions, critic_dims=CRITIC_DIMS).to(device)
+actor_params = list(model.actor.parameters())
+critic_params = list(model.critic.parameters())
 
+optimizer = optim.Adam([
+    {'params': actor_params, 'lr': ACTOR_LR},
+    {'params': critic_params, 'lr': CRITIC_LR}
+])
+
+# Training
 episode_returns = []
 
 for episode in range(EPISODES):
@@ -52,14 +71,10 @@ for episode in range(EPISODES):
         td_target = reward_tensor + GAMMA * next_value * (1 - done_tensor)
         td_error = td_target - value
 
-        # Critic loss
-        critic_loss = td_error.pow(2)
-
-        # Actor loss
         actor_loss = -dist.log_prob(action) * td_error.detach()
-
-        # Joint update
+        critic_loss = td_error.pow(2)
         total_loss = actor_loss + critic_loss
+
         optimizer.zero_grad()
         total_loss.backward()
         optimizer.step()
@@ -68,12 +83,19 @@ for episode in range(EPISODES):
         total_reward += reward
 
     episode_returns.append(total_reward)
-    print(f"Episode {episode+1}: Reward = {total_reward:.2f}")
+    print(f"Episode {episode + 1}: Reward = {total_reward}")
 
 env.close()
 
-# Save returns
+# Save
 os.makedirs("data", exist_ok=True)
+
+if args.save_path is not None:
+    save_path = args.save_path
+else:
+    dims_str = "_".join(map(str, CRITIC_DIMS))
+    save_path = f"data/actor_critic_dims_{dims_str}.csv"
+
 df = pd.DataFrame({"Episode": list(range(1, EPISODES + 1)), "Return": episode_returns})
-df.to_csv("data/actor_critic_lunarlander_returns.csv", index=False)
-print("Saved returns to data/actor_critic_lunarlander_returns.csv")
+df.to_csv(save_path, index=False)
+print(f"Saved returns to {save_path}")
