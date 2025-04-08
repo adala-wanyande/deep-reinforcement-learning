@@ -6,10 +6,9 @@ import numpy as np
 
 # File paths
 paths = {
-    "REINFORCE": "data/reinforce_halfcheetah_returns.csv",
-    "Actor-Critic (AC)": "data/actor_critic_halfcheetah_returns.csv",
-    "Advantage Actor-Critic (A2C)": "data/a2c_halfcheetah_returns.csv",
-    "Asynchronous Actor-Critic (A3C)": "data/a3c_halfcheetah_returns.csv"
+    "REINFORCE": "data/reinforce_acrobot_returns.csv",
+    "Actor-Critic (AC)": "data/actor_critic_acrobot_returns.csv",
+    "Advantage Actor-Critic (A2C)": "data/a2c_acrobot_returns.csv",
 }
 
 # Load and preprocess data
@@ -57,10 +56,10 @@ for label, (mean_rewards, std_rewards) in experiments.items():
 
 # Axis settings
 plt.xlim(left=0)
-plt.ylim(bottom=0)
+plt.ylim(bottom=-510)
 plt.xlabel("Episodes", fontsize=12)
 plt.ylabel("Episode Reward", fontsize=12)
-plt.title("Policy Gradient Algorithms on CartPole", fontsize=14)
+plt.title("Policy Gradient Algorithms on Acrobot", fontsize=14)
 
 # Legend
 plt.legend(title="Algorithm", fontsize=10, title_fontsize=12, loc="upper left", frameon=True)

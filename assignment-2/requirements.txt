@@ -2,4 +2,5 @@ numpy
 matplotlib
 gymnasium
 torch
-gymnasium[mujoco]
+swig
+gymnasium[box2d]

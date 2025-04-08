@@ -1,25 +1,18 @@
 #!/bin/bash
 
-echo "Starting all policy gradient experiments..."
-
-# Make sure the script stops if any command fails
+# Exit if any command fails
 set -e
 
-# Run training scripts
 echo "Running REINFORCE..."
-python3 reinforce.py
+python reinforce.py
 
-echo "Running Actor-Critic (AC)..."
-python3 actor_critic.py
+echo "Running Actor-Critic..."
+python ac.py
 
-echo "Running Advantage Actor-Critic (A2C)..."
-python3 a2c.py
+echo "Running A2C..."
+python a2c.py
 
-echo "Running Asynchronous Actor-Critic (A3C)..."
-python3 a3c.py
+echo "All training scripts completed."
 
-# Run the plotting script
-echo "Generating comparison plot..."
-python3 plot_all_algorithms.py
-
-echo "All experiments completed and comparison plot saved to plots/comparison_plot.png"
+echo "Generating plot..."
+python plot_all.py

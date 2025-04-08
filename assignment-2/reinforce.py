@@ -8,7 +8,7 @@ import os
 from models import SharedActorCritic
 
 # Hyperparameters
-LEARNING_RATE = 0.001
+LEARNING_RATE = 0.0005
 GAMMA = 0.99
 EPISODES = 5000
 SEED = 42

@@ -1,16 +1,17 @@
+# actor_critic.py
 import gymnasium as gym
 import torch
-import torch.nn as nn
 import torch.optim as optim
 import numpy as np
 import pandas as pd
 import os
 
+from models import SharedActorCritic
+
 # Hyperparameters
-ACTOR_LR = 0.001
-CRITIC_LR = 0.001
-EPISODES = 5000
+LEARNING_RATE = 0.0005
 GAMMA = 0.99
+EPISODES = 5000
 SEED = 42
 
 # Reproducibility
@@ -23,46 +24,16 @@ obs_dim = env.observation_space.shape[0]
 n_actions = env.action_space.n
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
-# Model Definition
-class SharedActorCritic(nn.Module):
-    def __init__(self, obs_dim, n_actions, hidden_size=64):
-        super().__init__()
-
-        self.actor_shared = nn.Sequential(
-            nn.Linear(obs_dim, hidden_size),
-            nn.ReLU()
-        )
-
-        self.actor = nn.Sequential(
-            nn.Linear(hidden_size, n_actions),
-            nn.Softmax(dim=-1)
-        )
-
-        self.critic = nn.Sequential(
-            nn.Linear(obs_dim, 256),
-            nn.ReLU(),
-            nn.Linear(256, 128),
-            nn.ReLU(),
-            nn.Linear(128, 1)
-        )
-
-    def forward(self, x):
-        actor_features = self.actor_shared(x)
-        action_probs = self.actor(actor_features)
-        value = self.critic(x).squeeze(-1)
-        return action_probs, value
-
-# Instantiate model
+# Initialize model and optimizer
 model = SharedActorCritic(obs_dim, n_actions).to(device)
 actor_params = list(model.actor.parameters()) + list(model.actor_shared.parameters())
 critic_params = list(model.critic.parameters())
 
 optimizer = optim.Adam([
-    {'params': actor_params, 'lr': ACTOR_LR},
-    {'params': critic_params, 'lr': CRITIC_LR}
+    {'params': actor_params, 'lr': LEARNING_RATE},
+    {'params': critic_params, 'lr': LEARNING_RATE}
 ])
 
-# Training
 episode_returns = []
 
 for episode in range(EPISODES):
@@ -80,15 +51,16 @@ for episode in range(EPISODES):
         done = terminated or truncated
 
         next_state_tensor = torch.tensor(next_state, dtype=torch.float32).to(device)
-        reward_tensor = torch.tensor(reward, dtype=torch.float32).to(device)
-        done_tensor = torch.tensor(done, dtype=torch.float32).to(device)
+        with torch.no_grad():
+            _, next_value = model(next_state_tensor)
+            td_target = reward + GAMMA * next_value * (1 - float(done))
 
-        _, next_value = model(next_state_tensor)
-        td_target = reward_tensor + GAMMA * next_value * (1 - done_tensor)
         td_error = td_target - value
 
+        # Actor and Critic losses
         actor_loss = -dist.log_prob(action) * td_error.detach()
         critic_loss = td_error.pow(2)
+
         total_loss = actor_loss + critic_loss
 
         optimizer.zero_grad()
@@ -99,12 +71,12 @@ for episode in range(EPISODES):
         total_reward += reward
 
     episode_returns.append(total_reward)
-    print(f"Episode {episode+1}: Reward = {total_reward}")
+    print(f"Episode {episode + 1}: Reward = {total_reward}")
 
 env.close()
 
-# Save
+# Save returns
 os.makedirs("data", exist_ok=True)
-df = pd.DataFrame({"Episode": list(range(1, EPISODES + 1)), "Return": episode_returns})
-df.to_csv("data/actor_critic_best_combo.csv", index=False)
-print("Saved returns to data/actor_critic_best_combo.csv")
+df = pd.DataFrame({"Episode": range(1, EPISODES + 1), "Return": episode_returns})
+df.to_csv("data/actor_critic_returns.csv", index=False)
+print("Saved returns to data/actor_critic_returns.csv")

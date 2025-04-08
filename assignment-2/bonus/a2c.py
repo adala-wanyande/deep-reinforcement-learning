@@ -9,9 +9,9 @@ import os
 from models import SharedActorCritic
 
 # Hyperparameters
-LEARNING_RATE = 0.001
+LEARNING_RATE = 0.0005
 GAMMA = 0.99
-EPISODES = 5000
+EPISODES = 500
 N_STEPS = 5
 SEED = 42
 
@@ -19,14 +19,14 @@ SEED = 42
 torch.manual_seed(SEED)
 np.random.seed(SEED)
 
-# Environment
-env = gym.make("LunarLander-v2")  # Discrete version
-obs_dim = env.observation_space.shape[0]
-n_actions = env.action_space.n
+# Environment setup change for all files:
+env = gym.make("Acrobot-v1")
+obs_dim = env.observation_space.shape[0]  # 8 for LunarLander
+n_actions = env.action_space.n  # 4 for LunarLander
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
-# Initialize shared model and optimizer
-model = SharedActorCritic(obs_dim, n_actions).to(device)
+# Adjust model initialization (recommended sizes for LunarLander):
+model = SharedActorCritic(obs_dim, n_actions, actor_hidden=128, critic_dims=[256, 128]).to(device)
 optimizer = optim.Adam(model.parameters(), lr=LEARNING_RATE)
 
 episode_returns = []
@@ -98,5 +98,5 @@ env.close()
 # Save returns
 os.makedirs("data", exist_ok=True)
 df = pd.DataFrame({"Episode": list(range(1, EPISODES + 1)), "Return": episode_returns})
-df.to_csv("data/a2c_lunarlander_returns.csv", index=False)
-print("Saved returns to data/a2c_lunarlander_returns.csv")
+df.to_csv("data/a2c_acrobot_returns.csv", index=False)
+print("Saved returns to data/a2c_acrobot_returns.csv")
