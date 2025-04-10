@@ -10,20 +10,18 @@ from models import SharedActorCritic
 LEARNING_RATE = 0.0005
 GAMMA = 0.99
 TOTAL_STEPS = 1_000_000
-RUNS = 5
+NUM_RUNS = 5
 SEED = 42
 
-# Set seeds
+# Reproducibility
 torch.manual_seed(SEED)
 np.random.seed(SEED)
 
-# Environment setup
-env = gym.make("CartPole-v1")
-obs_dim = env.observation_space.shape[0]
-n_actions = env.action_space.n
+# Env setup
+env_name = "Acrobot-v1"
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
-# Compute discounted returns
+# Return computation
 def compute_returns(rewards, gamma):
     returns = []
     G = 0
@@ -32,23 +30,27 @@ def compute_returns(rewards, gamma):
         returns.insert(0, G)
     return torch.tensor(returns, dtype=torch.float32)
 
-# Run experiments
-all_results = []
+# Training loop
+all_data = []
 
-for run in range(1, RUNS + 1):
-    print(f"\n=== Run {run} ===")
-    model = SharedActorCritic(obs_dim, n_actions).to(device)
+for run in range(1, NUM_RUNS + 1):
+    print(f"\n=== RUN {run} ===")
+    env = gym.make(env_name)
+    obs_dim = env.observation_space.shape[0]
+    n_actions = env.action_space.n
+
+    model = SharedActorCritic(obs_dim, n_actions, actor_hidden=128, critic_dims=[256, 128]).to(device)
     optimizer = optim.Adam(model.parameters(), lr=LEARNING_RATE)
 
+    total_env_steps = 0
     episode = 0
-    steps = 0
 
-    while steps < TOTAL_STEPS:
-        state, _ = env.reset(seed=SEED + run + episode)  # Different seed for diversity
+    while total_env_steps < TOTAL_STEPS:
+        state, _ = env.reset(seed=SEED + run)
         done = False
-        total_reward = 0
-        rewards = []
         log_probs = []
+        rewards = []
+        total_reward = 0
         steps_this_episode = 0
 
         while not done:
@@ -63,33 +65,33 @@ for run in range(1, RUNS + 1):
 
             rewards.append(reward)
             total_reward += reward
-            state = next_state
             steps_this_episode += 1
+            state = next_state
 
-        steps += steps_this_episode
-        episode += 1
-
+        # Update model
         returns = compute_returns(rewards, GAMMA)
         returns = (returns - returns.mean()) / (returns.std() + 1e-8)
-
         loss = -torch.sum(torch.stack(log_probs) * returns)
+
         optimizer.zero_grad()
         loss.backward()
         optimizer.step()
 
-        all_results.append({
+        total_env_steps += steps_this_episode
+        episode += 1
+        all_data.append({
             "Run": run,
             "Episode": episode,
-            "Total Steps": steps,
+            "Total Steps": total_env_steps,
             "Episode Reward": total_reward
         })
 
-        print(f"Run {run} | Episode {episode} | Reward = {total_reward:.1f} | Total Steps = {steps}")
+        print(f"[Run {run}] Ep {episode}: Reward = {total_reward} | Total Steps = {total_env_steps}")
 
-env.close()
+    env.close()
 
-# Save CSV
+# Save combined data
 os.makedirs("data", exist_ok=True)
-df = pd.DataFrame(all_results)
-df.to_csv("data/reinforce_returns.csv", index=False)
-print("Saved returns to data/reinforce_returns.csv")
+df = pd.DataFrame(all_data)
+df.to_csv("data/reinforce_acrobot_results.csv", index=False)
+print("Saved results to data/reinforce_acrobot_results.csv")

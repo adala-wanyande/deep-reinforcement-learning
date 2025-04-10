@@ -10,36 +10,35 @@ from models import SharedActorCritic
 LEARNING_RATE = 0.0005
 GAMMA = 0.99
 N_STEPS = 5
-RUNS = 5
 TOTAL_STEPS = 1_000_000
+NUM_RUNS = 5
 SEED = 42
 
-# Reproducibility
 torch.manual_seed(SEED)
 np.random.seed(SEED)
 
-# Environment setup
-env = gym.make("CartPole-v1")
-obs_dim = env.observation_space.shape[0]
-n_actions = env.action_space.n
+env_name = "Acrobot-v1"
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
-# Results
-all_results = []
+all_data = []
 
-for run in range(1, RUNS + 1):
-    print(f"\n=== Run {run} ===")
-    model = SharedActorCritic(obs_dim, n_actions).to(device)
+for run in range(1, NUM_RUNS + 1):
+    print(f"\n=== RUN {run} ===")
+    env = gym.make(env_name)
+    obs_dim = env.observation_space.shape[0]
+    n_actions = env.action_space.n
+
+    model = SharedActorCritic(obs_dim, n_actions, actor_hidden=128, critic_dims=[256, 128]).to(device)
     optimizer = optim.Adam(model.parameters(), lr=LEARNING_RATE)
 
-    episode = 0
     total_env_steps = 0
+    episode = 0
 
     while total_env_steps < TOTAL_STEPS:
-        state, _ = env.reset()
+        state, _ = env.reset(seed=SEED + run)
         done = False
         total_reward = 0
-        steps_this_episode = 0
+        steps = 0
 
         states, actions, rewards, dones = [], [], [], []
 
@@ -59,7 +58,7 @@ for run in range(1, RUNS + 1):
 
             state = next_state
             total_reward += reward
-            steps_this_episode += 1
+            steps += 1
 
             if len(states) >= N_STEPS or done:
                 next_state_tensor = torch.tensor(next_state, dtype=torch.float32).to(device)
@@ -82,7 +81,6 @@ for run in range(1, RUNS + 1):
                 log_probs = dists.log_prob(actions_tensor)
 
                 advantages = returns_tensor - values
-
                 actor_loss = -(log_probs * advantages.detach()).mean()
                 critic_loss = advantages.pow(2).mean()
 
@@ -93,20 +91,21 @@ for run in range(1, RUNS + 1):
 
                 states, actions, rewards, dones = [], [], [], []
 
+        total_env_steps += steps
         episode += 1
-        total_env_steps += steps_this_episode
-        all_results.append({
+        all_data.append({
             "Run": run,
             "Episode": episode,
             "Total Steps": total_env_steps,
             "Episode Reward": total_reward
         })
-        print(f"Run {run} | Ep {episode} | Steps {total_env_steps} | Reward {total_reward:.1f}")
 
-env.close()
+        print(f"[Run {run}] Episode {episode}: Reward = {total_reward:.2f} | Steps = {total_env_steps}")
+
+    env.close()
 
 # Save results
 os.makedirs("data", exist_ok=True)
-df = pd.DataFrame(all_results)
-df.to_csv("data/a2c_returns.csv", index=False)
-print("Saved returns to data/a2c_returns.csv")
+df = pd.DataFrame(all_data)
+df.to_csv("data/a2c_acrobot_results.csv", index=False)
+print("Saved results to data/a2c_acrobot_results.csv")

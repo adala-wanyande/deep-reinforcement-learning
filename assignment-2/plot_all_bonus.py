@@ -5,9 +5,9 @@ import os
 import numpy as np
 
 # File paths
-reinforce_path = "data/reinforce_returns.csv"
-ac_path = "data/actor_critic_returns.csv"
-a2c_path = "data/a2c_returns.csv"
+reinforce_path = "data/reinforce_acrobot_results.csv"
+ac_path = "data/actor_critic_acrobot_results.csv"
+a2c_path = "data/a2c_acrobot_results.csv"
 
 # Load data
 df_reinforce = pd.read_csv(reinforce_path)
@@ -63,18 +63,18 @@ for label, df in experiments.items():
 
 # Labels and formatting
 plt.xlim(left=0)
-plt.ylim(bottom=0)
+plt.ylim(bottom=-510)
 plt.xlabel("Total Environment Steps", fontsize=12)
 plt.ylabel("Episode Reward", fontsize=12)
-plt.title("Comparison of Policy Gradient Methods on Cartpole", fontsize=14)
+plt.title("Comparison of Policy Gradient Methods on Acrobot", fontsize=14)
 
-plt.legend(title="Algorithm", fontsize=10, title_fontsize=12, loc="upper left", frameon=True)
+plt.legend(title="Algorithm", fontsize=10, title_fontsize=12, loc="lower right", frameon=True)
 plt.grid(True, which="major", linestyle="--", linewidth=0.7, alpha=0.7)
 plt.grid(True, which="minor", linestyle=":", linewidth=0.5, alpha=0.5)
 plt.minorticks_on()
 
 # Save and display
-plot_path = "plots/policy_gradient_comparison_cartpole.png"
+plot_path = "plots/policy_gradient_comparison_acrobot.png"
 plt.savefig(plot_path, dpi=300)
 plt.show()
 

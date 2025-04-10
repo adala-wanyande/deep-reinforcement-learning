@@ -6,48 +6,46 @@ import pandas as pd
 import os
 from models import SharedActorCritic
 
-# Constants
+# Hyperparameters
 LEARNING_RATE = 0.0005
 GAMMA = 0.99
-SEED = 42
-REPEATS = 5
 TOTAL_STEPS = 1_000_000
-ENV_NAME = "CartPole-v1"
+NUM_RUNS = 5
+SEED = 42
 
-# Set seeds for reproducibility
+# Reproducibility
 torch.manual_seed(SEED)
 np.random.seed(SEED)
 
-# Output
-os.makedirs("data", exist_ok=True)
-all_runs = []
+# Environment settings
+env_name = "Acrobot-v1"
+device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
-for run in range(1, REPEATS + 1):
-    print(f"\n--- Starting Run {run} ---")
+# Results holder
+all_data = []
 
-    env = gym.make(ENV_NAME)
+for run in range(1, NUM_RUNS + 1):
+    print(f"\n=== RUN {run} ===")
+    env = gym.make(env_name)
     obs_dim = env.observation_space.shape[0]
     n_actions = env.action_space.n
-    device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
-    model = SharedActorCritic(obs_dim, n_actions).to(device)
+    model = SharedActorCritic(obs_dim, n_actions, actor_hidden=128, critic_dims=[256, 128]).to(device)
     actor_params = list(model.actor.parameters()) + list(model.actor_shared.parameters())
     critic_params = list(model.critic.parameters())
-
     optimizer = optim.Adam([
-        {'params': actor_params, 'lr': LEARNING_RATE},
-        {'params': critic_params, 'lr': LEARNING_RATE}
+        {"params": actor_params, "lr": LEARNING_RATE},
+        {"params": critic_params, "lr": LEARNING_RATE},
     ])
 
-    episode_returns = []
-    total_steps_list = []
     total_env_steps = 0
+    episode = 0
 
     while total_env_steps < TOTAL_STEPS:
-        state, _ = env.reset()
+        state, _ = env.reset(seed=SEED + run)
         done = False
         total_reward = 0
-        episode_steps = 0
+        steps = 0
 
         while not done:
             state_tensor = torch.tensor(state, dtype=torch.float32).to(device)
@@ -64,35 +62,33 @@ for run in range(1, REPEATS + 1):
                 td_target = reward + GAMMA * next_value * (1 - float(done))
 
             td_error = td_target - value
-            actor_loss = -dist.log_prob(action) * td_error.detach()
             critic_loss = td_error.pow(2)
-            total_loss = actor_loss + critic_loss
+            actor_loss = -dist.log_prob(action) * td_error.detach()
 
+            loss = actor_loss + critic_loss
             optimizer.zero_grad()
-            total_loss.backward()
+            loss.backward()
             optimizer.step()
 
             state = next_state
             total_reward += reward
-            episode_steps += 1
+            steps += 1
 
-        total_env_steps += episode_steps
-        episode_returns.append(total_reward)
-        total_steps_list.append(total_env_steps)
+        total_env_steps += steps
+        episode += 1
+        all_data.append({
+            "Run": run,
+            "Episode": episode,
+            "Total Steps": total_env_steps,
+            "Episode Reward": total_reward
+        })
 
-        print(f"Run {run}, Episode {len(episode_returns)}: Reward = {total_reward}, Steps = {total_env_steps}")
+        print(f"[Run {run}] Episode {episode}: Reward = {total_reward:.2f} | Steps = {total_env_steps}")
 
-    # Store run data
-    run_df = pd.DataFrame({
-        "Run": run,
-        "Episode": range(1, len(episode_returns) + 1),
-        "Total Steps": total_steps_list,
-        "Episode Reward": episode_returns
-    })
-    all_runs.append(run_df)
     env.close()
 
-# Save combined CSV
-final_df = pd.concat(all_runs, ignore_index=True)
-final_df.to_csv("data/actor_critic_returns.csv", index=False)
-print("Saved results to data/actor_critic_returns.csv")
+# Save results
+os.makedirs("data", exist_ok=True)
+df = pd.DataFrame(all_data)
+df.to_csv("data/actor_critic_acrobot_results.csv", index=False)
+print("Saved results to data/actor_critic_acrobot_results.csv")
