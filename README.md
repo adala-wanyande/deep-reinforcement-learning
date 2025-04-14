@@ -2,7 +2,7 @@
 
 This repository contains all code, experiments, reports, and analysis from my work on the Deep Reinforcement Learning (DRL) course at Leiden University.
 
-## 📁 Structure
+## Structure
 
 ```bash
 DEEP-RL/
@@ -35,14 +35,14 @@ DEEP-RL/
 
 ---
 
-## 🧠 Assignment Overview
+## Assignment Overview
 
-### 🟢 **Assignment 1 – Value-Based Methods**
+### **Assignment 1 – Value-Based Methods**
 - Implemented tabular Q-learning and Deep Q-Networks (DQN).
 - Added experience replay and target networks.
 - Compared naive vs stabilized DQN setups.
 
-### 🔵 **Assignment 2 – Policy-Based Methods**
+### **Assignment 2 – Policy-Based Methods**
 - Implemented REINFORCE, Actor-Critic, and Advantage Actor-Critic (A2C).
 - Trained and evaluated on `CartPole-v1` and `Acrobot-v1`.
 - Performed ablation studies on learning rate and critic capacity.
@@ -50,7 +50,7 @@ DEEP-RL/
 
 ---
 
-## ⚙️ Running Experiments
+## Running Experiments
 
 ### Setup Environment
 
@@ -84,7 +84,7 @@ bash run_all.sh
 
 ---
 
-## 📊 Visualization
+## Visualization
 
 After running experiments, results are saved in `data/` and `plots/`. Use the included plotting scripts to regenerate all comparison graphs:
 
@@ -95,7 +95,7 @@ python plot_all_bonus.py     # For Acrobot
 
 ---
 
-## 📄 Reports
+## Reports
 
 Each assignment includes a final PDF write-up following the ICML LaTeX template. Reports include:
 - Background theory
@@ -106,7 +106,7 @@ Each assignment includes a final PDF write-up following the ICML LaTeX template.
 
 ---
 
-## 📌 Resources
+## Resources
 
 - [Gymnasium (Farama)](https://gymnasium.farama.org/)
 - [Sutton & Barto – RL Book](http://incompleteideas.net/book/the-book.html)
@@ -114,7 +114,7 @@ Each assignment includes a final PDF write-up following the ICML LaTeX template.
 
 ---
 
-## 👋 Contact
+## Contact
 
 Feel free to reach out if you'd like to discuss implementation details or results. This repository is maintained as part of my MSc Data Science coursework.
 
